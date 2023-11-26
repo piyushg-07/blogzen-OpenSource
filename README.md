@@ -182,35 +182,7 @@ $ git pull upstream main
 <br><br>
 
 
-## Connect with us
 
-<div align="center">
- <a href="https://dscjss.in/"><img src="./assests/gdsc-logo.png"  height=100px /></a> <br><br> 
-<a href="https://github.com/DSC-JSS-NOIDA" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://twitter.com/DSCJSSATEN" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.linkedin.com/company/dsc-jssaten/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.facebook.com/dscjssnoida/" target="_blank">
-<img src=https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
-</a>
-<a href="https://instagram.com/gdscjssaten?igshid=YmMyMTA2M2Y=" target="_blank">
-<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-</a>
- <a href="https://discord.gg/PWEtw7gq" target="_blank">
-<img src=https://img.shields.io/badge/discord-%233E77FB.svg?&style=for-the-badge&logo=discord&logoColor=white alt=youtube style="margin-bottom: 5px;" />
-</a> 
-<a href="https://medium.com/dsc-jss-noida" target="_blank">
-<img src=https://img.shields.io/badge/medium-%23292929.svg?&style=for-the-badge&logo=medium&logoColor=white alt=medium style="margin-bottom: 5px;" />
-</a>  
-<a href="https://www.youtube.com/channel/UCkELk5JFDceaSf8pBa19kDQ" target="_blank">
-<img src=https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
-</a> 
-</div>
 
 <!-- "https://user-images.githubusercontent.com/42115530/94302134-5c28c680-ff89-11ea-9ca4-5dcdd4279786.png" -->
 
