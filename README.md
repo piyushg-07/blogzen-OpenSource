@@ -1,7 +1,6 @@
-<!-- <div align="center"> <img align="center" alt="dschackfest" src="https://user-images.githubusercontent.com/42115530/94295926-a5741880-ff7f-11ea-890b-39ad20ac0f21.png" height='150' width='350'></div> -->
+
 
 <div>
-    <img align=top src="https://miro.medium.com/max/1400/1*c4YgRXYQayOVWxV37ourrw.png" height="100" width="50%"/>
 
 <div>
 <br>
@@ -10,10 +9,10 @@
 
 ## Blogzen
 
-[![Issues](https://img.shields.io/github/issues/DSC-JSS-NOIDA/blogzen)](https://github.com/DSC-JSS-NOIDA/blogzen/issues)
-[![PRs](https://img.shields.io/github/issues-pr/DSC-JSS-NOIDA/blogzen)](https://github.com/DSC-JSS-NOIDA/blogzen/pulls)
-[![Maintenance](https://img.shields.io/maintenance/yes/2023?color=green&logo=github)](https://github.com/DSC-JSS-NOIDA/)
-[![Forks](https://img.shields.io/github/forks/DSC-JSS-NOIDA/blogzen?style=social)](https://github.com/DSC-JSS-NOIDA/blogzen) [![Stars](https://img.shields.io/github/stars/DSC-JSS-NOIDA/blogzen?style=social)](https://github.com/DSC-JSS-NOIDA/blogzen) [![Watchers](https://img.shields.io/github/watchers/DSC-JSS-NOIDA/blogzen?style=social)](https://github.com/DSC-JSS-NOIDA/blogzen) [![Twitter Follow](https://img.shields.io/twitter/follow/DSCJSSATEN?style=social)](https://twitter.com/DSCJSSATEN)
+[![Issues](https://img.shields.io/github/issues/DSC-JSS-NOIDA/blogzen)](https://github.com/piug-07/blogzen-main/issues)
+[![PRs](https://img.shields.io/github/issues-pr/DSC-JSS-NOIDA/blogzen)](https://github.com/piug-07/blogzen-main/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2023?color=green&logo=github)](https://github.com/piug-07/blogzen-main)
+[![Forks](https://img.shields.io/github/forks/DSC-JSS-NOIDA/blogzen?style=social)](https://github.com/piug-07/blogzen) [![Stars](https://img.shields.io/github/stars/piug-07/blogzen?style=social)](https://github.com/DSC-JSS-NOIDA/blogzen) [![Watchers](https://img.shields.io/github/watchers/piug-07/blogzen?style=social)](https://github.com/piug-07/blogzen) [![Twitter Follow](https://img.shields.io/twitter/follow/DSCJSSATEN?style=social)](https://twitter.com/DSCJSSATEN)
 
 A collection of resources categorised by tech domains, languages, expertise and much more. Blogzen gives you a quick access to all the resources that you could need at a single place, within a click!
 
