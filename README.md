@@ -1,6 +1,5 @@
-
-
 <div>
+    <img align=top src="https://miro.medium.com/max/1400/1*c4YgRXYQayOVWxV37ourrw.png" height="100" width="50%"/>
 
 <div>
 <br>
@@ -9,13 +8,12 @@
 
 ## Blogzen
 
-[![Issues](https://img.shields.io/github/issues/piug-07/blogzen)](https://github.com/piug-07/blogzen-main/issues)
-[![PRs](https://img.shields.io/github/issues-pr/piug-07/blogzen)](https://github.com/piug-07/blogzen-main/pulls)
-[![Maintenance](https://img.shields.io/maintenance/yes/2024?color=green&logo=github)](https://github.com/piug-07/blogzen-main)
-[![Forks](https://img.shields.io/github/forks/piug-07/blogzen?style=social)](https://github.com/piug-07/blogzen) 
-[![Stars](https://img.shields.io/github/stars/piug-07/blogzen?style=social)](https://github.com/piug-07/blogzen) 
- [![Watchers](https://img.shields.io/github/watchers/piug-07/blogzen?style=social)](https://github.com/piug-07/blogzen)
-[![Twitter Follow](https://img.shields.io/twitter/follow/DSCJSSATEN?style=social)](https://twitter.com/DSCJSSATEN)
+[![Issues](https://img.shields.io/github/issues/piug-07/blogzen-OpenSource)](https://github.com/piug-07/blogzen-OpenSource/issues)
+[![PRs](https://img.shields.io/github/issues-pr/piug-07/blogzen-OpenSource)](https://github.com/piug-07/blogzen-OpenSource/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2024?color=green&logo=github)](https://github.com/piug-07/blogzen-OpenSource)
+[![Forks](https://img.shields.io/github/forks/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource) 
+[![Stars](https://img.shields.io/github/stars/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource) 
+ [![Watchers](https://img.shields.io/github/watchers/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource)
 
 A collection of resources categorised by tech domains, languages, expertise and much more. Blogzen gives you a quick access to all the resources that you could need at a single place, within a click!
 
@@ -70,8 +68,8 @@ A collection of resources categorised by tech domains, languages, expertise and 
 <table>
 	<tr>
 		<td>
-			<a href="https://github.com/piug-07/blogzen/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=piug-07/blogzen" />
+			<a href="https://github.com/piug-07/blogzen-OpenSource/graphs/contributors">
+			  <img src="https://contrib.rocks/image?repo=piug-07/blogzen-OpenSource" />
 </a>
 		</td>
 	</tr>
@@ -121,8 +119,6 @@ $ cd QuickLearn
 [![fork.png](https://i.postimg.cc/xTPqkF38/fork.png)](https://postimg.cc/BXXJkpyf)
 
 <hr>
-
-[![clone.png](https://i.postimg.cc/5t2F51kr/clone.png)](https://postimg.cc/K1CzxXb7)<hr>
 
 [![clone-git-Bash.png](https://i.postimg.cc/kgcbtDw8/clone-git-Bash.png)](https://postimg.cc/CRR13h3L)
 
@@ -175,10 +171,10 @@ $ git pull upstream main
 
 #### Happy?? Star ⭐ this Repo. 🤩
 
-[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://github.com/piug-07/blogzen)
-[![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](https://github.com/piug-07/blogzen)
-[![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](https://github.com/piug-07/blogzen)
-[![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](https://github.com/piug-07/blogzen)
+[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://github.com/piug-07/blogzen-OpenSource)
+[![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](https://github.com/piug-07/blogzen-OpenSource)
+[![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](https://github.com/piug-07/blogzen-OpenSource)
+[![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](https://github.com/piug-07/blogzen-OpenSource)
 
 > Made By Piyush with ❤️
 
