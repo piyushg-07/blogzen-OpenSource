@@ -6,7 +6,7 @@
 
 
 
-## Blogzen
+## Blogzen_Open-Source
 
 [![Issues](https://img.shields.io/github/issues/piug-07/blogzen-OpenSource)](https://github.com/piug-07/blogzen-OpenSource/issues)
 [![PRs](https://img.shields.io/github/issues-pr/piug-07/blogzen-OpenSource)](https://github.com/piug-07/blogzen-OpenSource/pulls)
@@ -15,7 +15,7 @@
 [![Stars](https://img.shields.io/github/stars/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource) 
  [![Watchers](https://img.shields.io/github/watchers/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource)
 
-A collection of resources categorised by tech domains, languages, expertise and much more. Blogzen gives you a quick access to all the resources that you could need at a single place, within a click!
+An Open-Source Project & collection of resources categorised by tech domains, languages, expertise and much more. Blogzen gives you a quick access to all the resources that you could need at a single place, within a click!
 
 <!-- ### Links
 
