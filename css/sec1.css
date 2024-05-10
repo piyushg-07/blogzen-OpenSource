@@ -22,9 +22,12 @@
 }
 
 .s1part1 span {
-    position: relative;
-    top: 1.3vw;
-    left: 37vw;
+    /* position: relative; */
+    /* top: 1.3vw; */
+    /* left: 37vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.7em;
     font-weight: bold;
     color: white;

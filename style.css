@@ -11,6 +11,10 @@
         
         width: 100%;
     }
+    .navs1 img{
+        width: 8vw;
+        height: 8vw;
+    }
 
     .navs2{
         margin: 0;
@@ -26,13 +30,22 @@
     }
     
     .sec1{
-        width: 100%;
+        width: 157%;
         margin-bottom: 100px;
         height: max-content;
 
     }
     .s1part1{
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
+        width: 100vw;
+        height: 13vw;
+        padding: 10px;
+    }
+
+    .sec1part1 span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
    
 }
