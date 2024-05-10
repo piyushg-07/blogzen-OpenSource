@@ -73,6 +73,13 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 </a>
 		</td>
 	</tr>
+	<tr>
+		<td>
+			<a href="https://github.com/monikabattula/blogzen-OpenSource.git">
+			  <img src="https://avatars.githubusercontent.com/u/125571808?v=4" />
+</a>
+		</td>
+	</tr>
 </table>
 
 ## Get Started
