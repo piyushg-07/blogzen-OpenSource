@@ -164,6 +164,36 @@ body{
     border: none;
     cursor: pointer;
 }
+/* CSS */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    height: 30px;
+    background-color: #208FF4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s; /* Add transition for smooth effect */
+  }
+  
+  #loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+    transition-duration: 0.4s;
+
+}
+  
 
 .navbtn2 {
     cursor: pointer;
