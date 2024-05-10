@@ -582,7 +582,7 @@
         "id":"026",
         "title": "Svelte: The Cybernetically Enhanced Web Framework",
         "author": "Monika",
-        "imageurl":"https://iconduck.com/icons/28019/svelte",
+        "imageurl":"assests/svelte.svg",
         "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
         "date": "2024-05-10",
         "content": "Svelte is a cybernetically enhanced web framework that takes a different approach to building web applications. Developed by Rich Harris, Svelte shifts the heavy lifting of web development from the browser to the build step, resulting in faster load times and smaller bundle sizes. Svelte's unique compiler generates highly optimized vanilla JavaScript code that updates the DOM with minimal overhead. The framework's reactive data binding and component-based architecture enable developers to create dynamic and interactive user interfaces with ease. Svelte's simplicity and performance make it an attractive choice for building modern web applications that prioritize speed and efficiency. Whether you're a seasoned developer or new to web development, Svelte provides a powerful and intuitive platform for creating cutting-edge web experiences.",
@@ -597,6 +597,28 @@
                 "author": "Daisy",
                 "date": "2024-05-11",
                 "content": "Svelte: The cybernetically enhanced framework that empowers developers to build blazing-fast web applications."
+            }
+        ]
+    },
+    {
+        "id":"027",
+        "title": "Deno: A Secure Runtime for JavaScript and TypeScript",
+        "author": "Monika",
+        "imageurl":"assests/deno.svg",
+        "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
+        "date": "2024-05-10",
+        "content": "Deno is a secure runtime for JavaScript and TypeScript that was created by Ryan Dahl, the original creator of Node.js. Deno aims to address some of the shortcomings of Node.js by providing a more secure and developer-friendly environment for building server-side applications. Deno comes with built-in security features, such as secure by default, allowing developers to run scripts in a sandboxed environment without access to the file system, network, or environment variables unless explicitly granted. Deno also includes a built-in package manager, a standard library, and support for ES modules, making it easier to manage dependencies and write modular code. With its focus on security, performance, and developer experience, Deno is gaining traction among developers looking for a modern and secure runtime for building server-side applications.",
+        "tags": ["Deno", "JavaScript", "TypeScript", "Runtime", "Node.js"],
+        "comments": [
+            {
+                "author": "Ella",
+                "date": "2024-05-10",
+                "content": "Deno: Redefining server-side JavaScript development with enhanced security and developer experience."
+            },
+            {
+                "author": "Felix",
+                "date": "2024-05-11",
+                "content": "Deno: The secure runtime that empowers developers to build server-side applications with confidence."
             }
         ]
     }
