@@ -66,14 +66,15 @@
 
 .s1btn1 {
     height: 2.4vw;
-    width:fit-content;
-    padding: 2px;
+    width:100px;
+    padding: 5px;
     margin: 0 0.7vw;
     border: none;
-    border-radius: 1vw;
+    border-radius: 7px;
     background-color: #ff765d;
     color: white;
-
+    position: relative;
+    right: 8%;
 }
 
 .s1part2 a {

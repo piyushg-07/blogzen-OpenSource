@@ -86,8 +86,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto 0;
-    margin-left: 60px;
+    margin: auto;
+    margin-left: 10px;
     margin-right: 40px;
     height: 30px;
     background-color: #208FF4;
@@ -95,7 +95,7 @@ nav {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 15px;
+    border-radius: 7px;
     color: #ffffff;
 }
 
