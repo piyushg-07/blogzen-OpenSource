@@ -1,0 +1,38 @@
+@media (max-width: 426px){
+    .navbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        
+    }
+    .navs1{
+        
+        width: 100%;
+    }
+
+    .navs2{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-right: 8px;
+    }
+    .button_nav{
+        margin: 0;
+        width: max-content;
+        height: 50px;
+    }
+    
+    .sec1{
+        width: 100%;
+        margin-bottom: 100px;
+        height: max-content;
+
+    }
+    .s1part1{
+        margin-bottom: 100px;
+    }
+   
+}
