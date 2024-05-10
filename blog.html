@@ -1,136 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/desktop_9.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="./js/blog.js"></script>
+    <title>Blogzen</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <script>
-        function toggleTheme() {
-            var navbar = document.getElementById("navbar");
-            navbar.classList.toggle("dark");
-        }
-    </script>
-    <title>Blogzen</title>
-    <style>
-        .other_blogs {
-            margin-top: 110px;
-        }
-    </style>
 </head>
-
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="logo_container">
-            <a href="">
-                <div class="logo_image"><img src="/assests/blogzen_logo.svg" alt=""></div>
-                <div class="logo_text"><img src="/assests/blogzen_text.svg" alt=""></div>
-            </a>
-        </div>
-
-
-        <div class="profile">
-            <div class="profile_image_nav"><img src="/assests/profile_image_large.png" alt=""></div>
-            <a href="">
-                <div class="profile_name">Hello Piyush</div>
-                <img src="/assests/down_arrow.svg" alt="">
-            </a>
-            <img src="assests/moon.png" alt="image" id="themeImg" style="margin-left: 20px; cursor: pointer;">
-        </div>
-        <div class="calendar_container">
-            <a href="">
-                <div class="calendar_icon"><img src="/assests/calender_icon.svg" alt=""></div>
-                <div class="calendar_text">Calendar</div>
-            </a>
-        </div>
-    </nav>
-
-
-
-    <div id="blog">
-
-    </div>
-
-
-    <div class="other_blogs">
-        <div class="title_related_blogs">Other blogs related to this category</div>
-        <div class="blogs_related">
-
-            <div class="blog">
-                <img src="/assests/Rectangle 20.png" alt="">
-                <h4>Technology</h4>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
-                <div class="profile_section">
-                    <img src="/assests/profile_image_large.png" alt="">
-                    <div class="profile_details">
-                        <h4>Author Name</h4>
-                        <h5>XX.XX.XXXX</h5>
-                    </div>
-                </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/blogzen_logo.svg" alt="Blogzen Logo">
+                    <img src="./assets/blogzen_text.svg" alt="Blogzen Text">
+                </a>
             </div>
-            <div class="blog">
-                <img src="/assests/Rectangle 21.png" alt="">
-                <h4>Technology</h4>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
-                <div class="profile_section">
-                    <img src="/assests/profile_image_large.png" alt="">
-                    <div class="profile_details">
-                        <h4>Author Name</h4>
-                        <h5>XX.XX.XXXX</h5>
-                    </div>
-                </div>
+            <div class="profile">
+                <a href="#">
+                    <img src="./assets/profile_image_large.png" alt="Profile Image">
+                    <span>Hello Piyush</span>
+                    <img src="./assets/down_arrow.svg" alt="Down Arrow">
+                </a>
+                <img src="./assets/moon.png" alt="Theme Toggle" id="themeToggle" onclick="toggleTheme()">
             </div>
+            <div class="calendar">
+                <a href="#">
+                    <img src="./assets/calendar_icon.svg" alt="Calendar Icon">
+                    <span>Calendar</span>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-            <div class="blog">
-                <img src="/assests/Rectangle 20.png" alt="">
-                <h4>Technology</h4>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
-                <div class="profile_section">
-                    <img src="/assests/profile_image_large.png" alt="">
-                    <div class="profile_details">
-                        <h4>Author Name</h4>
-                        <h5>XX.XX.XXXX</h5>
-                    </div>
-                </div>
-            </div>
+    <main>
+        <div id="blog">
+            <!-- Blog content -->
         </div>
-    </div>
-    </div>
-    <div class="footer">
+
+        <section class="other-blogs">
+            <h2>Other blogs related to this category</h2>
+            <div class="blogs-related">
+                <!-- Related blogs content -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="socials">
-            <div class="footer_titles">Follow us on our socials</div>
+            <h3>Follow us on our socials</h3>
             <div class="icons">
-                <div class="icon"><a href=""><img src="assests/instagram.svg" alt=""></a></div>
-                <div class="icon"><a href=""><img src="assests/twitter.svg" alt=""></a></div>
-                <div class="icon"><a href=""><img src="assests/spotify.svg" alt=""></a></div>
+                <a href="#"><img src="./assets/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="./assets/spotify.svg" alt="Spotify"></a>
             </div>
         </div>
         <div class="newsletter">
-            <div class="footer_titles">Subscribe to our newsletter</div>
+            <h3>Subscribe to our newsletter</h3>
             <form>
-                <input type="text" id="emailId" name="email" placeholder="Your Email">
+                <input type="email" id="emailId" name="email" placeholder="Your Email" required>
                 <button type="submit">Subscribe</button>
             </form>
         </div>
         <div class="contact">
-            <div class="footer_titles">Contact Us</div>
-            <a href="mailto:Blogzen@gmail.com"><div class="mail">Blogzen@gmail.com</div></a>
+            <h3>Contact Us</h3>
+            <a href="mailto:Blogzen@gmail.com">Blogzen@gmail.com</a>
         </div>
-    </div>
-    <script src="js/theme.js"></script>
-</body>
+    </footer>
 
+    <script src="./js/theme.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
 </html>
