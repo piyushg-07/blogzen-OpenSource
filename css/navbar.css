@@ -205,7 +205,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
     align-items: center;
@@ -214,11 +214,12 @@ body{
   
   .popup {
     background-color: white;
-    border-radius: 10px;
-    padding: 20px;
+    border: 2px solid rgb(129, 129, 240);
+    border-radius: 12px;
     align-items: center;
-    padding-left: 10%;
-    width: 60%;
+    width: 30%;
+    padding:10px;
+    padding-left: 2%;
     text-align: center;
   }
   
@@ -226,11 +227,13 @@ body{
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin: 10px;
+    margin: 25px;
     border-radius: 10px;
     border: 1px solid #ccc;
     padding: 10px;
+    padding-left:15px;
     cursor: pointer;
+    
   }
   
   .popup .option img {
@@ -238,4 +241,14 @@ body{
     max-height: 25px;
     margin-right: 20px;
     margin-bottom: 10px;
+  }
+
+  .popup :hover {
+    border: 2px solid blue ;
+     transform: scale(1.01);
+     transition: all 0.2s ease-in;
+  }
+   
+  .popup .option {
+    transition: none !important;
   }
