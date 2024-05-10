@@ -560,7 +560,7 @@
         "id": "025",
         "title": "Vue.js: Progressive JavaScript framework",
         "author": "Monika",
-        "imageurl":"https://www.tutorialandexample.com/wp-content/uploads/2020/07/Vue.js_.png",
+        "imageurl":"https://www.tutorialspoint.com/vuejs/images/vuejs-mini-logo.jpg",
         "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
         "date": "2024-05-10",
         "content": "Vue.js is a progressive JavaScript framework that is known for its simplicity, flexibility, and ease of use. Developed by Evan You, Vue.js has gained popularity among developers for its intuitive design and robust features. Vue.js follows a component-based architecture, allowing developers to create reusable and modular components that can be easily integrated into larger applications. The framework's reactive data binding and virtual DOM capabilities enable efficient rendering and updating of the user interface. Vue.js also offers a comprehensive ecosystem of tools, libraries, and plugins that enhance the development experience and extend the framework's functionality. With its progressive nature, Vue.js can be incrementally adopted into existing projects, making it a versatile choice for developers of all levels. Whether you're building a small personal project or a large-scale enterprise application, Vue.js provides the tools and flexibility to bring your ideas to life in a fast and efficient manner.",
