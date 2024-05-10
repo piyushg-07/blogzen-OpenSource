@@ -577,6 +577,28 @@
                 "content": "Vue.js: The progressive framework that empowers developers to build dynamic applications."
             }
         ]
+    },
+    {
+        "id":"026",
+        "title": "Svelte: The Cybernetically Enhanced Web Framework",
+        "author": "Monika",
+        "imageurl":"https://iconduck.com/icons/28019/svelte",
+        "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
+        "date": "2024-05-10",
+        "content": "Svelte is a cybernetically enhanced web framework that takes a different approach to building web applications. Developed by Rich Harris, Svelte shifts the heavy lifting of web development from the browser to the build step, resulting in faster load times and smaller bundle sizes. Svelte's unique compiler generates highly optimized vanilla JavaScript code that updates the DOM with minimal overhead. The framework's reactive data binding and component-based architecture enable developers to create dynamic and interactive user interfaces with ease. Svelte's simplicity and performance make it an attractive choice for building modern web applications that prioritize speed and efficiency. Whether you're a seasoned developer or new to web development, Svelte provides a powerful and intuitive platform for creating cutting-edge web experiences.",
+        "tags": ["Svelte", "Framework", "Prototyping", "JavaScript", "Web design"],
+        "comments": [
+            {
+                "author": "Charlie",
+                "date": "2024-05-10",
+                "content": "Svelte: Revolutionizing web development with its innovative approach and performance optimizations."
+            },
+            {
+                "author": "Daisy",
+                "date": "2024-05-11",
+                "content": "Svelte: The cybernetically enhanced framework that empowers developers to build blazing-fast web applications."
+            }
+        ]
     }
     ]  
       
