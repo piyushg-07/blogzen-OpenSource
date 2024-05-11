@@ -1,51 +1,144 @@
-@media (max-width: 426px){
-    .navbar{
+@media (max-width: 426px) {
+    .navbar {
         width: 100%;
         height: 100px;
         display: flex;
         justify-content: space-between;
         padding: 5px;
-        
+
     }
-    .navs1{
-        
+
+    .navs1 {
+
         width: 100%;
     }
-    .navs1 img{
+
+    .navs1 img {
         width: 8vw;
         height: 8vw;
     }
 
-    .navs2{
+    .navs2 {
         margin: 0;
         display: flex;
         align-items: center;
         gap: 5px;
         padding-right: 8px;
     }
-    .button_nav{
+
+    .button_nav {
         margin: 0;
         width: max-content;
         height: 50px;
     }
-    
-    .sec1{
+
+    .sec1 {
         width: 157%;
         margin-bottom: 100px;
         height: max-content;
 
     }
-    .s1part1{
+
+    .s1part1 {
         /* margin-bottom: 100px; */
         width: 100vw;
         height: 13vw;
         padding: 10px;
     }
 
-    .sec1part1 span{
+    .sec1part1 span {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-   
+
+    .search {
+        width: max-content;
+        height: 5vw;
+        left: 55vw;
+        display: flex;
+    }
+
+    .s1btn1 {
+        width: 21vw;
+        height: 7.4vw;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .sec2btn2 {
+        height: 5.5vw;
+        width: 25vw;
+        padding: 2px;
+    }
+
+    .sec2buttons {
+        margin: 0;
+        width: 157%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .sec2content{
+        /* margin-bottom: 100vh; */
+        width: 157%;
+        justify-content: space-evenly;
+        padding: 15px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec2content>img{
+        height: 45vw;
+        width: 80vw;
+    }
+
+    .s2text {
+        width: 100%;
+    }
+
+    .s2text h1{
+        margin: 0;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+
+    .author>img{
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .authorsname{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .authorsname .name{
+        font-size: 3.6vw;
+    }
+
+    .authorsname .date{
+        font-size: 2.5vw;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+        gap: 20vw;
+
+    }
+
+    .box1{
+        /* border: 2px solid red; */
+        
+        gap: 2vw;
+        width: 100%;
+        height: 100%;
+    }
+
 }
