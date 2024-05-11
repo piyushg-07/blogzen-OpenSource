@@ -200,55 +200,141 @@ body{
 }
 
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 110%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .popup {
-    background-color: white;
-    border: 2px solid rgb(129, 129, 240);
-    border-radius: 12px;
-    align-items: center;
-    width: 30%;
-    padding:10px;
-    padding-left: 2%;
-    text-align: center;
-  }
-  
-  .popup .option {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: 25px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    padding-left:15px;
-    cursor: pointer;
-    
-  }
-  
-  .popup .option img {
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
 
-  .popup :hover {
-    border: 2px solid blue ;
-     transform: scale(1.01);
-     transition: all 0.2s ease-in;
-  }
-   
-  .popup .option {
-    transition: none !important;
-  }
+.popup {
+  background-color: white;
+  border: 2px solid rgb(129, 129, 240);
+  border-radius: 12px;
+  align-items: center;
+  width: 30%;
+  padding:10px;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.popup .option {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-left:15px;
+  cursor: pointer;
+  
+}
+
+.popup .option img {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.popup :hover {
+  border: 2px solid blue ;
+   transform: scale(1.01);
+   transition: all 0.2s ease-in;
+}
+ 
+.popup .option {
+  transition: none !important;
+}
+
+
+.overlay1{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup1 {
+  background-color: white;
+  border: 2px solid rgb(129, 129, 240);
+  border-radius: 12px;
+  align-items: center;
+  width: 30%;
+  padding:10px;
+  padding-left: 2%;
+  text-align: center;
+}
+.popup1 :hover {
+   transform: scale(1.01);
+   transition: all 0.2s ease-in;
+}
+.calender{
+    width:300px;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.days{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day{
+    text-align: center;
+    padding:5px;
+    color:rgb(0, 0, 0);
+}
+
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding:5px;
+    margin: auto;
+    font-weight: 500;
+    border-radius: 50%;
+    transition: 0.2s;
+    height:30px;
+    width:30px;
+}
+
+.date:hover,
+.date.active{
+    background-color: darkblue;
+    color: white;
+}
+
+.date.inactive{
+    color:rgb(211, 211, 211);
+}
+
