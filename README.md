@@ -76,8 +76,8 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 
 ### Demo <a href="https://drive.google.com/file/d/1Z6bihDrFMUPy8j5nIqzwnqP4pl_OgPXc/view" style="text-decoration:none;">🎥</a>
 
-#### Website for this repository : <https://blogzen-gdsc.netlify.app](https://main--blogzen-opensource.netlify.app/>
-#### Figma Link of this repository : https://www.figma.com/file/lTsgJbWw8MRxWLa3c0PwWh/Blog-Project?type=design&node-id=0%3A1&t=9fkc7cb59hN4TlHW-1 
+#### Website for this repository : [Blogzen Live Link](https://main--blogzen-opensource.netlify.app)
+#### Figma Link of this repository : [Blogzen](https://www.figma.com/file/lTsgJbWw8MRxWLa3c0PwWh/Blog-Project?type=design&node-id=0%3A1&t=9fkc7cb59hN4TlHW-1) 
 <br>
 
 ### Steps for Contributing
