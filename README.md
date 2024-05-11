@@ -79,7 +79,7 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 
 ### Demo <a href="https://drive.google.com/file/d/1Z6bihDrFMUPy8j5nIqzwnqP4pl_OgPXc/view" style="text-decoration:none;">🎥</a>
 
-#### Website for this repository : <https://blogzen-gdsc.netlify.app/>
+#### Website for this repository : <https://blogzen-gdsc.netlify.app](https://main--blogzen-opensource.netlify.app/>
 
 <br>
 
