@@ -2,32 +2,26 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 document.addEventListener("DOMContentLoaded", function() {
-    var tbody = document.getElementById("blog");
-
-    // fetch function
     fetch("../database/jsonData.json")
       .then(res => res.json())
       .then(json => {
-        json.blogs.map(data => {
-          console.log("data1", data);
-          // tbody.innerHTML += td_fun(data);
-          // tbody.append(td_blog(data));
-         if (data.id === id) tbody.innerHTML = td_blog(data).innerHTML;
+        json.blogs.forEach(data => {
+          if (data.id === id) {
+            const tbody = document.getElementById("blog");
+            tbody.appendChild(td_blog(data));
+          }
         });
       })
       .catch(error => {
         console.error('Error:', error);
       });
-  });
+});
 
-  // create td
-  function td_blog(item) {
-    console.log("item000", item ,item.id);
-    let loading =window.location.href.split("=")[1];
-    if (item.id==loading){
-      let div = document.createElement('div');
-    div.innerHTML = `
-        <div class="title_container">
+// create td
+function td_blog(item) {
+  const div = document.createElement('div');
+  div.innerHTML = `
+      <div class="title_container">
         <div class="category">${item.tags}</div>
         <div class="title">${item.title}</div>
         <div class="info">A conversation with Fereshteh Forough, founder and president of Afghanistan’s Code to Inspire
@@ -42,14 +36,11 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="blog_content">
         <div class="text_section">
             <img src="/assests/Rectangle 99.png" alt="">
-            <p>${item.content}
-                </p>
+            <p>${item.content}</p>
         </div>
         <div class="video_section">
             <div class="title">Watch a video</div>
-            <video src="" controls >
-                Your browser does not support the video tag.
-              </video>
+            <iframe width="560" height="315" src="${item.youtube.replace("watch?v=", "embed/")}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="like_comment_section">
             <hr>
@@ -60,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <hr class="below">
         </div>
-        `;
-        return div;
-    }
-    }
+    </div>`;
+  return div;
+}
