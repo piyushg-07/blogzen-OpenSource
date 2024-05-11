@@ -30,3 +30,4 @@ overlay.addEventListener('click', (event) => {
     overlay.style.display = 'none';
   }
 });
+

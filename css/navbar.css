@@ -126,7 +126,17 @@ body{
     background-color: transparent;
     color: #2a95f6;
 }
+#loginButton{
 
+    border: 1px solid #f6f8f9;
+     background-color:#208FF4 ;
+     color: white;
+}
+#loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
