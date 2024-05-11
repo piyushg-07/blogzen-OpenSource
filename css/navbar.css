@@ -79,7 +79,7 @@ body{
     top: 0px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #B9D9EB;
     transition: background-color 1s ease;
     z-index: 9999;
     position: fixed;
@@ -93,6 +93,7 @@ body{
     display: flex;
     align-items: center;
     margin-left: 3.5vw;
+    
 }
 
 .navs1 img {
