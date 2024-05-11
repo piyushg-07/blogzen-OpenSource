@@ -15,7 +15,7 @@
 [![Stars](https://img.shields.io/github/stars/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource) 
  [![Watchers](https://img.shields.io/github/watchers/piug-07/blogzen-OpenSource?style=social)](https://github.com/piug-07/blogzen-OpenSource)
 
-An Open-Source Project & collection of resources categorised by tech domains, languages, expertise and much more. Blogzen gives you a quick access to all the resources that you could need at a single place, within a click!
+An Open-Source Project & collection of resources categorized by tech domains, languages, expertise, and much more. Blogzen gives you quick access to all the resources that you could need in a single place, with a click!
 
 <!-- ### Links
 
@@ -29,7 +29,7 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 - **Safari**: version 5.2 and up
 - **Internet Explorer/Edge**: version 8 and up
 - **Opera**: version 9 and up
-<!-- > **Note**: Support for modern mobile browsers is experimental. The website is not responsive in mobile devices until now. -->
+<!-- > **Note**: Support for modern mobile browsers is experimental. The website is not responsive on mobile devices until now. -->
 
 ## Technology Stack used:
 
@@ -79,7 +79,7 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 
 ### Demo <a href="https://drive.google.com/file/d/1Z6bihDrFMUPy8j5nIqzwnqP4pl_OgPXc/view" style="text-decoration:none;">🎥</a>
 
-#### Website for this repository : <https://blogzen-gdsc.netlify.app/>
+#### Website for this repository: <https://blogzen-gdsc.netlify.app/>
 
 <br>
 
@@ -95,15 +95,15 @@ $ cd blogzen
 ```
 
 <!--
-- Open this folder in your favourite IDE. <br>
+- Open this folder in your favorite IDE. <br>
 - Run `npm install`.<br>
-- Run `git pull` command to sync with remote repo.<br>
+- Run the `git pull` command to sync with the remote repo.<br>
   <br> -->
-<!-- - Run `npm start` for starting server. -->
+<!-- - Run `npm start` to start the server. -->
 
-- Now to add your resource to website, add an object with keys same as listed in existing objects in the file.<br>
+- Now to add your resource to the website, add an object with keys the same as listed in existing objects in the file.<br>
 - Save and commit your code.<br>
-- Push to your fork of the repository , navigate to original repository and make a pull request.<br>
+- Push to your fork of the repository, navigate to the original repository, and make a pull request.<br>
 
 <!-- <strong>Backend</strong>
 
