@@ -65,19 +65,31 @@
 }
 
 .s1btn1 {
-    height: 2.4vw;
+   
     width:fit-content;
-    padding: 2px;
+    
     margin: 0 0.7vw;
     border: none;
-    border-radius: 1vw;
-    background-color: #ff765d;
-    color: white;
+   
+   
+    color:black;
 
 }
+.s1btn1:hover{
+    font-weight:bold;
+    position:sticky;
+}
+
+
 
 .s1part2 a {
     margin: 0 0.7vw;
     text-decoration: none;
     color: var(--element-color);
+}
+.sec2btn2 sec2btn2-recent{
+    color:black;
+}
+a{
+    text-decoration: none;
 }
