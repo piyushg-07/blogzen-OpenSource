@@ -328,12 +328,3 @@ body{
     width:30px;
 }
 
-.date:hover,
-.date.active{
-    background-color: darkblue;
-    color: white;
-}
-
-.date.inactive{
-    color:rgb(211, 211, 211);
-}
