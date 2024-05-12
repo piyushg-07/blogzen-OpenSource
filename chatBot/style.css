@@ -184,3 +184,16 @@
         display: inline;
     }
 }
+.newsletter button:hover{
+    background-color: white;
+    color:black;
+    box-shadow: 2px 2px white;
+
+}
+.mail:hover{
+    border-bottom: white 1px solid;
+    border-right:white 1px solid;
+    box-shadow: 2px 2px white;
+    /* background-color: white; */
+
+}
