@@ -555,63 +555,7 @@
                     "content": "Angular: Enhancing developer productivity with its comprehensive set of tools and features."
                 }    
             ] 
-        },
-        {
-            "id": "025", 
-            "title": "Ethics in Artificial Intelligence",
-            "author": "Harshit Rao",
-            "imageurl":"https://builtin.com/sites/www.builtin.com/files/styles/og/public/2024-04/what-is-artificial-intelligence-ai.jpg",
-            "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
-            "date": "2024-05-13",
-            "content":"Ethics in AI is essential as AI systems wield significant influence over individuals and societies. Ensuring fairness and mitigating bias is imperative to prevent discrimination and promote equitable treatment. Transparent decision-making fosters trust and enables accountability, while prioritizing privacy safeguards personal data from misuse. Human-centered design emphasizes user well-being and autonomy, enhancing the usability and acceptance of AI technologies. Moreover, robust safety measures are vital to manage risks and prevent potential harm. By adhering to ethical principles, AI can contribute positively to society while minimizing negative impacts, ultimately shaping a more just and inclusive future for humanity. ",
-            "tags": ["Transparency","Fairness","Privacy","Safety"],
-            "comments": [
-                {
-                    "author": "Harshit Rao",
-                    "date": "2024-05-13",
-                    "content": "Navigating the Ethical Landscape: Ensuring Fairness and Transparency in AI"
-                }
-                   
-            ] 
-        },
-        {
-            "id": "026", 
-            "title": "A Beginner's Guide to Blockchain",
-            "author": "Harshit Rao",
-            "imageurl":"https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg",
-            "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
-            "date": "2024-05-13",
-            "content":"Blockchain technology has emerged as a revolutionary force, offering decentralized and transparent systems for recording and verifying transactions. At its core, blockchain is a distributed ledger that stores data across a network of computers, or nodes, making it resistant to tampering and fraud. Each block in the chain contains a timestamped batch of transactions, cryptographically linked to the previous block, forming an immutable and chronological record of events. This transparency and immutability make blockchain particularly well-suited for applications requiring trustless transactions, such as cryptocurrencies like Bitcoin. However, the potential of blockchain extends far beyond finance, with applications spanning supply chain management, voting systems, healthcare records, and more. As blockchain continues to evolve, its impact on various industries and sectors is poised to reshape the way we transact, interact, and trust in the digital age. ",
-            "tags": ["Cryptocurrency","Blockchain","Bitcoin","Supply Chain Management"],
-            "comments": [
-                {
-                    "author": "Harshit Rao",
-                    "date": "2024-05-13",
-                    "content": "Unlocking the Potential: An Introduction to Blockchain Technology"
-                }
-                   
-            ] 
-        },
-        {
-            "id": "027", 
-            "title": "Unlocking Digital Ownership:The Rise of NFTs",
-            "author": "Harshit Rao",
-            "imageurl":"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg",
-            "img0":"https://www.pngitem.com/pimgs/m/214-2145309_blank-profile-picture-circle-hd-png-download.png",
-            "date": "2024-05-13",
-            "content":"Non-Fungible Tokens (NFTs) have surged in popularity, representing unique digital assets verified on a blockchain. Each NFT holds distinct characteristics, differentiating it from other tokens, making it valuable for collectors and creators alike. These tokens are often used to authenticate ownership and provenance of digital artwork, collectibles, and even virtual real estate in online gaming environments. NFTs leverage blockchain technology to ensure authenticity, transparency, and scarcity, allowing creators to monetize their digital creations in ways previously unattainable. However, the rapid rise of NFTs has sparked debates regarding environmental concerns due to the energy-intensive nature of blockchain transactions, as well as questions surrounding copyright, ownership rights, and the speculative nature of NFT markets. Nonetheless, NFTs have opened up new avenues for digital ownership and expression, with their impact extending across art, entertainment, gaming, and beyond. ",
-            "tags": ["digital assets","blockchain technology","art market","virtual real estate"],
-            "comments": [
-                {
-                    "author": "Harshit Rao",
-                    "date": "2024-05-13",
-                    "content": "NFTs offer a dynamic blend of digital ownership and creativity, but require careful consideration of environmental impact and ethical concerns."
-                }
-                   
-            ] 
         }
-        
-
     ]  
       
 }
