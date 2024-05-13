@@ -82,7 +82,7 @@
 
     .sec2content{
         /* margin-bottom: 100vh; */
-        width: 157%;
+        width: 280%;
         justify-content: space-evenly;
         padding: 15px;
         gap: 20px;
@@ -130,7 +130,7 @@
         justify-items: center;
         align-items: start;
         gap: 20vw;
-
+        margin-top: 75vh;
     }
 
     .box1{
