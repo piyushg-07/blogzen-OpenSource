@@ -323,8 +323,14 @@ nav {
 
 /*Addling hover effect in blogs */
 .blog:hover{
-    border-radius: 1cm;
-    border-color: #7D41E2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.596);
+}
+
+/*Adding hover effect on .blog img*/
+.blog img:hover{
+    transform: scale(1.1);
+    border: 5px solid #7D41E2;
+    border-radius: 10%;
 }
 
 .profile_section {
