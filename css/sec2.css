@@ -8,24 +8,28 @@
 
 .sec2{
     /* border: 2px solid red; */
-    height: 34vw;
+    width: 100vw;
 }
 
 .sec2buttons{
-    width: 20vw;
     margin-left: 9.5vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 .sec2btn2{
     cursor: pointer;
-    height: 2.5vw;
-    width: 7.2vw;
+    padding:4px 10px;
     margin: 0 1.3vw;
     border-radius: 1vw;
     border: none;
     border: 1px solid #ff765d;
     background-color: white;
     margin: 0 1vw;
-    font-size: 0.8em;
+    font-size: 15px;
+    display: inline-block;
     color: black;
 }
 .sec2btn2-recent:hover{
@@ -36,7 +40,6 @@
 .sec2content{
     /* border: 1px solid black; */
     width: 90vw;
-    height: 25vw;
     margin-top: 2.4vw;
     display: flex;
     align-items: center;
@@ -53,8 +56,9 @@
 
 .s2text{
     /* border: 1px solid green; */
+    width: auto;
     height: 23vw;
-    width: 45vw;
+    overflow: scroll;
     /* margin: 0 3vw; */
 }
 /* .div{
@@ -68,10 +72,11 @@
 .s2text h1{
     margin: 1vw 0;
     font-size: 1.8em;
-    width: 30vw;
+    width: 100%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
+    font-size: 2vw;
     line-height: 42px;
     color: var(--element-color);
 }
@@ -79,7 +84,8 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 70%;
+    text-overflow: hidden;
     line-height: 30px;
     color: var(--element-color);
 

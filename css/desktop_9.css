@@ -82,7 +82,7 @@ nav {
     margin-left: 10px;
 }
 
-.calendar_container {
+/* .calendar_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +114,7 @@ nav {
 .calendar_container:hover {
   background-color: rgb(148, 173, 227);
   border: 1px solid #208FF4;
-}
+} */
 
 .title_container {
     width: 90%;
@@ -349,46 +349,6 @@ nav {
     color: var(--element-color);
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-}
-
-.footer {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-image: url(../assests//footer_bg.png);
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 260px;
-    background-repeat: no-repeat, repeat;
-}
-
-.footer_titles{
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 600 !important;
-}
-
-.newsletter form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.newsletter form input {
-    width: 60%;
-    border: none;
-    height: 30px;
-    padding-left: 10px;
-    border: 1px solid #AA77FF;
-    background-color: transparent;
-    color: #ffffff;
 }
 
 ::placeholder {

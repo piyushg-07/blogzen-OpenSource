@@ -9,31 +9,34 @@
 
 .sec3{
     /* border: 2px solid red; */
-    height: 62vw;
+    /* height: 62vw; */
     display: flex;
     justify-content: center;
 }
 .s3boxes{
     /* border: 1px solid black; */
-    height: 26vw;
+    /* height: 26vw; */
     width: 90vw;
     display: flex;
-    margin-left: 6vw;
+    /* margin-left: 6vw; */
     margin-bottom: 3vw;
 }
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
     flex-grow: 1;
+    width: 22rem;
+    height: auto;
     align-items: center;
     justify-content: center;
     
 }
 .box1{
     /* border: 1px solid green; */
-    padding-bottom: 2vw;
-    height: 27vw;
-    width: 25vw;
+    /* padding-bottom: 2vw; */
+    /* height: 27vw; */
+    width: 540px;
     margin: 0 2vw;
     display: flex;
     flex-direction: column;
@@ -41,30 +44,33 @@
 }
 .box1>img{
     
-    height: 15vw;
-    width: 23vw;
+    height: fit-content;
+    width: 23rem;
+    max-width: 380px;
     object-fit: fill;
     /* margin: 0 5vw; */
     border-radius: 1vw;
 }
 
-.flex{
+.blog-container{
     display: flex;
     flex-wrap: wrap;
     max-width: 95%;
-    margin: auto;
+    margin: 40px auto;
 }
 
 
-.flex a{
+.blog-container a{
     color: black;
     text-decoration: none;
+    width:auto;
 }
 
 .boxtext{
     /* border: 1px solid green; */
-    height: 11vw;
-    width: 20vw;
+    /* height: 11vw; */
+    width: 100%;
+    text-align: center;
     margin-left: 1vw;
 }
 .boxdiv{
@@ -81,8 +87,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: 27px;
+    justify-self: center;
     color: var(--element-color);
-    width: 15vw;
+    width: 100%;
     font-size: 1em;
 }
 .boxContent{
@@ -103,17 +110,18 @@
 }
 .boxauthor{
     display: flex;
+    justify-content: center;
     margin-top: 0.5vw;
 }
 .boxauthor>img{
-    height: 2vw;
-    width: 2vw;
+    height: 40px;
+    width: 40px;
     border-radius: 10vw;
     
 }
-.boxauthorsname{
+div.namestyle{
     margin-left: 0.5vw;
-    font-size: 0.8vw;
+    font-size: 10px;
 }
 .namestyle{
     font-family: 'Poppins';
@@ -127,7 +135,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.5vw;
+    font-size: 0.5rem;
     line-height: 18px;
     color: var(--element1-color);
 

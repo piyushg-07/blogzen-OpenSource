@@ -34,7 +34,7 @@ console.log("FucY")
       jack.map(data => {
         console.log("data1", data);
         // tbody.innerHTML += td_fun(data);
-        tbody.append(td_fun(data));
+        tbody.appendChild(td_fun(data));
         
       });
     })
@@ -100,8 +100,6 @@ console.log("FucY")
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
   var tbody = document.getElementById("tbody");
   var tmain = document.getElementById("sec2");
@@ -131,11 +129,11 @@ function td_fun(item) {
   let div = document.createElement('div');
   div.className = "mainContainer";
   div.innerHTML = `
-    <div class="box1" key="item.id">
+  <div class="box1" key="${item.id}">
       <img src=${item.imageurl} alt="" />
       <div class="boxtext">
         <div class="boxdiv">${item.tags}</div>
-        <a href="../blog.html?id=${item.id}"><h1>${item.title}</h1></a>
+        <div><a href="../blog.html?id=${item.id}"><h1>${item.title}</h1></a></div>
         <a href="../blog.html?id=${item.id}"><p class="boxContent">
         ${item.content.slice(0,180)}
         </p></a>
@@ -146,9 +144,9 @@ function td_fun(item) {
             <div class="date datestyle" style="color: grey;">${item.date}</div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
-  `;
+      `;
   return div;
 }
 
@@ -164,7 +162,7 @@ function td_fun1(item) {
         <div class="s2text">
           <div class="div">${data.tags}</div>
           <h1>${data.title}</h1>
-          <p">
+          <p>
           ${data.content.slice(0, 500)}
           </p>
           <div class="author">
