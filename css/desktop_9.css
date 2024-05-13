@@ -321,6 +321,12 @@ nav {
 }
 
 
+/*Addling hover effect in blogs */
+.blog:hover{
+    border-radius: 1cm;
+    border-color: #7D41E2;
+}
+
 .profile_section {
     display: flex;
 }
