@@ -22,7 +22,7 @@
     margin: 0 1.3vw;
     border-radius: 1vw;
     border: none;
-    border: 1px solid #ff765d;
+    border: 1px solid #7D41E2;
     background-color: white;
     margin: 0 1vw;
     font-size: 0.8em;
@@ -30,7 +30,7 @@
 }
 .sec2btn2-recent:hover{
     color: #fff;
-    background-color: #ff765d;
+    background-color: #7D41E2;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .sec2content{

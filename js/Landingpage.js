@@ -11,7 +11,7 @@ console.log("FucY")
       NavBar[i].style.backgroundColor="white";
       NavBar[i].style.color="black";
     }
-    document.getElementById(ele).style.backgroundColor="#ff765d"
+    document.getElementById(ele).style.backgroundColor="#7D41E2"
     document.getElementById(ele).style.color="white";
     //
     var tbody = document.getElementById("tbody");

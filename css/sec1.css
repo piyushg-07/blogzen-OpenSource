@@ -64,17 +64,22 @@
     text-decoration: underline;
 }
 
+.browse{
+    margin-left: 26%;
+    margin-top: -30px;
+}
+
 .s1btn1 {
     height: 2.4vw;
-    width:fit-content;
-    padding: 2px;
+    width:86px;
+    padding: 3px;
     margin: 0 0.7vw;
     border: none;
     border-radius: 1vw;
-    background-color: #ff765d;
+    background-color: #7D41E2;
     color: white;
-
 }
+
 
 .s1part2 a {
     margin: 0 0.7vw;
