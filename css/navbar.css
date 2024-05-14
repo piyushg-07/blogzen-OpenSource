@@ -40,6 +40,7 @@ body{
     /* overflow-x: hidden; */
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    /* position: relative; */
     /* background-color: black; */
 
 }
@@ -103,7 +104,7 @@ body{
     background-color: white;
     left: 0px;
     top: 0px;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +172,7 @@ body{
     background-color: transparent;
     color: white;
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 20px;
     display: none;
     justify-content: center;
 }
@@ -320,22 +321,22 @@ body{
   
   /* Styles for screens below 780px */
   @media (max-width: 712px) {
-    .nav-links {
-      display: none;
-    }
+    
     #menu-icon{
         display: block;
     }
     .menu-overlay{
-        display: block;
-        transition: 1sec ease;
-    }
-    .sec1{
-        margin-top: 0;
-        top: 0px;
+        display: none;
+        top: 100px;
+        /* transition: 1sec ease; */
+    } 
+    .nav-links{
+        display: none;
     }
     .menu-container{
-        display: flex;
+        display: none;
+        /* transition: 3s ease-in-out; */
+        flex-direction: column;
     }
   
     .navs2{
@@ -345,16 +346,14 @@ body{
       margin-right: 40px;
       background-color: white;
       /* width: 100%; */
-      padding: 10px;
+      padding: 5px;
       /* display: flex;
       flex-direction: column; */
-    }
-
-    .nav-links{
-        display: none;
     }
   
     .navs2 .nav-links button {
       margin: 5px 0;
+      width: fit-content;
+      padding: 5px;
     }
   }

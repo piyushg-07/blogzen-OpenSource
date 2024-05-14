@@ -1,6 +1,6 @@
 let body = document.getElementsByTagName("BODY")[0];
 let themeBtn = document.getElementById("themeImg");
-let menu_icon = document.getElementsByClassName("menu");
+let menu_icon = document.getElementById("menu-icon");
 
 themeBtn.addEventListener('click',function(){
     body.classList.toggle("darktheme");
@@ -15,11 +15,15 @@ themeBtn.addEventListener('click',function(){
 })
 
 function menucng() {
-  let menuoverlay = document.getElementsByClassName("menu-overlay");
-  let menucontainer = document.getElementsByClassName("menu-container");
+  let menucontainer = document.querySelector(".menu-container");
+  let menuoverlay = document.querySelector(".menu-overlay");
+  let section1 = document.querySelector(".sec1");
   console.log("kiran");
-  menuoverlay.style.display = menuoverlay.style.display == "none" ? "block":"none";
-  menucontainer.style.display = menucontainer.style.display == "none" ? "flex": "none";
+  console.log(menucontainer)
+  menucontainer.style.display = menucontainer.style.display == "flex" ? "none":"flex";
+  menuoverlay.style.display =  menuoverlay.style.display == "block" ? "none":"block";
+  section1.style.margin = section1.style.margin == "20px 0 0 0 " ? "100px 0 0 0":"20px 0 0 0";
+  menu_icon.classList = menu_icon.classList == "bx bx-menu" ?"bx bx-x":"bx bx-menu";
 }
 
 function click() {

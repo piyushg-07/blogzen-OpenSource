@@ -89,7 +89,7 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    height: 270px;
+    height: fit-content;
     top: 40px;
     background-repeat: no-repeat, repeat;
 }
@@ -121,6 +121,7 @@
 @media (max-width:820px) {
     .footer{
         flex-direction: column;
+        height: fit-content;
     }
 }
 

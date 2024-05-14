@@ -47,8 +47,9 @@
     
 }
 .sec2content>img{
-    height: 23vw;
-    width: 29vw;
+    height: fit-content;
+    /* width: 29vw; */
+    width: 23rem;
     object-fit: fill;
     margin: 0 5vw;
     border-radius: 2vw;
@@ -102,4 +103,15 @@
 }
 .authorsname{
     margin-left: 1vw;
+}
+
+@media (max-width:834px) {
+    .sec2content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .s2text{
+        height: 20rem;
+        width: 70%;
+    }
 }
