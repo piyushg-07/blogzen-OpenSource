@@ -16,6 +16,7 @@
     --element2-color: #DDE6ED;
     background-color: black;
     color: white;
+
 }
 #themeImg{
     width: 25px;
@@ -23,7 +24,6 @@
     border: none;
     padding: 10px;
 }
-
 
 nav {
     height: 80px;
@@ -89,7 +89,7 @@ nav {
     margin-left: 60px;
     margin-right: 40px;
     height: 30px;
-    background-color: #208FF4;
+    background-color: rgb(148, 173, 227);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;

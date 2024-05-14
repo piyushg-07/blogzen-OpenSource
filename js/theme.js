@@ -4,8 +4,8 @@ const monthYearElement = document.getElementById('monthYear');
 const datesElement = document.getElementById('dates');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const calendarContainer = document.querySelector('.calendar')
- 
+const calendarContainer = document.querySelector('.calendar');
+
 let currentDate = new Date();
 
 const updateCalendar = () => {
