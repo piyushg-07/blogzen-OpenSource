@@ -7,41 +7,42 @@
 
 
 .sec1 {
-    height: 20vw;
+    height: 20rem;
     margin-top: 110px;
+    width: 100%;
 }
 
 .s1part1 {
-    height: 7vw;
+    height: 7rem;
     width: 80vw;
-    margin: 3.2vw auto;
-    border-radius: 2vw;
+    margin: 3.2rem;
+    border-radius: 2rem;
     background-color: #7D41E2;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .s1part1 span {
-    position: relative;
-    top: 1.3vw;
-    left: 37vw;
     font-size: 2.7em;
     font-weight: bold;
     color: white;
 }
 
 .search {
-    height: 3vw;
-    width: 34vw;
-    border-radius: 2vw;
+    height: 3rem;
+    width: 34rem;
+    border-radius: 2rem;
     position: relative;
-    left: 33vw;
-    right: 33vw;
-    top: -4.5vw;
+    top: -2.5rem;
     background-color: white;
     border: none;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
     color: rgba(0, 0, 0, 0.148);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .search[placeholder] {
@@ -63,17 +64,22 @@
 .s1part2 a:hover {
     text-decoration: underline;
 }
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -2rem 0.7rem;
 
+}
 .s1btn1 {
-    height: 2.4vw;
     width:fit-content;
-    padding: 2px;
-    margin: 0 0.7vw;
+    padding: .9rem;
+    margin: 0 0.7rem;
     border: none;
-    border-radius: 1vw;
+    border-radius: 1rem;
     background-color: #ff765d;
     color: white;
-
 }
 
 .s1part2 a {
