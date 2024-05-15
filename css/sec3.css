@@ -11,29 +11,29 @@
     /* border: 2px solid red; */
     height: 62vw;
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 .s3boxes{
     /* border: 1px solid black; */
     height: 26vw;
     width: 90vw;
     display: flex;
-    margin-left: 6vw;
+    margin-left: 5vw;
     margin-bottom: 3vw;
 }
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
     
 }
 .box1{
     /* border: 1px solid green; */
     padding-bottom: 2vw;
     height: 27vw;
-    width: 25vw;
+     width: 25vw;
     margin: 0 2vw;
     display: flex;
     flex-direction: column;
