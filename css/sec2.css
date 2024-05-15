@@ -49,7 +49,7 @@
 .sec2content>img{
     height: fit-content;
     /* width: 29vw; */
-    width: 23rem;
+    width: 22rem;
     object-fit: fill;
     margin: 0 5vw;
     border-radius: 2vw;
@@ -113,5 +113,11 @@
     .s2text{
         height: 20rem;
         width: 70%;
+    }
+}
+
+@media (max-width:515px) {
+    .sec2content>img{
+        width: 70vw;
     }
 }

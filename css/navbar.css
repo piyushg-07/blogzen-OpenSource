@@ -4,6 +4,7 @@
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 2px;
 
 }
 
@@ -37,9 +38,8 @@
 
 
 body{
-    /* overflow-x: hidden; */
-    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
     /* position: relative; */
     /* background-color: black; */
 
@@ -55,10 +55,6 @@ body{
     color: white;
     transition: all 1s;
 
-}
-
-body{
-    overflow-x: hidden;
 }
 
 #themeImg {

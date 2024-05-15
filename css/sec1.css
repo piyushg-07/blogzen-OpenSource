@@ -8,7 +8,7 @@
 
 .sec1 {
     height: 20vw;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .s1part1 {
@@ -118,9 +118,18 @@
     }
 }
 
-@media (max-width:450px) {
-    .s1part2{
-        text-overflow: scroll;
+@media (max-width:515px) {
+    .s1part22{
+        width: 80vw;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+    
+    .s1btn1{
+        padding: auto 2px;
+    }
+    .btn-container{
+        width: 395px;
     }
 }
 .s1part2 a:hover {

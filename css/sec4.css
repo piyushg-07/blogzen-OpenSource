@@ -132,3 +132,16 @@
         /* padding: 20px; */
     }
 }
+
+@media (max-width:512px) {
+    .footer_titles{
+        font-size: medium;
+    }
+    .contact h2{
+        font-size: 15px;
+    }
+    .contact a{
+        font-size: 13px;
+    }
+   
+}

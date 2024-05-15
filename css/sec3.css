@@ -55,7 +55,7 @@
 .blog-container{
     display: flex;
     flex-wrap: wrap;
-    max-width: 95%;
+    max-width: 80%;
     margin: 40px auto;
 }
 
@@ -139,4 +139,16 @@ div.namestyle{
     line-height: 18px;
     color: var(--element1-color);
 
+}
+
+@media (max-width:515px) {
+    .mainContainer{
+        width: 70vw;
+    }
+    .box1{
+        width: 80vw;
+    }
+    .box1>img{
+        width: 70vw;
+    }
 }
