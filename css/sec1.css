@@ -66,11 +66,11 @@
 
 .s1btn1 {
     height: 2.4vw;
-    width:fit-content;
-    padding: 2px;
-    margin: 0 0.7vw;
+    width:auto;
+    padding: 10px;
+    margin: 0px 0.7vw;
     border: none;
-    border-radius: 1vw;
+    border-radius: 15px;
     background-color: #ff765d;
     color: white;
 
@@ -80,4 +80,9 @@
     margin: 0 0.7vw;
     text-decoration: none;
     color: var(--element-color);
+}
+.align_btn{
+    text-align: center;
+    padding: auto;
+    margin: 10px;
 }
