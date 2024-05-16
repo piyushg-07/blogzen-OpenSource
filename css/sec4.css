@@ -59,16 +59,8 @@
     margin-top: 10px;
 }
 
-.contact h2 a{
-    text-decoration: none;
-    color: #ffffff;
+*/
+
+.contact a .mail {
+    font-size: 12px;
 }
-
-.icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 60%;
-    margin-top: 10px;
-} */
-
