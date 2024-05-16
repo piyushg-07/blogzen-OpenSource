@@ -127,6 +127,30 @@ body{
     color: #2a95f6;
 }
 
+#loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+
+#Calender:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+
+#themeImg {
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+  }
+  
+  #themeImg:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+  }
+  
+
+.themeImg:hover{
+   box-shadow: 0 10px 18px black;
+}
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
@@ -337,4 +361,3 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
-
