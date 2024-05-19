@@ -10,6 +10,9 @@
     height: 20vw;
     margin-top: 110px;
 }
+.cursor {
+    cursor: pointer;
+}
 
 .s1part1 {
     height: 7vw;
