@@ -25,7 +25,6 @@
     padding: 10px;
 }
 
-
 nav {
     height: 80px;
     display: flex;
@@ -90,7 +89,7 @@ nav {
     margin-left: 60px;
     margin-right: 40px;
     height: 30px;
-    background-color: #208FF4;
+    background-color: rgb(148, 173, 227);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -111,8 +110,16 @@ nav {
     margin-left: 5px;
 }
 
+
+/* make calender dark */
+.darktheme .overlay1 .popup1{
+    background-color: black;
+    color: white;
+}
+
+
 .calendar_container:hover {
-  background-color: rgb(148, 173, 227);
+  background-color: rgb(5, 5, 6);
   border: 1px solid #208FF4;
 }
 
