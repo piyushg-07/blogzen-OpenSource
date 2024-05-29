@@ -358,7 +358,7 @@ nav {
     font-size: 10px;
 }
 
-.footer {
+/*.footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -430,7 +430,7 @@ nav {
     justify-content: space-between;
     width: 60%;
     margin-top: 10px;
-}
+} */
 
 .video{
     margin-left: 4rem;
