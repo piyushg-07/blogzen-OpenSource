@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .chatbot__button {
     position: fixed;
-    bottom: 15px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
+    bottom: 55px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #227ebb;
+    background: linear-gradient(45deg, rgb(110, 8, 218),#319de4);
     color: #f3f7f8;
     border: none;
     border-radius: 50%;
