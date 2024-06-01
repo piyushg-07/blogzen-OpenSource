@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .chatbot__button {
     position: fixed;
     bottom: 15px;
@@ -8,7 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #227ebb;
+    background: url('../img/8943377.png') no-repeat center center, #227ebb;
+    background-size: 80%;
     color: #f3f7f8;
     border: none;
     border-radius: 50%;
@@ -17,7 +19,7 @@
 }
 
 .chatbot__button span {
-    position: absolute;
+    display: none; 
 }
 
 .show-chatbot .chatbot__button span:first-child,
@@ -36,7 +38,7 @@
     width: 400px;
     background-color: #f3f7f8;
     border-radius: 15px;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1) 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
     transform: scale(0.5);
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -71,6 +73,7 @@
     font-size: 1.4rem;
     color: #f3f7f8;
 }
+
 
 .chatbot__box {
     height: 332px;
