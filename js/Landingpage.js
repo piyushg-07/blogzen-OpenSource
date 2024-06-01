@@ -43,11 +43,6 @@ console.log("FucY")
     });
   }
 
-  function closePopup() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
-  }
-
 //Changes by priya
 
 // let tbody = document.getElementById("tbody")
