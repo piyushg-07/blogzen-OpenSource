@@ -121,6 +121,8 @@ body{
 }
 
 
+
+
 #signup:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
@@ -188,6 +190,25 @@ body{
 .navbtn2 span {
     margin-left: 0.3vw;
 }
+
+.popup {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+    font-size: 20px;
+    color: #181818; 
+  }
+  
+  .close-btn:hover {
+    color: #ff0000;
+    border-color: none;
+  }
+  
 
 .txtColor {
     color: white;
