@@ -104,35 +104,3 @@ if (event.target === overlay1) {
   overlay1.style.display = 'none';
 }
 });
-
-
-function validateEmail(email) {
-  const emailPattern = /^[A-Za-z\._\-0-9]+@[A-Za-z]+\.[a-z]{2,4}$/;
-  return emailPattern.test(email);
-}
-
-const emailInput = document.getElementById("emailId");
-const errorSpan = document.getElementById("emailError");
-
-// Function to update error message based on email input validity
-function updateErrorMessage() {
-    if (!emailInput.validity.valid) {
-        errorSpan.textContent = "Please enter a valid email address."; // Set error message
-    } else {
-        errorSpan.textContent = ""; // Clear error message
-    }
-}
-
-// Add event listener to submit button to check email validity and update error message
-document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
-  const isValidEmail = validateEmail(emailInput.value);
-  if (!isValidEmail) {
-    errorSpan.textContent = "Please enter a valid email address."; // Set error message
-    event.preventDefault(); // Prevent the form from submitting
-  }
-});
-
-// Add event listener to email input field to clear error message when user starts re-entering email
-emailInput.addEventListener("input", function() {
-    errorSpan.textContent = ""; // Clear error message
-});
