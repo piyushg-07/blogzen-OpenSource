@@ -117,13 +117,6 @@ nav {
     color: white;
 }
 
-/* make login dark */
-
-.darktheme .overlay .popup{
-    background-color: black;
-    color: white;
-}
-
 
 .calendar_container:hover {
   background-color: rgb(5, 5, 6);
