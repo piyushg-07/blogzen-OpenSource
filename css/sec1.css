@@ -10,6 +10,10 @@
     height: 20vw;
     margin-top: 110px;
 }
+.s1btn1:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
 
 .s1part1 {
     height: 7vw;
