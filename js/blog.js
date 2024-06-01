@@ -64,33 +64,3 @@ document.addEventListener("DOMContentLoaded", function() {
         return div;
     }
     }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const searchInput = document.getElementById("searchInput");
-      const searchButton = document.getElementById("searchButton");
-      const searchResults = document.getElementById("searchResults");
-  
-      // Function to perform the search
-      function performSearch() {
-          // Clear previous search results
-          searchResults.innerHTML = '';
-  
-          // Get the search term
-          const searchTerm = searchInput.value.trim();
-  
-          // Perform the search (you can replace this with your actual search logic)
-          // For demonstration, just displaying the search term
-          searchResults.textContent = `Search results for: ${searchTerm}`;
-      }
-  
-      // Add event listener to the search button
-      searchButton.addEventListener("click", performSearch);
-  
-      // Optionally, you can also trigger the search on pressing Enter key
-      searchInput.addEventListener("keypress", function(event) {
-          if (event.key === "Enter") {
-              performSearch();
-          }
-      });
-  });
-  
