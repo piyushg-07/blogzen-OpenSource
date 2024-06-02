@@ -7,7 +7,7 @@ const chatbotCloseBtn = document.querySelector('.chatbot__header span');
 let userMessage;
 // Need GPT key
 const inputInitHeight = chatInput.scrollHeight;
-const API_KEY = '033f3bcc57msh4cbeceaaa74b3fbp172fd5jsn8008c32db481'; // ~IMPORTANT~
+const API_KEY = '262e9be1afmsh2f9a771f4813961p1a1116jsnb48bc5e6075a'; // ~IMPORTANT~
 
 const createChatLi = (message, className) => {
   const chatLi = document.createElement('li');
@@ -17,15 +17,15 @@ const createChatLi = (message, className) => {
 };
 
 const generateResponse = (incomingChatLi) => {
-  const API_URL = 'https://chatgpt53.p.rapidapi.com/';
+  const API_URL = 'https://apiaiserg-osipchukv1.p.rapidapi.com/addContext';
   const messageElement = incomingChatLi.querySelector('p');
 
   const requestOptions = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-RapidAPI-Key": "033f3bcc57msh4cbeceaaa74b3fbp172fd5jsn8008c32db481", // ! IMPORTANT !
-      "X-RapidAPI-Host": "chatgpt53.p.rapidapi.com",
+      "X-RapidAPI-Key": "262e9be1afmsh2f9a771f4813961p1a1116jsnb48bc5e6075a", // ! IMPORTANT !
+      "X-RapidAPI-Host": "ApiAIserg-osipchukV1.p.rapidapi.com",
     },
     body: JSON.stringify({
       messages: [{ role: "user", content: userMessage }],

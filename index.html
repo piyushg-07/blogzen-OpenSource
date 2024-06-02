@@ -111,14 +111,22 @@
         })
       </script>
     </div>
-    <input class="search" placeholder="Search"></input>
-    <button class="s1btn1" >All</button>
-        <button class="s1btn1" style="background-color: white;color:black;" id = 'Tech' onclick="buttonClick('Tech')">Technology</button>
-        <button class="s1btn1"style="background-color: white;color:black;" id = 'branding' onclick="buttonClick('branding')">Branding </button>
-          <button class="s1btn1"style="background-color: white;color:black" id = 'news' onclick="buttonClick('news')" >News</button>
-            <button class="s1btn1"style="background-color: white;color:black"  id = 'AI' onclick="buttonClick('AI')" > AI</button>
-              <button class="s1btn1"style="background-color: white;color:black" id = 'Management' onclick="buttonClick('Management')" >Management</button>
-                <button class="s1btn1"style="background-color: white;color:black" id = 'Design' onclick="buttonClick('Design')">Design</button>
+    <div class="container">
+      <div class="search-container">
+        <input class="search" id="searchInput" placeholder="Search">
+        <button class="search-button" onclick="performSearch()">
+          <i id="searchIcon" class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="s1btn1">All</button>
+      <button class="s1btn1" style="background-color: white;color:black;" id='Tech' onclick="buttonClick('Tech')">Technology</button>
+      <button class="s1btn1" style="background-color: white;color:black;" id='branding' onclick="buttonClick('branding')">Branding</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='news' onclick="buttonClick('news')">News</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='AI' onclick="buttonClick('AI')">AI</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='Management' onclick="buttonClick('Management')">Management</button>
+    </div>
   </div>
   <!-- Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -196,6 +204,62 @@
 
   <script src="./chatBot/script.js"></script>
   <script src="js/theme.js"></script>
+  <script>
+    function performSearch() {
+      // Get the search input value
+      var searchTerm = document.getElementById("searchInput").value;
+
+      // Clear existing search results
+      var tbody = document.getElementById("tbody");
+      tbody.innerHTML = '';
+
+      // Fetch data and filter based on the search term
+      fetch("../database/jsonData.json")
+          .then(res => res.json())
+          .then(json => {
+              console.log("Searching for:", searchTerm);
+              console.log("Data:", json);
+
+              // Filter data based on the search term
+              const filteredData = json.blogs.filter(item => {
+                  // Assuming 'title' is the property you want to search in
+                  return item.title.toLowerCase().includes(searchTerm.toLowerCase());
+              });
+
+              // Display filtered data
+              filteredData.forEach(data => {
+                  tbody.appendChild(createBlogElement(data));
+              });
+          })
+          .catch(error => {
+              console.error('Error:', error);
+          });
+    }
+
+    // Function to create HTML element for a blog entry
+    function createBlogElement(data) {
+      var blogDiv = document.createElement('div');
+      blogDiv.className = 'mainContainer';
+      blogDiv.innerHTML = `
+        <div class="box1">
+          <img src="${data.imageurl}" alt="" />
+          <div class="boxtext">
+            <div class="boxdiv">${data.tags}</div>
+            <a href="../blog.html?id=${data.id}"><h1>${data.title}</h1></a>
+            <a href="../blog.html?id=${data.id}"><p class="boxContent">${data.content.slice(0, 180)}</p></a>
+            <div class="boxauthor">
+              <img src="${data.img0}" alt="" class="boxauthorimg" />
+              <div class="boxauthorsname">
+                <div class="name">${data.author}</div>
+                <div class="date">${data.date}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      return blogDiv;
+    }
+  </script>
 </body>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 
