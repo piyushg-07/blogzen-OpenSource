@@ -30,7 +30,23 @@
     color: white;
 }
 
-.search {
+  
+  .sec1.search-container button {
+    float: right;
+    padding: 0px;
+    margin-top: 8px;
+    margin-right: 225px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .search-container button:hover {
+    background: #ccc;
+  }
+/* .search {
     height: 3vw;
     width: 34vw;
     border-radius: 2vw;
@@ -47,7 +63,7 @@
 .search[placeholder] {
     color: black;
     padding-left: 1rem;
-}
+} */
 
 .s1part2 {
     /* border: 1px solid black; */
@@ -81,3 +97,51 @@
     text-decoration: none;
     color: var(--element-color);
 }
+/* Style for the main section container */
+/* .sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally within .sec1 */
+    /* margin: 0 auto; /* Center .sec1 horizontally on the page */
+    /* width: 80%; /* Set a maximum width for .sec1 */
+    /* padding: 20px;
+  } */ 
+  
+  /* Style for the first part with the typed text */
+  .s1part1 {
+    margin-bottom: 20px; /* Add some space below the typed text */
+  }
+  
+  /* Style for the auto-typed text animation */
+  .auto-type {
+    font-size: 3rem; /* Set the font size for the typed text */
+  }
+  
+  /* Style for the search bar container */
+  .search-container {
+    display: flex;
+    justify-content: center; /* Center search bar horizontally within container */
+    width: 100%; /* Make the search container full width */
+  }
+  
+  /* Style for the search input field */
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex:1;
+    /*width: 100%; /* Make the input field fill the container width */
+  }
+  
+  /* Style for the search button */
+  .search-container button[type="submit"] {
+    background-color: #6f37e8; /* Green color for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to indicate clickability */
+  }
+  
+  
