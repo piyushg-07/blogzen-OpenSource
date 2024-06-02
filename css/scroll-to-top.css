@@ -1,0 +1,27 @@
+.scroll-top-button {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #227ebb;
+  color: #f3f7f8;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+@keyframes bouncing {
+  0% {bottom: 5px;}
+  50% {bottom: 10px;}
+  100% {bottom: 5px;}
+}
+
+.scroll-top-button{
+  animation: bouncing 1s infinite ease-in-out;
+}
