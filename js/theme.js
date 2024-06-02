@@ -1,5 +1,6 @@
 let body = document.getElementsByTagName("BODY")[0];
 let themeBtn = document.getElementById("themeImg");
+let navbar = document.getElementById("navbar");
 const monthYearElement = document.getElementById('monthYear');
 const datesElement = document.getElementById('dates');
 const prevBtn = document.getElementById('prevBtn');
@@ -55,8 +56,9 @@ updateCalendar();
 
 themeBtn.addEventListener('click',function(){
     body.classList.toggle("darktheme");
+    navbar.classList.toggle("darktheme");
     if(body.classList.contains("darktheme")){
-        themeBtn.src ="assests/sunblack.png"
+        themeBtn.src ="assests/sun.png"
     }
     else{
         themeBtn.src ="assests/moon.png"
