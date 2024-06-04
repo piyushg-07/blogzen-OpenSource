@@ -139,6 +139,7 @@ body{
     margin-right: 1vw;
 }
 
+
 .navs2>img {
     cursor: pointer;
     width: 2vw;
@@ -165,6 +166,7 @@ body{
     border: none;
     cursor: pointer;
 }
+
 
 .navbtn2 {
     cursor: pointer;
@@ -194,7 +196,7 @@ body{
     color: white;
 }
 .txtColor1{
-    color: var(--txtColor1);
+    color: white;
 }
 
 .txtColor:hover{
@@ -202,9 +204,20 @@ body{
     background-color: transparent;
     color: #2a95f6;
 }
+
+.txtColor1:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
 .darktheme .txtColor1{
     color: rgba(0, 0, 0, 0.7);
 }
+
+.navs2 #themeImg:hover{
+    transform: scale(1.2);
+}
+
 
 
 
