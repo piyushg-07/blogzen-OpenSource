@@ -7,11 +7,15 @@
 
 
 .sec1 {
+   
     height: 20vw;
     margin-top: 110px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .s1part1 {
+    left: 33vw;
     height: 7vw;
     width: 80vw;
     margin: 3.2vw auto;
@@ -22,9 +26,11 @@
 }
 
 .s1part1 span {
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 1.3vw;
-    left: 37vw;
+    left: 33vw;
     font-size: 2.7em;
     font-weight: bold;
     color: white;
@@ -42,6 +48,7 @@
     border: none;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
     color: rgba(0, 0, 0, 0.148);
+    margin-top: 40px;
 }
 
 .search[placeholder] {
@@ -66,14 +73,16 @@
 
 .s1btn1 {
     height: 2.4vw;
-    width:fit-content;
-    padding: 2px;
-    margin: 0 0.7vw;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    /* margin: 0 0.7vw; */
     border: none;
     border-radius: 1vw;
     background-color: #ff765d;
     color: white;
-    
+    left: 30vw;
 
 }
 .s1btn1:hover{

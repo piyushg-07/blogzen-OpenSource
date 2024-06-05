@@ -1,16 +1,17 @@
-/* .footer {
+ .footer {
+    height: 80px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-image: url(../assests//footer_bg.png);
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 260px;
+    height:180px;
     background-repeat: no-repeat, repeat;
 }
 

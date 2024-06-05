@@ -15,18 +15,20 @@
 }
 .s3boxes{
     /* border: 1px solid black; */
-    height: 26vw;
-    width: 90vw;
+    height: 22vw;
+    width: 80vw;
     display: flex;
     margin-left: 6vw;
     margin-bottom: 3vw;
 }
 .mainContainer{
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-grow: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    line-height: 20px;
     
 }
 .box1{
@@ -67,11 +69,13 @@
     width: 20vw;
     margin-left: 1vw;
 }
+
 .boxdiv{
-    margin: 0.4vw 0;
-    font-size: 0.8em;
+    margin: 0.2vw 0;
+    text-align: justify;
+    font-size: 0.8rem;
     color: var(--element1-color);
-    line-height: 18px;
+    line-height: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -80,17 +84,17 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 14px;
     color: var(--element-color);
-    width: 15vw;
-    font-size: 1em;
+    width: 13vw;
+    font-size: 0.8rem;
 }
 .boxContent{
     font-size: 0.7em;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    line-height: 21px;
+    line-height: 14px;
     color: var(--element2-color);
 
 
