@@ -22,6 +22,6 @@ jobs:
       - name: Send Greeting
         if: steps.first_contribution.outputs.first-time-contributor == 'true'
         run: |
-          echo "Congratulations, @${{ github.actor }}! Thank you for creating your issue. Your contribution is greatly appreciated, and we look forward to collaborating with you to resolve it. Keep up the great work! We will review your changes promptly and provide feedback. Please remember to check our documentation and guidelines." | gh issue comment ${{ github.event.issue.number }}
+          echo "Congratulations🎉 , @${{ github.actor }}! Thank you for creating your issue. Your contribution is greatly appreciated, and we look forward to collaborating with you to resolve it. Keep up the great work! We will review your changes promptly and provide feedback. Please remember to check our documentation and guidelines." | gh issue comment ${{ github.event.issue.number }}
           
-          echo "Excellent work, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines." | gh pr comment ${{ github.event.pull_request.number }}
+          echo "Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines." | gh pr comment ${{ github.event.pull_request.number }}
