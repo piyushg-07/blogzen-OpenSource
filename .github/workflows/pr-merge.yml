@@ -19,6 +19,11 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            const number = context.issue.number;
+            const number = context.payload.pull_request.number;
             const body = "🎉 Your pull request has been successfully merged! 🎉 Thank you for your contribution to our project. Your efforts are greatly appreciated. Keep up the fantastic work! 🚀";
-            github.issues.createComment({ owner, repo, issue_number: number, body });
+            await github.rest.issues.createComment({
+              owner: owner,
+              repo: repo,
+              issue_number: number,
+              body: body
+            });
