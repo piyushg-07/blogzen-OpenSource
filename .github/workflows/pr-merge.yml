@@ -1,0 +1,24 @@
+name: Auto Comment on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  comment:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Add Comment to Merged PR
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const number = context.issue.number;
+            const body = "🎉 Your pull request has been successfully merged! 🎉 Thank you for your contribution to our project. Your efforts are greatly appreciated. Keep up the fantastic work! 🚀";
+            github.issues.createComment({ owner, repo, issue_number: number, body });
