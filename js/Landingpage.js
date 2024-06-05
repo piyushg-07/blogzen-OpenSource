@@ -6,13 +6,13 @@ console.log("FucY")
   function buttonClick(ele) {
     NavBar= document.getElementsByClassName("s1btn1");
     console.log("Hi")
-    for(i=0; i<NavBar.length; i++)
-    {
-      NavBar[i].style.backgroundColor="white";
-      NavBar[i].style.color="black";
-    }
-    document.getElementById(ele).style.backgroundColor="#ff765d"
-    document.getElementById(ele).style.color="white";
+    // for(i=0; i<NavBar.length; i++)
+    // {
+    //   NavBar[i].style.backgroundColor="white";
+    //   NavBar[i].style.color="black";
+    // }
+    // document.getElementById(ele).style.backgroundColor="#ff765d"
+    // document.getElementById(ele).style.color="white";
     //
     var tbody = document.getElementById("tbody");
     let get = Array.from(document.getElementsByClassName('mainContainer'));

@@ -18,6 +18,7 @@
     color: white;
 
 }
+
 #themeImg{
     width: 25px;
     height: 25px;
@@ -79,6 +80,13 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin-left: 10px;
+}
+
+/* dark sec 1 */
+
+.dark-button {
+    background-color: #1A1A1A;
+    color: white;
 }
 
 .calendar_container {
