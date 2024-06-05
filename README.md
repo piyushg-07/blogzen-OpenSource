@@ -88,7 +88,7 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 
 ```
 $ git clone https://github.com/<your-github-username>/blogzen-OpenSource.git
-$ cd blogzen
+$ cd blogzen-OpenSource
 ```
 
 <!--
