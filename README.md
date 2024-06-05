@@ -87,7 +87,7 @@ An Open-Source Project & collection of resources categorised by tech domains, la
 - Fork and clone the Repo by typing the following commands in the terminal
 
 ```
-$ git clone https://github.com/<your-github-username>/blogzen.git
+$ git clone https://github.com/<your-github-username>/blogzen-OpenSource.git
 $ cd blogzen
 ```
 
