@@ -38,13 +38,18 @@
     position: relative;
     top: -2.5rem;
     background-color: white;
-    border: none;
+    border: black;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
     color: rgba(0, 0, 0, 0.148);
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 2px black;
 }
 
+.search:hover{
+    box-shadow:3px 3px 5px black;
+   
+}
 .search[placeholder] {
     color: black;
     padding-left: 1rem;
@@ -59,6 +64,7 @@
     bottom: 3vw;
     display: flex;
     align-items: center;
+    
 }
 
 .s1part2 a:hover {
@@ -76,8 +82,14 @@
     width:fit-content;
     padding: .9rem;
     margin: 0 0.7rem;
-    border: none;
+    border: black ;
+    background-color: white;
+    border: 1px solid #ff765d;
+    background-color: white;
     border-radius: 1rem;
+    
+}
+.s1btn1:hover{
     background-color: #ff765d;
     color: white;
 }
