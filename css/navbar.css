@@ -59,7 +59,8 @@ body{
     cursor: pointer;
     width: 25px;
     height: 25px;
-    border: none;
+    border-radius:50%;
+    margin-bottom: 5px;
 }
 
 .themechangebtn {
@@ -84,6 +85,53 @@ body{
     z-index: 9999;
     position: fixed;
 }
+
+/* Responsive Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    margin:15px 50px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navs2 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: white;
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: scroll;
+        /* padding: 20px; */
+    }
+
+    .navs2.show {
+        display: flex;
+        max-height: 500px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 
 /* Sec-1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs1 {
@@ -131,6 +179,7 @@ body{
     color: white;
 }
 #signup:hover{
+    content: '';
     border: 1px solid #208FF4;
     background-color: transparent;
     color: #2a95f6;
@@ -144,6 +193,7 @@ body{
 }
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .navs2 {
     /* border: 1px solid black; */
     /* width: 25vw; */
@@ -158,9 +208,9 @@ body{
     width: 2vw;
     height: 2vw;
     margin: 0 0.5vw;
-
 }
-.button_nav{
+
+.button_nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,149 +257,196 @@ body{
 .txtColor {
     color: white;
 }
-.txtColor1{
+
+.txtColor1 {
     color: var(--txtColor1);
 }
-.darktheme .txtColor1{
+
+.darktheme .txtColor1 {
     color: rgba(0, 0, 0, 0.7);
 }
 
 .overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
 }
 
 .popup {
-  background-color: white;
-  border: 2px solid rgb(129, 129, 240);
-  border-radius: 12px;
-  align-items: center;
-  width: 30%;
-  padding:10px;
-  padding-left: 2%;
-  text-align: center;
+    background-color: white;
+    border: 2px solid rgb(129, 129, 240);
+    border-radius: 12px;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    padding-left: 2%;
+    text-align: center;
 }
 
 .popup .option {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  margin: 25px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  padding-left:15px;
-  cursor: pointer;
-  
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
 .popup .option img {
-  max-width: 25px;
-  max-height: 25px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
+
 .popup :hover {
-  border: 2px solid blue ;
-   transform: scale(1.01);
-   transition: all 0.2s ease-in;
+    border: 2px solid blue;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in;
 }
- 
+
 .popup .option {
-  transition: none !important;
+    transition: none !important;
 }
 
-
-.overlay1{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
+.overlay1 {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }
+
+/* CSS to show the overlay when a specific class is added */
+.overlay1.show {
+    display: flex;
+}
+
 
 .popup1 {
-  background-color: white;
-  border: 2px solid rgb(129, 129, 240);
-  border-radius: 12px;
-  align-items: center;
-  width: 30%;
-  padding:10px;
-  padding-left: 2%;
-  text-align: center;
-}
-.popup1 :hover {
-   transform: scale(1.01);
-   transition: all 0.2s ease-in;
-}
-.calender{
-    width:300px;
-    height: auto;
-    display:flex;
-    flex-direction:column;
-    padding:10px;
-    background-color: whitesmoke;
-    border-radius: 10px;
+    background-color: white;
+    border: 2px solid rgb(129, 129, 240);
+    border-radius: 12px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
 }
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    margin-bottom: 20px;
 }
 
-.days{
-    display:grid;
-    grid-template-columns: repeat(7,1fr);
+.header .prevBtn, .header .nextBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.day{
-    text-align: center;
-    padding:5px;
-    color:rgb(0, 0, 0);
+.monthYear {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.dates{
+.days, .dates {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 5px;
 }
 
-.date{
+.day, .date {
+    text-align: center;
+    padding: 5px;
+}
+
+.date {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding:5px;
-    margin: auto;
-    font-weight: 500;
+    padding: 10px;
     border-radius: 50%;
-    transition: 0.2s;
-    height:30px;
-    width:30px;
+    transition: background-color 0.2s;
 }
 
-.date:hover,
-.date.active{
+.date:hover, .date.active {
     background-color: darkblue;
     color: white;
 }
 
-.date.inactive{
-    color:rgb(211, 211, 211);
+.date.inactive {
+    color: rgb(211, 211, 211);
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .popup1 {
+        width: 80%;
+    }
+
+    .header .prevBtn, .header .nextBtn {
+        font-size: 1.2rem;
+    }
+
+    .monthYear {
+        font-size: 1rem;
+    }
+
+    .day, .date {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    .date {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup1 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .header {
+        margin-bottom: 15px;
+    }
+
+    .header .prevBtn, .header .nextBtn {
+        font-size: 1rem;
+    }
+
+    .monthYear {
+        font-size: 0.9rem;
+    }
+
+    .day, .date {
+        padding: 4px;
+        font-size: 0.7rem;
+    }
+
+    .date {
+        padding: 6px;
+    }
+}
+
 

@@ -23,9 +23,23 @@
     function toggleTheme() {
       var navbar = document.getElementById("navbar");
       navbar.classList.toggle("dark");
+
     }
-    
-    
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navs2 = document.getElementById('navs2');
+
+    hamburger.addEventListener('click', function () {
+        navs2.classList.toggle('show');
+    });
+
+});
+
+
+
+
+
   </script>
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
 </head>
@@ -35,44 +49,46 @@
 
   <div class="navbar" id="navbar">
     <div class="navs1">
-      <a href="index.html"><img src="img/final logo 1.png" alt="" /></a>
-      <div class="span1"><a href="index.html">Blogzen</a></div>
-      <!-- <div class="span2"><a href="index.html">zen</a></div> -->
+        <a href="index.html"><img src="img/final logo 1.png" alt="" /></a>
+        <div class="span1"><a href="index.html">Blogzen</a></div>
     </div>
+    <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="navs2" id="navs2">
+        <img src="assests/moon.png" alt="image" id="themeImg">
+        <button onclick="click" id="loginButton" class="button_nav txtColor1">Log In</button>
+        <button id="signup" class="button_nav txtColor">Sign Up</button>
+        <button onclick="toggleCalendar()" id="Calender" class="button_nav txtColor1">Calendar</button>
+    </div>
+</div>
 
-    <div class="navs2">
-      <!-- <img src="img/final logo 1.png" alt="" /> -->
-      <img src="assests/moon.png" alt="image" id="themeImg">
-      <button onclick="click" id="loginButton" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Log
-        In</button>
-      <button id="signup" class="button_nav txtColor">Sign Up</button>
-      <button onclick="click" id="Calender" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Calendar</button>
-    </div>
-  </div>
-<!--Calender-->
-  <div class="overlay1" id="overlay1">
+<!-- Calendar -->
+<div class="overlay1" id="overlay1">
     <div class="popup1">
-      <div class="header">
-        <button class="prevBtn" id="prevBtn">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <div class="monthYear" id="monthYear"></div>
-        <button class="nextBtn" id="nextBtn">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="days">
-          <div class="day">Mon</div>
-          <div class="day">Tue</div>
-          <div class="day">Wed</div>
-          <div class="day">Thur</div>
-          <div class="day">Fri</div>
-          <div class="day">Sat</div>
-          <div class="day">Sun</div>
-      </div>
-      <div class="dates" id="dates"></div>
-    </div> 
-  </div>
+        <div class="header">
+            <button class="prevBtn" id="prevBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="monthYear" id="monthYear"></div>
+            <button class="nextBtn" id="nextBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="days">
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thur</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+            <div class="day">Sun</div>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+</div>
 
   <div class="overlay" id="overlay">
     <div class="popup">
@@ -112,16 +128,22 @@
       </script>
     </div>
     <input class="search" placeholder="Search"></input>
-    <div class="buttons">
-      <button class="s1btn1" >All</button>
-      <button class="s1btn1" style="background-color: white;color:black;" id = 'Tech' onclick="buttonClick('Tech')">Technology</button>
-      <button class="s1btn1"style="background-color: white;color:black;" id = 'branding' onclick="buttonClick('branding')">Branding </button>
-        <button class="s1btn1"style="background-color: white;color:black" id = 'news' onclick="buttonClick('news')" >News</button>
-          <button class="s1btn1"style="background-color: white;color:black"  id = 'AI' onclick="buttonClick('AI')" > AI</button>
-            <button class="s1btn1"style="background-color: white;color:black" id = 'Management' onclick="buttonClick('Management')" >Management</button>
-              <button class="s1btn1"style="background-color: white;color:black" id = 'Design' onclick="buttonClick('Design')">Design</button>
+    <div class="buttons flex-dir" >
+      <button class="s1btn1">All</button>
+      <button class="s1btn1" style="background-color: white;color:black;" id='Tech'
+        onclick="buttonClick('Tech')">Technology</button>
+      <button class="s1btn1" style="background-color: white;color:black;" id='branding'
+        onclick="buttonClick('branding')">Branding </button>
+      <button class="s1btn1" style="background-color: white;color:black" id='news'
+        onclick="buttonClick('news')">News</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='AI' onclick="buttonClick('AI')">
+        AI</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='Management'
+        onclick="buttonClick('Management')">Management</button>
+      <button class="s1btn1" style="background-color: white;color:black" id='Design'
+        onclick="buttonClick('Design')">Design</button>
     </div>
-   
+
   </div>
   <!-- Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -161,16 +183,18 @@
       <div class="footer_titles">Subscribe to our newsletter</div>
       <form>
         <input type="text" id="emailId" name="email" placeholder="Your Email">
-        <button  type="submit">Subscribe</button>
+        <button type="submit">Subscribe</button>
       </form>
     </div>
     <div class="contact">
       <div class="footer_titles">Contact Us</div>
-      <a href="mailto:Blogzen@gmail.com"><div class="mail">Blogzen@gmail.com</div></a>
+      <a href="mailto:Blogzen@gmail.com">
+        <div class="mail">Blogzen@gmail.com</div>
+      </a>
     </div>
   </div>
 
-   <!--   Chat bot   -->
+  <!--   Chat bot   -->
   <button class="chatbot__button">
     <span class="material-symbols-outlined">mode_comment</span>
     <span class="material-symbols-outlined">close</span>

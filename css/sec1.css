@@ -87,3 +87,9 @@
     text-decoration: none;
     color: var(--element-color);
 }
+
+.flex-dir{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
