@@ -13,18 +13,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - name: Send Greeting for Issues
-        if: github.event_name == 'issues'
-        run: |
-          echo "Sending greeting for issue"
-          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-               -d '{"body":"Congratulations🎉, @${{ github.actor }}! on creating your issue. Your contribution is greatly appreciated, and we look forward to collaborating with you to resolve it. Keep up the great work! We will review your changes promptly and provide feedback. Please remember to check our documentation and guidelines."}' \
-               "${{ github.event.issue.url }}/comments"
-
-      - name: Send Greeting for Pull Requests
-        if: github.event_name == 'pull_request_target'
-        run: |
-          echo "Sending greeting for pull request"
-          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-               -d '{"body":"Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines."}' \
-               "${{ github.event.pull_request.url }}/comments"
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Hey there👋, Congratulations on creating your first issue with Git-re. Hope you solve it! This is your first issue."
+          pr-message: "Congratulations🎉 on creating your first pull request in Git-re. This is your first pull request."
