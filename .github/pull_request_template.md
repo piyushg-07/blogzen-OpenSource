@@ -1,9 +1,8 @@
-
 ## Related Issue
-[Cite any related issue(s) this pull request addresses. If none, simply state “None”]
+[Please link to any related issue(s) this pull request addresses. If none, simply state “None”]
 
 ## Description
-[Please include a brief description of the changes or features added]
+[Please provide a brief overview of the changes or features added in this pull request.]
 
 ## Type of PR
 
@@ -12,16 +11,17 @@
 - [ ] Documentation update
 - [ ] Other (specify): _______________
 
-## Screenshots / videos (if applicable)
-[Attach any relevant screenshots or videos demonstrating the changes]
+## Screenshots / Videos (if applicable)
+[Attach any relevant screenshots or videos demonstrating the changes made, if applicable.]
 
 ## Checklist:
-- [ ] I have performed a self-review of my code
-- [ ] I have read and followed the Contribution Guidelines.
-- [ ] I have tested the changes thoroughly before submitting this pull request.
+- [ ] I have performed a self-review of my code.
+- [ ] I have read and followed the Contribution Guidelines outlined in the project's documentation.
+- [ ] I have thoroughly tested the changes before submitting this pull request.
 - [ ] I have provided relevant issue numbers, screenshots, and videos after making the changes.
 - [ ] I have commented my code, particularly in hard-to-understand areas.
-<!-- [X] - put a cross/X inside [] to check the box -->
 
-## Additional context:
-[Include any additional information or context that might be helpful for reviewers.]
+<!-- To check the boxes, place an 'X' inside the brackets. Example: [X] -->
+
+## Additional Context:
+[Include any additional information or context that might be helpful for reviewers. This could include details about any design decisions, potential impacts, or alternative approaches considered.]

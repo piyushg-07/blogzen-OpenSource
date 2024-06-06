@@ -28,5 +28,5 @@ jobs:
           echo "Sending greeting for pull request"
           curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Content-Type: application/json" \
-               -d "{\"body\":\"Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines.\"}" \
-               "${{ github.event.pull_request.url }}/comments"
+               -d "{\"body\":\"Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines.\", \"in_reply_to\": null}" \
+               "${{ github.event.pull_request.comments_url }}"
