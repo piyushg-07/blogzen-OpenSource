@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 
+
+
   // create td
   function td_blog(item) {
     console.log("item000", item ,item.id);
