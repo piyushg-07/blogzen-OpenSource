@@ -9,6 +9,7 @@ const calendarContainer = document.querySelector('.calendar');
 
 let currentDate = new Date();
 
+
 const updateCalendar = () => {
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
