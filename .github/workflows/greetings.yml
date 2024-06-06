@@ -1,4 +1,4 @@
-name: Greetings
+name: First Greetings
 
 on:
   pull_request_target:
