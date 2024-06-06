@@ -17,11 +17,12 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const { owner, repo } = context.repo;
             const issue_number = context.payload.issue.number;
             const comment_body = `Thank you for creating this issue! 🎉 We'll look into it as soon as possible. In the meantime, please make sure to provide all the necessary details and context. If you have any questions or additional information, feel free to add them here. Your contributions are highly appreciated! 😊You can also check our CONTRIBUTING.md for guidelines on contributing to this project.`;
-            await github.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue_number,
+            github.issues.createComment({
+              owner,
+              repo,
+              issue_number,
               body: comment_body
             });
