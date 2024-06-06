@@ -1,28 +1,29 @@
-name: Auto Comment on Issue
+name: Greetings
 
 on:
+  pull_request_target:
+    types: [opened]
   issues:
     types: [opened]
 
-permissions:
-  issues: write
-
 jobs:
-  comment:
+  greeting:
     runs-on: ubuntu-latest
-
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
-      - name: Add Comment to Issue
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { owner, repo } = context.repo;
-            const issue_number = context.payload.issue.number;
-            const comment_body = `Thank you for creating this issue! 🎉 We'll look into it as soon as possible. In the meantime, please make sure to provide all the necessary details and context. If you have any questions or additional information, feel free to add them here. Your contributions are highly appreciated! 😊You can also check our CONTRIBUTING.md for guidelines on contributing to this project.`;
-            github.issues.createComment({
-              owner,
-              repo,
-              issue_number,
-              body: comment_body
-            });
+      - name: Send Greeting for Issues
+        if: github.event_name == 'issues'
+        run: |
+          echo "Sending greeting for issue"
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -d '{"body":"Thank you🎉, @${{ github.actor }}! for creating this issue!. We'll look into it as soon as possible. In the meantime, Your contribution is greatly appreciated, and we look forward to collaborating with you to resolve it. Keep up the great work! We will review your changes promptly and provide feedback. Please remember to check our documentation and guidelines."}' \
+               "${{ github.event.issue.url }}/comments"
+      - name: Send Greeting for Pull Requests
+        if: github.event_name == 'pull_request_target'
+        run: |
+          echo "Sending greeting for pull request"
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -d '{"body":"Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines."}' \
+               "${{ github.event.pull_request.url }}/comments"
