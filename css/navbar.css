@@ -126,6 +126,11 @@ body{
     color: #2a95f6;
 }
 #loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+#loginButton{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
     color: white;
@@ -135,6 +140,11 @@ body{
     background-color: transparent;
     color: #2a95f6;
 }
+#loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+    }
 #Calender{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
@@ -178,6 +188,7 @@ body{
     margin-left: 5px;
     border: none;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .navbtn2 {
@@ -352,4 +363,8 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
-
+#loginButton:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+    }
