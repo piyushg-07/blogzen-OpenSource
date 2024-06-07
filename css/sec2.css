@@ -6,26 +6,23 @@
 }
 
 
-.sec2{
-    /* border: 2px solid red; */
-    height: 34vw;
-}
-
 .sec2buttons{
-    width: 20vw;
-    margin-left: 9.5vw;
+    position: absolute;
+    top: 23rem;
+    width: 20rem;
+    margin-left: 3rem;
 }
 .sec2btn2{
     cursor: pointer;
-    height: 2.5vw;
-    width: 7.2vw;
-    margin: 0 1.3vw;
-    border-radius: 1vw;
+    height: 2.5rem;
+    width: 7.2rem;
+    margin: 0 1.3rem;
+    border-radius: 1rem;
     border: none;
     border: 1px solid #ff765d;
     background-color: white;
-    margin: 0 1vw;
-    font-size: 0.8em;
+    margin: 0 1rem;
+    font-size: 0.8rem;
     color: black;
 }
 .sec2btn2-recent:hover{
@@ -35,26 +32,27 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .sec2content{
     /* border: 1px solid black; */
-    width: 90vw;
-    height: 25vw;
-    margin-top: 2.4vw;
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    margin-left: 5vw;
+    margin-left: 1rem;
     
 }
 .sec2content>img{
-    height: 23vw;
-    width: 29vw;
+    height: 23rem;
+    width: 29rem;
     object-fit: fill;
-    margin: 0 5vw;
-    border-radius: 2vw;
+    margin: 0 4rem;
+    border-radius: 2rem;
 }
 
 .s2text{
     /* border: 1px solid green; */
-    height: 23vw;
-    width: 45vw;
+    width: 35rem;
+    padding: 1rem;
     /* margin: 0 3vw; */
 }
 /* .div{
@@ -66,9 +64,8 @@
     line-height: 30px;
      color: var(--element1-color)} */
 .s2text h1{
-    margin: 1vw 0;
-    font-size: 1.8em;
-    width: 30vw;
+    margin: 1rem 0;
+    font-size: 1.8rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -79,7 +76,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 30px;
     color: var(--element-color);
 
@@ -87,13 +84,13 @@
 .author{
     display: flex;
     align-items: center;
-    margin-top: 1.5vw;
+    margin-top: 1rem;
 }
 .author>img{
-    height: 3vw;
-    width: 3vw;
-    border-radius: 10vw;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
 }
 .authorsname{
-    margin-left: 1vw;
+    margin-left: 1rem;
 }

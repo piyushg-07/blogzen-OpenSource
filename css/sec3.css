@@ -7,19 +7,13 @@
 }
 
 
-.sec3{
-    /* border: 2px solid red; */
-    height: 62vw;
-    display: flex;
-    justify-content: center;
-}
 .s3boxes{
     /* border: 1px solid black; */
-    height: 26vw;
-    width: 90vw;
+    height: 26rem;
+    width: 90rem;
     display: flex;
-    margin-left: 6vw;
-    margin-bottom: 3vw;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
 }
 .mainContainer{
     display: flex;
@@ -31,28 +25,27 @@
 }
 .box1{
     /* border: 1px solid green; */
-    padding-bottom: 2vw;
-    height: 27vw;
-    width: 25vw;
-    margin: 0 2vw;
+    padding-bottom: 2rem;
+    height: 27rem;
+    margin: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .box1>img{
     
-    height: 15vw;
-    width: 23vw;
+    height: 12rem;
+    width: 20rem;
     object-fit: fill;
     /* margin: 0 5vw; */
-    border-radius: 1vw;
+    border-radius: 1rem;
 }
 
 .flex{
     display: flex;
     flex-wrap: wrap;
     max-width: 95%;
-    margin: auto;
+    margin: 1rem;
 }
 
 
@@ -63,30 +56,30 @@
 
 .boxtext{
     /* border: 1px solid green; */
-    height: 11vw;
-    width: 20vw;
-    margin-left: 1vw;
+    height: 11rem;
+    width: 20rem;
+    margin-left: 1rem;
 }
 .boxdiv{
-    margin: 0.4vw 0;
-    font-size: 0.8em;
+    margin: 0.4rem 0;
+    font-size: 0.8rem;
     color: var(--element1-color);
     line-height: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 .boxtext h1{
-    margin: 0.5vw 0;
+    margin: 0.5rem 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 27px;
     color: var(--element-color);
-    width: 15vw;
-    font-size: 1em;
+    width: 15rem;
+    font-size: 1rem;
 }
 .boxContent{
-    font-size: 0.7em;
+    font-size: 0.7rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -99,27 +92,27 @@
 .author{
     display: flex;
     align-items: center;
-    margin-top: 1.5vw;
+    margin-top: 1.5rem;
 }
 .boxauthor{
     display: flex;
-    margin-top: 0.5vw;
+    margin-top: 0.5rem;
 }
 .boxauthor>img{
-    height: 2vw;
-    width: 2vw;
-    border-radius: 10vw;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10rem;
     
 }
 .boxauthorsname{
-    margin-left: 0.5vw;
-    font-size: 0.8vw;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
 }
 .namestyle{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.8vw;
+    font-size: 0.8rem;
     line-height: 15px;
     color: var(--element-color);
 }
@@ -127,8 +120,19 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.5vw;
+    font-size: 0.5rem;
     line-height: 18px;
     color: var(--element1-color);
 
+}
+@media(max-width: 620px){
+    #signup{
+        display: none;
+    }
+    #loginButton{
+        display: none;
+    }
+    .search{
+        width: 20rem;
+    }
 }
