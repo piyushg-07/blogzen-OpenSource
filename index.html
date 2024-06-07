@@ -46,7 +46,30 @@
       <img src="assests/moon.png" alt="image" id="themeImg">
       <button onclick="click" id="loginButton" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Log
         In</button>
+
+        <div class="overlay" id="overlay">
+          <div class="popup">
+            <div class="option">
+              <img src="email_icon.png" alt="Email">
+              <div>Sign in with Email</div>
+            </div>
+            <div class="option">
+              <img src="facebook_icon.png" alt="Facebook">
+              <div>Sign in with Facebook</div>
+            </div>
+            <div class="option">
+              <img src="google_icon.png" alt="Google">
+              <div>Sign in with Google</div>
+            </div>
+            <div class="option">
+              <img src="yahoo_icon.png" alt="Yahoo">
+              <div>Sign in with Yahoo</div>
+            </div>
+          </div>
+        </div>
+
       <button id="signup" class="button_nav txtColor">Sign Up</button>
+      
       <button onclick="click" id="Calender" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Calendar</button>
     </div>
   </div>
@@ -54,9 +77,14 @@
   <div class="overlay1" id="overlay1">
     <div class="popup1">
       <div class="header">
-
-        <h3><div class="Year" id="Year"></div></h3>
-        <!-- <h3><div class="monthYear" id="monthYear"></div></h3> -->
+        <h2><div class="Year" id="Year"></div></h2>
+        <div class="yearButton">
+        <button class="upBtn" id="upBtn">
+          <i class="fa-solid fa-chevron-up"></i>
+      </button>
+      <button class="downBtn" id="downBtn">
+        <i class="fa-solid fa-chevron-down"></i>
+    </button></div>
         <button class="prevBtn" id="prevBtn">
           <i class="fa-solid fa-chevron-left"></i>
       </button>
@@ -66,55 +94,25 @@
         </button>
       </div>
       <div class="days">
+          <div class="day">Sun</div>
           <div class="day">Mon</div>
           <div class="day">Tue</div>
           <div class="day">Wed</div>
           <div class="day">Thur</div>
           <div class="day">Fri</div>
           <div class="day">Sat</div>
-          <div class="day">Sun</div>
       </div>
       <div class="dates" id="dates"></div>
     </div> 
   </div>
 
-  <div class="overlay" id="overlay">
-    <div class="popup">
-      <div class="option">
-        <img src="email_icon.png" alt="Email">
-        <div>Sign in with Email</div>
-      </div>
-      <div class="option">
-        <img src="facebook_icon.png" alt="Facebook">
-        <div>Sign in with Facebook</div>
-      </div>
-      <div class="option">
-        <img src="google_icon.png" alt="Google">
-        <div>Sign in with Google</div>
-      </div>
-      <div class="option">
-        <img src="yahoo_icon.png" alt="Yahoo">
-        <div>Sign in with Yahoo</div>
-      </div>
-    </div>
-  </div>
-
   <div class="monthOverlay" id="monthOverlay">
     <div class="monthPopup">
-    <div class="months">January</div>
-    <div class="months">February</div>
-    <div class="months">March</div>
-    <div class="months">April</div>
-    <div class="months">May</div>
-    <div class="months">June</div>
-    <div class="months">July</div>
-    <div class="months">August</div>
-    <div class="months">September</div>
-    <div class="months">October</div>
-    <div class="months">November</div>
-    <div class="months">December</div>
+    <div class="months" id="months"></div>
   </div>
   </div>
+
+
 
   <!-- Sec-1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <div class="sec1">

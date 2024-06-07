@@ -9,6 +9,33 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const calendarContainer = document.querySelector(".calendar");
 const monthClick = document.querySelector(".month");
+const month_list = monthOverlay.querySelector(".months");
+
+const monthsArray = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+monthsArray.forEach((e, index) => {
+  let months = document.createElement("div");
+  months.innerHTML = `<div>${e}</div`;
+  months.onclick = () => {
+    monthOverlay.style.display = "none";
+    currentDate.setMonth(index);
+    updateCalendar();
+  };
+  month_list.appendChild(months);
+});
 
 let currentDate = new Date();
 
@@ -21,7 +48,6 @@ monthOverlay.addEventListener("click", (event) => {
     monthOverlay.style.display = "none";
   }
 });
-
 
 const updateCalendar = () => {
   const currentYear = currentDate.getFullYear();
@@ -72,6 +98,15 @@ nextBtn.addEventListener("click", () => {
   updateCalendar();
 });
 
+upBtn.addEventListener("click", () => {
+  currentDate.setFullYear(currentDate.getFullYear() - 1);
+  updateCalendar();
+});
+
+downBtn.addEventListener("click", () => {
+  currentDate.setFullYear(currentDate.getFullYear() + 1);
+  updateCalendar();
+});
 updateCalendar();
 
 themeBtn.addEventListener("click", function () {

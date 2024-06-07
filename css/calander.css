@@ -16,8 +16,7 @@
   border: 2px solid rgb(129, 129, 240);
   border-radius: 12px;
   align-items: center;
-  width: 30%;
-  padding: 10px;
+  padding: 20px;
   padding-left: 2%;
   text-align: center;
 }
@@ -87,15 +86,37 @@
   background-color: white;
   border: none;
   padding-left: 30%;
+  cursor: pointer;
 }
 
 .nextBtn {
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 .month {
   cursor: pointer;
 }
+
+.yearButton {
+  display: flex;
+  flex-direction: column;
+}
+.upBtn {
+  background-color: white;
+  border: none;
+  align-items: center;
+  font-size: 60%;
+  cursor: pointer;
+}
+.downBtn {
+  background-color: white;
+  border: none;
+  align-items: center;
+  font-size: 60%;
+  cursor: pointer;
+}
+
 .monthOverlay {
   display: none;
   position: fixed;
@@ -103,7 +124,7 @@
   left: 0;
   width: 100%;
   height: 110%;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
   z-index: 10;
   align-items: center;
   justify-content: center;
@@ -114,32 +135,42 @@
   border: 2px solid rgb(129, 129, 240);
   border-radius: 12px;
   align-items: center;
-  width: 30%;
-  height: 45%;
+  width: 325px;
+  height: 355px;
   padding: 20px;
   padding-left: 2%;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
 }
 .months {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+.months > div {
+  display: grid;
+  place-items: center;
+}
+.month > div > div {
+  width: 100%;
+  text-align: center;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
+}
+.months > div :hover {
+  background-color: darkblue;
+  color: white;
+  transform: scale(1.01);
+  transition: all 0.2s ease-in;
+  position: absolute;
   align-items: center;
   cursor: pointer;
   padding: 5px;
   margin: auto;
   font-weight: 500;
-  border-radius: 5%;
+  border-radius: 10%;
   transition: 0.2s;
-  height: 30px;
-  /* width: 30px; */
-}
-.months:hover{
-  background-color: darkblue;
-  color: white;
-  transform: scale(1.01);
-  transition: all 0.2s ease-in;
-  
 }
