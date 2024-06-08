@@ -22,8 +22,10 @@
     border: 1px solid #ff765d;
     background-color: white;
     margin: 0 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: black;
+    font-weight: bold;
+
 }
 .sec2btn2-recent:hover{
     color: #fff;
