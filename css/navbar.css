@@ -33,6 +33,7 @@
 *{
     margin: 0;
     padding: 0;
+    z-index: 0;
 }
 
 
@@ -81,7 +82,7 @@ body{
     justify-content: space-between;
     background-color: white;
     transition: background-color 1s ease;
-    z-index: 9999;
+    z-index: 1;
     position: fixed;
 }
 
@@ -353,3 +354,15 @@ body{
     color:rgb(211, 211, 211);
 }
 
+.nav-wrapper{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+ }
+ .progress-bar{
+    height: 5px;
+    width: 0;
+    border: 3px solid  #7D41E2;
+    background-color: #7D41E2;
+ }
