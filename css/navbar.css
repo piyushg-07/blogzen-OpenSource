@@ -345,7 +345,6 @@ body{
 
 .date:hover,
 .date.active{
-    background-color: darkblue;
     color: white;
 }
 
