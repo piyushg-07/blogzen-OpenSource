@@ -258,7 +258,7 @@ body{
   margin-bottom: 10px;
 }
 .popup :hover {
-  border: 2px solid blue ;
+  
    transform: scale(1.01);
    transition: all 0.2s ease-in;
 }
