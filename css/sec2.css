@@ -31,6 +31,10 @@
     color: #fff;
     background-color: #ff765d;
 }
+
+.sec2 img:hover{
+    transform: scale(1.1);
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .sec2content{
     /* border: 1px solid black; */
