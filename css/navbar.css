@@ -33,11 +33,12 @@
 *{
     margin: 0;
     padding: 0;
+    z-index: 0;
 }
 
 
 body{
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     font-family: 'Poppins', sans-serif;
     /* background-color: black; */
 
@@ -352,4 +353,16 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
-
+.nav-wrapper{
+    position: sticky;
+    top: 0;
+    background-color:white;
+    z-index: 1;
+ }
+ .progress-bar{
+    height: 5px;
+    width: 0;
+    border:3px solid #7D41E2;
+    background-color: #7D41E2;
+    
+ }
