@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Blogzen</title>
+  <style>
+    /* signup.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  width: 300px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #208ff4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #1b6ac9;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+p a {
+  color: #208ff4;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form>
+      <div class="input-field">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="input-field">
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Log in here</a></p>
+  </div>
+</body>
+
+</html>

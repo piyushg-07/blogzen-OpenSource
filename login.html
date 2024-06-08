@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Blogzen</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/login.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+      </div>
+      <button onclick="loginWithEmail()">Login</button>
+      <div class="divider">or</div>
+      <div class="social-login">
+        <button class="google-btn" onclick="loginWithGoogle()">
+          <img src="google_icon.png" alt="Google"> Login with Google
+        </button>
+        <button class="facebook-btn" onclick="loginWithFacebook()">
+          <img src="facebook_icon.png" alt="Facebook"> Login with Facebook
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* login.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button_nav {
+    margin-top: 15px;
+  }
+  
+  .divider {
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .social-login button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .google-btn {
+    background: #db4437;
+    color: #fff;
+  }
+  
+  .facebook-btn {
+    background: #3b5998;
+    color: #fff;
+  }
+  
+  .social-login button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
