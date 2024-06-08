@@ -22,8 +22,8 @@ jobs:
             const number = context.payload.pull_request.number;
             const body = "🎉 Your pull request has been successfully merged! 🎉 Thank you for your contribution to our project. Your efforts are greatly appreciated. Keep up the fantastic work! 🚀";
             await github.rest.issues.createComment({
-              owner: owner,
-              repo: repo,
+              owner,
+              repo,
               issue_number: number,
               body: body
             });
