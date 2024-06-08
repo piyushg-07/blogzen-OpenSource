@@ -38,7 +38,7 @@
 
 
 body{
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     /* background-color: black; */
 
@@ -82,7 +82,7 @@ body{
     justify-content: space-between;
     background-color: white;
     transition: background-color 1s ease;
-    z-index: 9999;
+    z-index: 0;
     position: fixed;
 }
 
