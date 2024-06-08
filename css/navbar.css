@@ -340,7 +340,7 @@ body{
     border-radius: 50%;
     transition: 0.2s;
     height:30px;
-    width:30px;
+    /* width:30px; */
 }
 
 .date:hover,
