@@ -59,9 +59,11 @@ themeBtn.addEventListener('click',function(){
     navbar.classList.toggle("darktheme");
     if(body.classList.contains("darktheme")){
         themeBtn.src ="assests/sun.png"
+        themeBtn.style.backgroundColor="rgba(255, 255, 0, 0.8) "
     }
     else{
         themeBtn.src ="assests/moon.png"
+        themeBtn.style.backgroundColor="white"
         document.body.style.transition="1s"
     }
 
@@ -86,11 +88,12 @@ overlay.addEventListener('click', (event) => {
   }
 });
 
-function click() {
-  const overlay1 = document.getElementById('overlay1');
-  console.log("Baby");
-  overlay1.style.display = overlay1.style.display == "flex" ? "none": "flex";
+
+function toggleCalendar() {
+  var overlay = document.getElementById('overlay1');
+  overlay.style.display = overlay.style.display === 'flex' ? 'none' : 'flex';
 }
+
 const Calender = document.getElementById('Calender');
 const overlay1 = document.getElementById('overlay1');
 
