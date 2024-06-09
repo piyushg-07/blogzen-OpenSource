@@ -70,6 +70,10 @@ body{
 .navbar.dark {
     background-color: black;
 }
+.darktheme .overlay .popup {
+    background-color: #2c2c2c; 
+    color: #ffffff;
+}
 
 .navbar {
 
