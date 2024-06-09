@@ -147,11 +147,35 @@ function closeCalendar() {
     </div>
     <div class="newsletter">
       <div class="footer_titles">Subscribe to our newsletter</div>
-      <form>
-        <input type="text" id="emailId" name="email" placeholder="Your Email">
-        <button  type="submit">Subscribe</button>
+      <form id="subscriptionForm">
+        <input type="email" id="emailId" name="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
       </form>
+      <div id="subscriptionMessage" style="display: none;">You have subscribed successfully!</div>
     </div>
+    
+    <script>
+      document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+    
+        // Get the email input value
+        var email = document.getElementById("emailId").value;
+    
+        // Email validation using regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+    
+        // Simulate subscription (you may replace this with actual subscription code)
+        // For now, just displaying the success message
+        document.getElementById("subscriptionMessage").style.display = "block";
+      });
+    </script>
+    
+    
+    
     <div class="contact">
       <div class="footer_titles">Contact Us</div>
       <a href="mailto:Blogzen@gmail.com"><div class="mail">Blogzen@gmail.com</div></a>

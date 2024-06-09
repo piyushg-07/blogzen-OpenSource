@@ -1,0 +1,32 @@
+name: Greetings
+
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Send Greeting for Issues
+        if: github.event_name == 'issues'
+        run: |
+          echo "Sending greeting for issue"
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               -d "{\"body\":\"Thank you🎉, @${{ github.actor }}! for creating this issue! We'll look into it as soon as possible. In the meantime, Your contribution is greatly appreciated, and we look forward to collaborating with you to resolve it. Keep up the great work! We will review your changes promptly and provide feedback. Please remember to check our documentation and guidelines.\"}" \
+               "${{ github.event.issue.url }}/comments"
+
+      - name: Send Greeting for Pull Requests
+        if: github.event_name == 'pull_request_target'
+        run: |
+          echo "Sending greeting for pull request"
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               -d "{\"body\":\"Excellent work🚀🚀, @${{ github.actor }}! Thank you for submitting your pull request. Your contribution is valuable, and we appreciate your efforts to improve our project. We will review your changes promptly and provide feedback. Keep up the excellent work! Please remember to check our documentation and guidelines.\", \"in_reply_to\": null}" \
+               "${{ github.event.pull_request.comments_url }}"

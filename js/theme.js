@@ -53,54 +53,69 @@ nextBtn.addEventListener('click', () => {
 
 updateCalendar();
 
-
+// Function to toggle the theme and save preference to localStorage
 themeBtn.addEventListener('click',function(){
     body.classList.toggle("darktheme");
     navbar.classList.toggle("darktheme");
     if(body.classList.contains("darktheme")){
-        themeBtn.src ="assests/sun.png"
+        themeBtn.src ="assests/sun.png";
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeBtn.src ="assests/moon.png";
+        localStorage.setItem('theme', 'light');
     }
-    else{
-        themeBtn.src ="assests/moon.png"
-        document.body.style.transition="1s"
+    document.body.style.transition="1s";
+});
+
+// Check for saved theme preference on page load and apply it
+window.addEventListener('load', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('darktheme');
+        navbar.classList.add('darktheme');
+        themeBtn.src = "assests/sun.png";
+    } else {
+        body.classList.remove('darktheme');
+        navbar.classList.remove('darktheme');
+        themeBtn.src = "assests/moon.png";
     }
+});
 
-})
-
+// Function to toggle overlay display
 function click() {
     const overlay = document.getElementById('overlay');
     console.log("Baby");
-    overlay.style.display = overlay.style.display == "flex" ? "none": "flex";
-  }
+    overlay.style.display = overlay.style.display == "flex" ? "none" : "flex";
+}
 const loginButton = document.getElementById('loginButton');
 const overlay = document.getElementById('overlay');
 
 loginButton.addEventListener('click', () => {
-  overlay.style.display = 'flex';
-  console.log("Hello");
+    overlay.style.display = 'flex';
+    console.log("Hello");
 });
 
 overlay.addEventListener('click', (event) => {
-  if (event.target === overlay) {
-    overlay.style.display = 'none';
-  }
+    if (event.target === overlay) {
+        overlay.style.display = 'none';
+    }
 });
 
 function click() {
-  const overlay1 = document.getElementById('overlay1');
-  console.log("Baby");
-  overlay1.style.display = overlay1.style.display == "flex" ? "none": "flex";
+    const overlay1 = document.getElementById('overlay1');
+    console.log("Baby");
+    overlay1.style.display = overlay1.style.display == "flex" ? "none" : "flex";
 }
 const Calender = document.getElementById('Calender');
 const overlay1 = document.getElementById('overlay1');
 
 Calender.addEventListener('click', () => {
-overlay1.style.display = 'flex';
-console.log("Hello");
+    overlay1.style.display = 'flex';
+    console.log("Hello");
 });
 
 overlay1.addEventListener('click', (event) => {
-if (event.target === overlay1) {
-  overlay1.style.display = 'none';
-}
+    if (event.target === overlay1) {
+        overlay1.style.display = 'none';
+    }
 });
