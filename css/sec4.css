@@ -42,18 +42,14 @@
     color: #AA77FF;
 }
 
- .newsletter form button {
-     width: 30%;
-     background-color: #AA77FF;
-     border: none;
-     height: 30px;
-     color: #ffffff;
-     cursor: pointer;
- }
-+
-+.newsletter form button:hover {
-+    background-color: #8855c8;
-+}
+.newsletter form button {
+    width: 30%;
+    background-color: #AA77FF;
+    border: none;
+    height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 .contact h2 {
     color: #ffffff;
