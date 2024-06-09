@@ -143,6 +143,11 @@ body{
     padding: 1.2rem;
 }
 
+#Calender:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
