@@ -43,10 +43,10 @@
     <div class="navs2">
       <!-- <img src="img/final logo 1.png" alt="" /> -->
       <img src="assests/moon.png" alt="image" id="themeImg">
-      <button onclick="click" id="loginButton" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Log
+      <button onclick="click" id="loginButton" class="button_nav txtColor hello" >Log
         In</button>
       <button id="signup" class="button_nav txtColor">Sign Up</button>
-      <button onclick="click" id="Calender" class="button_nav txtColor1" style="border: 1px solid #f6f8f9; background-color:#208FF4 ; color: white;">Calendar</button>
+      <button onclick="click" id="Calender" class="button_nav txtColor1 hello">Calendar</button>
     </div>
   </div>
 <!--Calender-->
@@ -118,18 +118,18 @@
           <i id="searchIcon" class="fas fa-search"></i>
         </button>
       </div>
+    </div>    <div class="buttons">
+      <button class="s1btn1" >All</button>
+      <button class="s1btn1" style="background-color: white;color:black;" id = 'Tech' onclick="buttonClick('Tech')">Technology</button>
+      <button class="s1btn1"style="background-color: white;color:black;" id = 'branding' onclick="buttonClick('branding')">Branding </button>
+        <button class="s1btn1"style="background-color: white;color:black" id = 'news' onclick="buttonClick('news')" >News</button>
+          <button class="s1btn1"style="background-color: white;color:black"  id = 'AI' onclick="buttonClick('AI')" > AI</button>
+            <button class="s1btn1"style="background-color: white;color:black" id = 'Management' onclick="buttonClick('Management')" >Management</button>
+              <button class="s1btn1"style="background-color: white;color:black" id = 'Design' onclick="buttonClick('Design')">Design</button>
     </div>
-    <div class="button-container">
-      <button class="s1btn1">All</button>
-      <button class="s1btn1" style="background-color: white;color:black;" id='Tech' onclick="buttonClick('Tech')">Technology</button>
-      <button class="s1btn1" style="background-color: white;color:black;" id='branding' onclick="buttonClick('branding')">Branding</button>
-      <button class="s1btn1" style="background-color: white;color:black" id='news' onclick="buttonClick('news')">News</button>
-      <button class="s1btn1" style="background-color: white;color:black" id='AI' onclick="buttonClick('AI')">AI</button>
-      <button class="s1btn1" style="background-color: white;color:black" id='Management' onclick="buttonClick('Management')">Management</button>
-    </div>
+   
   </div>
   <!-- Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
 
   <div class="sec2buttons">
     <button class="sec2btn2" style="background-color: #ff765d; color: white">
@@ -165,11 +165,35 @@
     </div>
     <div class="newsletter">
       <div class="footer_titles">Subscribe to our newsletter</div>
-      <form>
-        <input type="text" id="emailId" name="email" placeholder="Your Email">
-        <button  type="submit">Subscribe</button>
+      <form id="subscriptionForm">
+        <input type="email" id="emailId" name="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
       </form>
+      <div id="subscriptionMessage" style="display: none;">You have subscribed successfully!</div>
     </div>
+    
+    <script>
+      document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+    
+        // Get the email input value
+        var email = document.getElementById("emailId").value;
+    
+        // Email validation using regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+    
+        // Simulate subscription (you may replace this with actual subscription code)
+        // For now, just displaying the success message
+        document.getElementById("subscriptionMessage").style.display = "block";
+      });
+    </script>
+    
+    
+    
     <div class="contact">
       <div class="footer_titles">Contact Us</div>
       <a href="mailto:Blogzen@gmail.com"><div class="mail">Blogzen@gmail.com</div></a>

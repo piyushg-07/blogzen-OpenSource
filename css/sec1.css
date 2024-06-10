@@ -7,29 +7,29 @@
 
 
 .sec1 {
-    height: 20vw;
+    height: 20rem;
     margin-top: 110px;
+    width: 100%;
 }
 
 .s1part1 {
-    height: 7vw;
-    width: 80vw;
-    margin: 3.2vw auto;
-    border-radius: 2vw;
+    height: 7rem;
+    width: 97%;
+    margin: 3.2rem 2%;
+    border-radius: 2rem;
     background-color: #7D41E2;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .s1part1 span {
-    position: relative;
-    top: 1.3vw;
-    left: 37vw;
     font-size: 2.7em;
     font-weight: bold;
     color: white;
 }
-
 
 .container {
     display: flex;
@@ -42,25 +42,28 @@
 }
 
 .search {
-    height: 3vw;
-    width: 34vw;
-    border-radius: 2vw;
-    padding-left: 1rem;
-    padding-right: 3.5rem; /* Adjust padding to make space for the icon */
+    height: 3rem;
+    width: 34rem;
+    border-radius: 2rem;
+    position: relative;
+    top: -2.5rem;
+    background-color: white;
     border: none;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
+    color: rgba(0, 0, 0, 0.148);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search[placeholder] {
     color: black;
+    padding-left: 1rem;
 }
-
-.search::placeholder {
-    color: black !important; /* Ensure placeholder text appears in black */
-}
-
 
 .search-button {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -3.9rem;
     height: 100%;
     width: 3.5rem;
     background-color: transparent;
@@ -90,23 +93,49 @@
 .s1part2 a:hover {
     text-decoration: underline;
 }
-
-.button-container {
+.buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
-  }
-  
-  .s1btn1 {
-    height: 2.4vw;
-    padding: 2px;
-    margin: 0 0.7vw;
+    align-items: center;
+    margin: -2rem 0.7rem;
+
+}
+.s1btn1 {
+    /* width:fit-content;
+    padding: .9rem;
+    margin: 0 0.7rem;
     border: none;
-    border-radius: 1vw;
+    border-radius: 1rem;
+    background-color: #ff765d;
+    color: white; */
+    cursor: pointer;
+    height: 2.5rem;
+    width: 7.2rem;
+    margin: 0 ;
+    border-radius: 1rem;
+    border: none;
+    border: 1px solid #ff765d;
+    background-color: white;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+
+    
+}
+
+/* add hovering effect to s1btn1 buttons */
+/* .s1btn1:hover {
     background-color: #ff765d;
     color: white;
-  }
-  
+    cursor: pointer;
+} */
+
+.s1btn1-recent:hover{
+    color: #fff;
+    background-color: #ff765d;
+}
 
 .s1part2 a {
     margin: 0 0.7vw;
