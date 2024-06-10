@@ -27,6 +27,12 @@
     font-weight: bold;
 
 }
+
+.allActive{
+    background-color: #ff765d;
+    color: #fff;
+}
+
 .sec2btn2-recent:hover{
     color: #fff;
     background-color: #ff765d;
@@ -99,4 +105,25 @@
 }
 .authorsname{
     margin-left: 1rem;
+}
+
+@media (max-width:965px){
+    .sec2btn2{
+    margin-top: 50px;
+    transition: all 0.4s;
+    }
+    .sec2content>img{
+        margin-top: 50px;
+        transition: all 0.4s;
+    }
+
+}
+
+@media(max-width:605px){
+    .sec2btn2{
+        margin-top: 70px;
+    }
+    .sec2content>img{
+        margin-top: 60px;
+    }
 }
