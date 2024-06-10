@@ -87,3 +87,8 @@
     text-decoration: none;
     color: var(--element-color);
 }
+
+.s1btn1 :hover {
+    color: #fff;
+    background-color: #ff765d;
+}
