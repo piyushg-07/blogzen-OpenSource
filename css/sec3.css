@@ -23,10 +23,6 @@
     justify-content: center;
     
 }
-
-.flex img:hover{
-    transform: scale(1.1);
-}
 .box1{
     /* border: 1px solid green; */
     padding-bottom: 2rem;
