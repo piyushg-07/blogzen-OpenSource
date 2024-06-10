@@ -1,0 +1,17 @@
+name: "❓ Question"
+description: "Ask a question or seek clarification"
+title: "QUESTION:"
+labels: [Question, Needs Triage]
+body:
+  - type: textarea
+    attributes:
+      label: "What's your question?"
+      description: "Please describe your question or what you need clarification on."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true

@@ -1,6 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var tbody = document.getElementById("blog");
 

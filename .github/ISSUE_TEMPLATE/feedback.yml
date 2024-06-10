@@ -1,0 +1,18 @@
+name: "📣 General Feedback"
+description: "Share your thoughts or suggestions"
+title: "FEEDBACK:"
+labels: [Feedback, Needs Triage]
+body:
+  - type: textarea
+    attributes:
+      label: "What's your feedback?"
+      description: "Please share your thoughts, ideas, or suggestions."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's Code of Conduct"
+          required: true
+        - label: "I'm a GSSoC'24 contributor"
