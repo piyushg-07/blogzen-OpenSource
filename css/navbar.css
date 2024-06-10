@@ -97,9 +97,9 @@ body{
 
 .navs1 img {
     /* border: 1px solid black; */
-    width: 3vw;
-    height: 3vw;
-    border-radius: 10vw;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
 }
 
 .navs1 a {
@@ -120,11 +120,27 @@ body{
     color: #7D41E2;
 }
 
-
+#loginButton{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+#loginButton:hover{
+    border: 1px solid #f6f8f9;
+    background-color:#208FF4 ;
+    color: white;
+}
 #signup:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
     color: #2a95f6;
+}
+#Calender{
+    border: 1px solid #f6f8f9;
+    background-color:#208FF4 ;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1.2rem;
 }
 
 
@@ -137,6 +153,7 @@ body{
     align-items: center;
     margin-right: 1vw;
 }
+
 
 .navs2>img {
     cursor: pointer;
@@ -164,6 +181,7 @@ body{
     border: none;
     cursor: pointer;
 }
+
 
 .navbtn2 {
     cursor: pointer;
@@ -193,11 +211,30 @@ body{
     color: white;
 }
 .txtColor1{
-    color: var(--txtColor1);
+    color: white;
+}
+
+.txtColor:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+
+.txtColor1:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
 }
 .darktheme .txtColor1{
     color: rgba(0, 0, 0, 0.7);
 }
+
+.navs2 #themeImg:hover{
+    transform: scale(1.2);
+}
+
+
+
 
 .overlay {
   display: none;
@@ -337,4 +374,5 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
+
 
