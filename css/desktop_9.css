@@ -411,6 +411,14 @@ nav {
     cursor: pointer;
 }
 
+.newsletter form button:hover{
+    background-color: black;
+    color: #ffffff;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 10px;
+}
+
 .footer a .mail{
     color: #ffffff;
     font-size: 20px;
