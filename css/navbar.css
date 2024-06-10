@@ -28,6 +28,7 @@
    
   } */
   
+
   
 
 *{
@@ -142,7 +143,62 @@ body{
     font-size: 1.1rem;
     padding: 1.2rem;
 }
+/* Navbar */
 
+ul.horizontal-menu {
+    padding: 20px;
+    display: flex;  /* Change to flex for horizontal alignment */
+    border-radius: 0px;
+    margin-left: 750px;
+  }
+
+  ul.horizontal-menu li {
+    list-style: none;
+    margin: 0 17px;  /* Add spacing between items */
+  }
+
+  ul.horizontal-menu li a {
+    color: #208FF4;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;  /* Align icon and text vertically */
+    
+  }
+
+  ul.horizontal-menu li a .icon {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 10px;  /* Add spacing between icon and text */
+  }
+
+  ul.horizontal-menu li a .icon .fa {
+    width: 100%;
+    height: 90%;
+    line-height: 40px;
+    font-size: 32px;
+    transition: 0.5s ease-in-out;
+    color: inherit;
+  }
+
+  ul.horizontal-menu li a .icon .fa:last-child {
+    color: #e91e63;
+  }
+
+  ul.horizontal-menu li a:hover .icon .fa {
+    transform: translateY(-100%);
+  }
+
+  ul.horizontal-menu li a .name {
+    position: relative;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;  /* Center the text */
+  }
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
