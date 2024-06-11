@@ -411,6 +411,11 @@ nav {
     cursor: pointer;
 }
 
+.newsletter form button:hover {
+    background-color: white;
+    color: #AA77FF;
+}
+
 .footer a .mail{
     color: #ffffff;
     font-size: 20px;
