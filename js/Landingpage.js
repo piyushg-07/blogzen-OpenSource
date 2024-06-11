@@ -149,6 +149,9 @@ function td_fun(item) {
       </div>
     </div>
   `;
+  div.addEventListener('click', function() {
+    window.location.href = `../blog.html?id=${item.id}`;
+  });
   return div;
 }
 
