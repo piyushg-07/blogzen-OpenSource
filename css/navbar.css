@@ -120,28 +120,29 @@ body{
     color: #7D41E2;
 }
 
-#loginButton{
-    border: 1px solid #208FF4;
+#loginButton,#Calender{
+    border: 1px solid #7D41E2;
     background-color: transparent;
-    color: #2a95f6;
+    color: #7D41E2;
 }
-#loginButton:hover{
+#loginButton:hover,#Calender:hover{
     border: 1px solid #f6f8f9;
-    background-color:#208FF4 ;
+    background-color:#7D41E2;
     color: white;
 }
 #signup:hover{
-    border: 1px solid #208FF4;
+    border: 1px solid #7D41E2;
     background-color: transparent;
-    color: #2a95f6;
+    color: #7D41E2;
 }
-#Calender{
+
+/*#Calender{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
     color: white;
     font-size: 1.1rem;
-    padding: 1.2rem;
-}
+    padding: 1.2rem; 
+}*/
 
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -168,7 +169,7 @@ body{
     justify-content: center;
     margin-right: 20px;
     height: 30px;
-    background-color: #208FF4;
+    background-color: #7D41E2;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
