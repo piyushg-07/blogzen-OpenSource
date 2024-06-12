@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogzen</title>
     <link rel="stylesheet" href="./css/desktop_9.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="./js/blog.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <script>
-        function toggleTheme() {
-            var navbar = document.getElementById("navbar");
-            navbar.classList.toggle("dark");
-        }
-    </script>
-    <title>Blogzen</title>
     <style>
         .other_blogs {
             margin-top: 110px;
         }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #000000;
+            color: #fff; /* Text color in dark mode */
+        }
+
+        body.dark-mode .navbar {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        body.dark-mode .other_blogs {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        body.dark-mode .footer {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        body.dark-mode img.logo-image, 
+        body.dark-mode img.logo-text {
+            filter: none; /* Ensuring logos are not affected */
+        }
+
+        body.dark-mode .title_related_blogs,
+        body.dark-mode .blogs_related h4,
+        body.dark-mode .blogs_related h3,
+        body.dark-mode .blogs_related p,
+        body.dark-mode .blogs_related .profile_details h4,
+        body.dark-mode .blogs_related .profile_details h5,
+        body.dark-mode .footer .footer_titles,
+        body.dark-mode .footer .newsletter input[type="text"],
+        body.dark-mode .footer .newsletter button,
+        body.dark-mode .footer .contact .mail {
+            color: #fff;
+        }
     </style>
 </head>
-
 <body>
     <nav class="navbar" id="navbar">
         <div class="logo_container">
             <a href="">
-                <div class="logo_image"><img src="/assests/blogzen_logo.svg" alt=""></div>
-                <div class="logo_text"><img src="/assests/blogzen_text.svg" alt=""></div>
+                <div class="logo_image"><img src="/assests/blogzen_logo.svg" alt="" class="logo-image"></div>
+                <div class="logo_text"><img src="/assests/blogzen_text.svg" alt="" class="logo-text"></div>
             </a>
         </div>
-
-
         <div class="profile">
             <div class="profile_image_nav"><img src="/assests/profile_image_large.png" alt=""></div>
             <a href="">
                 <div class="profile_name">Hello Piyush</div>
                 <img src="/assests/down_arrow.svg" alt="">
             </a>
-            <img src="assests/moon.png" alt="image" id="themeImg" style="margin-left: 20px; cursor: pointer;">
+            <img src="assests/moon.png" alt="image" id="themeImg" style="margin-left: 20px; cursor: pointer;" onclick="toggleDarkMode()">
         </div>
         <div class="calendar_container">
             <a href="">
@@ -51,24 +77,15 @@
             </a>
         </div>
     </nav>
-
-
-
-    <div id="blog">
-
-    </div>
-
-
+    <div id="blog"></div>
     <div class="other_blogs">
         <div class="title_related_blogs">Other blogs related to this category</div>
         <div class="blogs_related">
-
             <div class="blog">
                 <img src="/assests/Rectangle 20.png" alt="">
                 <h4>Technology</h4>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae hendrerit.</p>
                 <div class="profile_section">
                     <img src="/assests/profile_image_large.png" alt="">
                     <div class="profile_details">
@@ -81,8 +98,7 @@
                 <img src="/assests/Rectangle 21.png" alt="">
                 <h4>Technology</h4>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae hendrerit.</p>
                 <div class="profile_section">
                     <img src="/assests/profile_image_large.png" alt="">
                     <div class="profile_details">
@@ -91,13 +107,11 @@
                     </div>
                 </div>
             </div>
-
             <div class="blog">
                 <img src="/assests/Rectangle 20.png" alt="">
                 <h4>Technology</h4>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae
-                    hendrerit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus consequat orci vitae hendrerit.</p>
                 <div class="profile_section">
                     <img src="/assests/profile_image_large.png" alt="">
                     <div class="profile_details">
@@ -107,7 +121,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="footer">
         <div class="socials">
@@ -120,17 +133,21 @@
         </div>
         <div class="newsletter">
             <div class="footer_titles">Subscribe to our newsletter</div>
-            <form>
+            <form onsubmit="alert('You have successfully subscribed!'); document.getElementById('emailId').value = ''; return false;">
                 <input type="text" id="emailId" name="email" placeholder="Your Email">
                 <button type="submit">Subscribe</button>
             </form>
+            
         </div>
         <div class="contact">
             <div class="footer_titles">Contact Us</div>
             <a href="mailto:Blogzen@gmail.com"><div class="mail">Blogzen@gmail.com</div></a>
         </div>
     </div>
-    <script src="js/theme.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
-
 </html>
