@@ -92,16 +92,17 @@
     font-size: 1rem;
     color: black;
     font-weight: bold;
-
+    transition: transform 0.3s ease, background-color 0.3s ease;
     
 }
 
 /* add hovering effect to s1btn1 buttons */
-/* .s1btn1:hover {
+.s1btn1:hover {
+    transform: scale(1.1);
     background-color: #ff765d;
     color: white;
     cursor: pointer;
-} */
+}
 
 .s1btn1-recent:hover{
     color: #fff;

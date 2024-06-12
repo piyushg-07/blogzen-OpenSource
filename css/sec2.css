@@ -25,9 +25,11 @@
     font-size: 1rem;
     color: black;
     font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
-.sec2btn2-recent:hover{
+.sec2btn2:hover{
+    transform: scale(1.1); 
     color: #fff;
     background-color: #ff765d;
 }
