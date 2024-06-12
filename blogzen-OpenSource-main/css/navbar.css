@@ -84,7 +84,35 @@ body{
     z-index: 9999;
     position: fixed;
 }
+.bg:empty {
 
+    color:rgba(0, 0, 0, 0.6)
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .other_blogs {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .footer {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode img {
+    filter: invert(1);
+}
 /* Sec-1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs1 {
     /* border: 1px solid black; */
