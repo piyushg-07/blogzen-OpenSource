@@ -1,0 +1,72 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://img.freepik.com/free-photo/medium-shot-young-people-with-reviews_23-2149394417.jpg?size=626&ext=jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+/* Container styling */
+.container {
+    position: relative;
+    background: rgba(25, 12, 12, 0.5); /* Added semi-transparent black background */
+    color: white; /* Added white text color for better visibility */
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Added background-color transition */
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.7); /* Adjusted background color on hover */
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 2.5em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.selected {
+    color: #ffcc00;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    background-color: rgb(41, 134, 234);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgb(13, 62, 184);
+}
