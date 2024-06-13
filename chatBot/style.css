@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .chatbot__button {
     position: fixed;
     bottom: 15px;
@@ -36,7 +37,7 @@
     width: 400px;
     background-color: #f3f7f8;
     border-radius: 15px;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1) 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
     transform: scale(0.5);
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -60,7 +61,7 @@
 .chatbot__header span {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 20px;
     color: #202020;
     transform: translateY(-50%);
@@ -165,22 +166,40 @@
     visibility: hidden;
 }
 
-.chatbot__textarea:valid~span {
+.chatbot__textarea:valid ~ span {
     visibility: visible;
 }
 
+/* Added responsiveness */
 @media (max-width: 490px) {
     .chatbot {
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
+        right: 23px;
+        bottom: 85px;
+        width: 90%;
+        height: 71%;
+        border-radius: 30px
     }
     .chatbot__box {
-        height: 90%;
+        height: calc(100% - 140px); 
+        padding: 20px 10px 80px; 
     }
     .chatbot__header span {
         display: inline;
+    }
+    .chatbot__header {
+        padding: 10px 0; 
+    }
+    .chatbox__title {
+        font-size: 1.2rem; 
+    }
+    .chatbot__input-box {
+        padding: 5px 10px; 
+    }
+    .chatbot__textarea {
+        width: 70%; 
+        padding: 10px 10px 10px 0; 
+    }
+    .chatbot__input-box span {
+        font-size: 1.5rem; 
     }
 }

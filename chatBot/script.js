@@ -5,7 +5,6 @@ const chatBox = document.querySelector('.chatbot__box');
 const chatbotCloseBtn = document.querySelector('.chatbot__header span');
 
 let userMessage;
-// Need GPT key
 const inputInitHeight = chatInput.scrollHeight;
 const API_KEY = '033f3bcc57msh4cbeceaaa74b3fbp172fd5jsn8008c32db481'; // ~IMPORTANT~
 
@@ -24,7 +23,7 @@ const generateResponse = (incomingChatLi) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-RapidAPI-Key": "033f3bcc57msh4cbeceaaa74b3fbp172fd5jsn8008c32db481", // ! IMPORTANT !
+      "X-RapidAPI-Key": API_KEY, // ~IMPORTANT~
       "X-RapidAPI-Host": "chatgpt53.p.rapidapi.com",
     },
     body: JSON.stringify({
@@ -35,20 +34,27 @@ const generateResponse = (incomingChatLi) => {
   console.log('Sending API request:', requestOptions);
 
   fetch(API_URL, requestOptions)
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
     .then((data) => {
       console.log('API response:', data);
-      console.log(data.choices[0].message.content);
-      messageElement.textContent = data.choices[0].message.content;
+      if (data && data.choices && data.choices.length > 0 && data.choices[0].message && data.choices[0].message.content) {
+        messageElement.textContent = data.choices[0].message.content;
+      } else {
+        throw new Error('Invalid API response format');
+      }
     })
     .catch((error) => {
-      console.log('API error:', error);
+      console.error('API error:', error);
       messageElement.classList.add('error');
       messageElement.textContent = 'Oops! Please try again!';
     })
     .finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
 };
-
 
 const handleChat = () => {
   userMessage = chatInput.value.trim();
