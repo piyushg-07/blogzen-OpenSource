@@ -129,12 +129,18 @@
     color: var(--element1-color);
 
 }
-@media(max-width: 620px){
+@media(max-width: 570px){
+    
     #signup{
-        display: none;
+        /* display: none; */
+        font-size: 10px;
+        margin-right: 0px;
     }
     #loginButton{
-        display: none;
+        /* display: none; */
+        /* margin-top: 5rem; */
+        margin-left: 2rem;
+        font-size: 10px;
     }
     .search{
         width: 20rem;

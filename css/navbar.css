@@ -166,7 +166,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     height: 30px;
     background-color: #208FF4;
     padding-top: 10px;
@@ -374,5 +374,37 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
-
-
+@media (max-width: 570px) {
+    
+    #Calender {
+        border: 1px solid #f6f8f9;
+        background-color: #208FF4;
+        color: white;
+        font-size: 16px;
+        padding: 11px;
+        height: 35px;
+    }
+    .button_nav {
+        height: 25px;
+        padding: 7px;
+    }
+    .span1 {
+        margin-left: 1vw;
+        
+        font-size: 25px;
+        font-weight: bold;
+        color: #7D41E2;
+    }
+    .navs1 img {
+        /* border: 1px solid black; */
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+    }
+    
+}
+@media(max-width:769px){
+    .popup{
+        width: 50%;
+    }
+}

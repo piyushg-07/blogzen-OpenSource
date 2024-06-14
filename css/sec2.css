@@ -16,12 +16,12 @@
     cursor: pointer;
     height: 2.5rem;
     width: 7.2rem;
-    margin: 0 1.3rem;
+   gap: 20px;
     border-radius: 1rem;
     border: none;
     border: 1px solid #ff765d;
     background-color: white;
-    margin: 0 1rem;
+    margin-top: 20px;
     font-size: 1rem;
     color: black;
     font-weight: bold;
@@ -99,4 +99,10 @@
 }
 .authorsname{
     margin-left: 1rem;
+}
+@media(max-width:767px){
+    .sec2btn2{
+        margin-top: 10rem;
+        
+    }
 }
