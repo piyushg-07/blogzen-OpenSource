@@ -1,13 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
-:root{
+
+:root {
     --element-color: black;
-    --element1-color:rgba(0, 0, 0, 0.5);
-    --element2-color:rgba(0, 0, 0, 0.8);
+    --element1-color: rgba(0, 0, 0, 0.5);
+    --element2-color: rgba(0, 0, 0, 0.8);
 }
 
 
-.s3boxes{
+.s3boxes {
     /* border: 1px solid black; */
     height: 26rem;
     width: 90rem;
@@ -15,37 +15,40 @@
     margin-left: 6rem;
     margin-bottom: 3rem;
 }
-.mainContainer{
+
+.mainContainer {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.flex img:hover{
+.flex img:hover {
     transform: scale(1.1);
 }
-.box1{
-    /* border: 1px solid green; */
+
+.box1 {
     padding-bottom: 2rem;
     height: 27rem;
     margin: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.box1>img{
-    
-    height: 12rem;
-    width: 20rem;
-    object-fit: fill;
-    /* margin: 0 5vw; */
-    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.flex{
+.box1>img {
+    height: 12rem;
+    width: 20rem;
+    margin: 20px 0;
+    object-fit: fill;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.flex {
     display: flex;
     flex-wrap: wrap;
     max-width: 95%;
@@ -53,18 +56,19 @@
 }
 
 
-.flex a{
+.flex a {
     color: black;
     text-decoration: none;
 }
 
-.boxtext{
+.boxtext {
     /* border: 1px solid green; */
     height: 11rem;
     width: 20rem;
     margin-left: 1rem;
 }
-.boxdiv{
+
+.boxdiv {
     margin: 0.4rem 0;
     font-size: 0.8rem;
     color: var(--element1-color);
@@ -72,7 +76,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-.boxtext h1{
+
+.boxtext h1 {
     margin: 0.5rem 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -82,7 +87,8 @@
     width: 15rem;
     font-size: 1rem;
 }
-.boxContent{
+
+.boxContent {
     font-size: 0.7rem;
     font-family: 'Poppins';
     font-style: normal;
@@ -93,26 +99,31 @@
 
 
 }
-.author{
+
+.author {
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
 }
-.boxauthor{
+
+.boxauthor {
     display: flex;
     margin-top: 0.5rem;
 }
-.boxauthor>img{
+
+.boxauthor>img {
     height: 2rem;
     width: 2rem;
     border-radius: 10rem;
-    
+
 }
-.boxauthorsname{
+
+.boxauthorsname {
     margin-left: 0.5rem;
     font-size: 0.8rem;
 }
-.namestyle{
+
+.namestyle {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -120,7 +131,8 @@
     line-height: 15px;
     color: var(--element-color);
 }
-.datestyle{
+
+.datestyle {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -129,14 +141,17 @@
     color: var(--element1-color);
 
 }
-@media(max-width: 620px){
-    #signup{
+
+@media(max-width: 620px) {
+    #signup {
         display: none;
     }
-    #loginButton{
+
+    #loginButton {
         display: none;
     }
-    .search{
+
+    .search {
         width: 20rem;
     }
 }
