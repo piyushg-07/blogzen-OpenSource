@@ -100,6 +100,7 @@ body{
     width: 2rem;
     height: 2rem;
     border-radius: 2rem;
+    margin-top: 30px;
 }
 
 .navs1 a {
@@ -112,6 +113,7 @@ body{
     font-size: 2em;
     font-weight: bold;
     color: #7D41E2;
+    margin-top: 30px;
 }
 
 .span2 {
@@ -152,6 +154,7 @@ body{
     display: flex;
     align-items: center;
     margin-right: 1vw;
+    margin-top: 20px;
 }
 
 
