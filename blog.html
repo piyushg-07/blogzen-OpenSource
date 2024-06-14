@@ -23,6 +23,28 @@
         .other_blogs {
             margin-top: 110px;
         }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 10px 50px;
+            margin-top: 90px;
+            margin-bottom: 10px;
+        }
+        .breadcrumb li {
+            margin-right: 10px;
+        }
+        .breadcrumb li+li:before {
+            content: ">";
+            margin-right: 10px;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -51,7 +73,10 @@
             </a>
         </div>
     </nav>
-
+ <!-- Breadcrumb Navigation -->
+ <ul class="breadcrumb">
+    <li><a href="index.html" id="homeLink">Home</a></li>
+</ul>
 
 
     <div id="blog">
@@ -132,5 +157,12 @@
     </div>
     <script src="js/theme.js"></script>
 </body>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const homeLink = document.getElementById('homeLink');
+            homeLink.addEventListener('click', function() {
+                localStorage.removeItem('breadblog');
+            });
+    });
+</script>
 </html>
