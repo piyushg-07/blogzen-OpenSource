@@ -220,6 +220,65 @@
   </div>
   <!--  chat bot finish  -->
 
+  <!--Go To Top Button-->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><b>&uarr;</b></button>
+
+  <style>
+  #myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 80px;
+  right:20px; 
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color:rgb(60, 123, 174); 
+  color: white;
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 30px; 
+  font-size: 18px; 
+  width:60px;
+  height:60px;
+  font-size:25px;
+}
+
+#myBtn:hover {
+  background-color:rgb(14, 66, 109);
+}
+</style>
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+// When the user clicks on the button, scroll to the top of the document smoothly
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+<!--Go To Top Button ended-->
+
   <script src="./chatBot/script.js"></script>
   <script src="js/theme.js"></script>
 </body>
