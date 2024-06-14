@@ -120,29 +120,6 @@ body{
     color: #7D41E2;
 }
 
-#loginButton{
-    border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
-}
-#loginButton:hover{
-    border: 1px solid #f6f8f9;
-    background-color:#208FF4 ;
-    color: white;
-}
-#signup:hover{
-    border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
-}
-#Calender{
-    border: 1px solid #f6f8f9;
-    background-color:#208FF4 ;
-    color: white;
-    font-size: 1.1rem;
-    padding: 1.2rem;
-}
-
 
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
@@ -168,17 +145,17 @@ body{
     justify-content: center;
     margin-right: 20px;
     height: 30px;
-    background-color: #208FF4;
+    background-color: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
-    color: #ffffff;
+    color: #7D41E2;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     margin-left: 5px;
-    border: none;
+    border: 1px solid #208FF4;
     cursor: pointer;
 }
 
@@ -207,24 +184,15 @@ body{
     margin-left: 0.3vw;
 }
 
-.txtColor {
-    color: white;
-}
-.txtColor1{
-    color: white;
+
+
+.button_nav:hover{
+    border: 1px solid #f6f8f9;
+    background-color:#208FF4 ;
+    color: white; 
+    transform: scale(1.1);
 }
 
-.txtColor:hover{
-    border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
-}
-
-.txtColor1:hover{
-    border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
-}
 .darktheme .txtColor1{
     color: rgba(0, 0, 0, 0.7);
 }
