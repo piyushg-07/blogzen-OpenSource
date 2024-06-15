@@ -156,6 +156,7 @@ body{
 
 
 .navs2>img {
+    box-sizing: content-box;
     cursor: pointer;
     width: 2vw;
     height: 2vw;
