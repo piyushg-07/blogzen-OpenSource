@@ -1,18 +1,19 @@
-:root{
+:root {
     --element-color: black;
-    --element1-color:rgba(0, 0, 0, 0.5);
-    --element2-color:rgba(0, 0, 0, 0.8);
+    --element1-color: rgba(0, 0, 0, 0.5);
+    --element2-color: rgba(0, 0, 0, 0.8);
 
 }
 
 
-.sec2buttons{
+.sec2buttons {
     position: absolute;
     top: 23rem;
     width: 20rem;
     margin-left: 3rem;
 }
-.sec2btn2{
+
+.sec2btn2 {
     cursor: pointer;
     height: 2.5rem;
     width: 7.2rem;
@@ -27,16 +28,18 @@
     font-weight: bold;
 
 }
-.sec2btn2-recent:hover{
+
+.sec2btn2-recent:hover {
     color: #fff;
     background-color: #ff765d;
 }
 
-.sec2 img:hover{
+.sec2 img:hover {
     transform: scale(1.1);
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.sec2content{
+.sec2content {
     /* border: 1px solid black; */
     width: 100%;
     height: auto;
@@ -45,22 +48,25 @@
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
-    
+
 }
-.sec2content>img{
+
+.sec2content>img {
     height: 23rem;
     width: 29rem;
     object-fit: fill;
     margin: 0 4rem;
     border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.s2text{
+.s2text {
     /* border: 1px solid green; */
     width: 35rem;
     padding: 1rem;
     /* margin: 0 3vw; */
 }
+
 /* .div{
     margin: 1.3vw 0;
     font-family: 'Poppins';
@@ -69,7 +75,7 @@
     font-size: 0.9em;
     line-height: 30px;
      color: var(--element1-color)} */
-.s2text h1{
+.s2text h1 {
     margin: 1rem 0;
     font-size: 1.8rem;
     font-family: 'Poppins';
@@ -78,7 +84,8 @@
     line-height: 42px;
     color: var(--element-color);
 }
-.s2text p{
+
+.s2text p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -87,16 +94,19 @@
     color: var(--element-color);
 
 }
-.author{
+
+.author {
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
-.author>img{
+
+.author>img {
     height: 3rem;
     width: 3rem;
     border-radius: 10rem;
 }
-.authorsname{
+
+.authorsname {
     margin-left: 1rem;
 }
