@@ -381,6 +381,20 @@ nav {
     font-weight: 600 !important;
 }
 
+.footer_titles-1{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 600 !important;
+}
+
+.visitor-widget{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
 .newsletter form {
     display: flex;
     flex-wrap: wrap;
