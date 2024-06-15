@@ -18,17 +18,17 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #7D41E2;    
-    border-radius: 80px; 
+    background: #7D41E2;
+    border-radius: 80px;
   }
-  
+
   /* Handle on hover */
   /* ::-webkit-scrollbar-thumb:hover {
-    
-   
+
+
   } */
-  
-  
+
+
 
 *{
     margin: 0;
@@ -73,15 +73,12 @@ body{
 
 .navbar {
 
-    width: 100vw;
-    height: 80px;
-    left: 0px;
+    width: 100%;
     top: 0px;
     display: flex;
     justify-content: space-between;
     background-color: white;
     transition: background-color 1s ease;
-    z-index: 9999;
     position: fixed;
 }
 
@@ -122,9 +119,14 @@ body{
 
 #loginButton{
     border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
+    color: white;
 }
+
+#loginButton a{
+    text-decoration: none;
+    text-emphasis: none;
+}
+
 #loginButton:hover{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
@@ -270,7 +272,7 @@ body{
   padding: 10px;
   padding-left:15px;
   cursor: pointer;
-  
+
 }
 
 .popup .option img {
@@ -284,7 +286,7 @@ body{
    transform: scale(1.01);
    transition: all 0.2s ease-in;
 }
- 
+
 .popup .option {
   transition: none !important;
 }
@@ -376,3 +378,30 @@ body{
 }
 
 
+/* NAVBAR LINKS */
+.navbar_links{
+    text-decoration: none;
+    color: #7D41E2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: all 0.3s;
+}
+
+.navbar_links:hover{
+    color: #2a95f6;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
