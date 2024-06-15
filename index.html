@@ -17,6 +17,9 @@
   <!-- material -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/desktop_9.css">
   <script src="./js/Landingpage.js"></script>
   <script>
@@ -100,15 +103,38 @@
     <div class="s1part1">
 
 
-      <span class="auto-type"></span>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <span class="auto-type"></span>
+      <div class="typewriter"><span class="auto-type"></span></div>
+
       <script>
-        var typed = new Typed(".auto-type", {
-          strings: ["Blogzen!!"],
-          typeSpeed: 150,
-          backspeed: 150,
-          loop: true
-        })
+          const fonts = [
+          "'Roboto', sans-serif",
+            "'Pacifico', cursive",
+            "'Indie Flower', cursive",
+            "'Courier Prime', monospace",
+       
+            "'Dancing Script', monospace",
+            "'Bebas Neue',monospace",
+            "'Sacramento', cursive"
+          ];
+          let fontIndex = 0;
+          const typewriterElement = document.querySelector('.auto-type');
+  
+          function changeFont() {
+              fontIndex = (fontIndex + 1) % fonts.length;
+              typewriterElement.parentElement.style.fontFamily = fonts[fontIndex];
+          }
+  
+          var typed = new Typed(".auto-type", {
+            strings: ["Blogzen!!"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+            preStringTyped: changeFont
+          });
+  
+          changeFont();
       </script>
     </div>
     <input class="search" placeholder="Search"></input>
