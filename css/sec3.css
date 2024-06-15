@@ -143,14 +143,6 @@
 }
 
 @media(max-width: 620px) {
-    #signup {
-        display: none;
-    }
-
-    #loginButton {
-        display: none;
-    }
-
     .search {
         width: 20rem;
     }

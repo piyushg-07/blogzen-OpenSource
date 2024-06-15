@@ -153,6 +153,14 @@ body{
     align-items: center;
     margin-right: 1vw;
 }
+.toggle-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
 
 
 .navs2>img {
@@ -180,7 +188,46 @@ body{
     margin-left: 5px;
     border: none;
     cursor: pointer;
-}
+}  
+  @media (max-width: 768px) {
+    .navs2 {
+      display: none;
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 60px;
+    }
+  
+    .navs2.active {
+      display: flex;
+    }
+  
+    .toggle-button {
+      display: block;
+    }
+    .navs2 button, .navs2 a {
+        width: 100%;
+        text-align: center;
+      }
+  
+      .navs2 button {
+        margin-bottom: 10px;
+      }
+  }
+  @media (max-width: 630px) {
+    .navs2 {
+      width: 100%; /* Make navs2 take full width */
+      box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .navs2 button, .navs2 a {
+      width: 100%; /* Make buttons and links take full width */
+      text-align: center; /* Center align the text */
+    }
+
+    .navs2 button {
+      margin-bottom: 10px; /* Add space between buttons */
+    }
+  }
 
 
 .navbtn2 {
@@ -374,5 +421,3 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
-
-
