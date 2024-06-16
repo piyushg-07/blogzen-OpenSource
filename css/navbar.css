@@ -153,6 +153,7 @@ body{
     padding: 1.2rem;
 }
 
+
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
     /* border: 1px solid black; */
@@ -162,6 +163,7 @@ body{
     align-items: center;
     margin-right: 1vw;
 }
+
 
 .navs2>img {
     cursor: pointer;
@@ -191,6 +193,7 @@ body{
     border: 1px solid transparent;
 }
 
+
 .navbtn2 {
     cursor: pointer;
     height: 2vw;
@@ -219,11 +222,30 @@ body{
     color: white;
 }
 .txtColor1{
-    color: var(--txtColor1);
+    color: white;
+}
+
+.txtColor:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+
+.txtColor1:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
 }
 .darktheme .txtColor1{
     color: rgba(0, 0, 0, 0.7);
 }
+
+.navs2 #themeImg:hover{
+    transform: scale(1.2);
+}
+
+
+
 
 .overlay {
   display: none;
@@ -341,7 +363,7 @@ body{
 }
 
 .date{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -350,8 +372,8 @@ body{
     font-weight: 500;
     border-radius: 50%;
     transition: 0.2s;
-    height:30px;
-    width:30px;
+    height:20px;
+    width:50px;
 }
 
 .date:hover,
@@ -363,8 +385,11 @@ body{
 .date.inactive{
     color:rgb(211, 211, 211);
 }
+
 #loginButton:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
     color: #2a95f6;
     }
+
+
