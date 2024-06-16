@@ -81,7 +81,9 @@ body * {
   top: calc(55%);
   left: 84.9%;
 }
-
+#twitter{
+  color:white;
+}
 .textfield>input {
   width: 100%;
   border: none;
