@@ -153,7 +153,14 @@ body{
     padding: 1.2rem;
 }
 
-
+#loginButton a{
+    color: white;
+    text-decoration: none;
+}
+#loginButton a:hover{
+    color:#208FF4;
+    text-decoration:none;
+}
 /* Sec-2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs2 {
     /* border: 1px solid black; */
