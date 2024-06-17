@@ -1,7 +1,7 @@
 :root {
     --element-color: black;
-    --element1-color:rgba(0, 0, 0, 0.5);
-    --element2-color:rgba(0, 0, 0, 0.8);
+    --element1-color: rgba(0, 0, 0, 0.5);
+    --element2-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -13,6 +13,9 @@
 }
 
 .s1part1 {
+    background-image: url(../assests//blog_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 7rem;
     width: 97%;
     margin: 3.2rem 2%;
@@ -38,16 +41,35 @@
     position: relative;
     top: -2.5rem;
     background-color: white;
-    border: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;    
+    outline: none;
+    padding: 5px 0 5px 2rem;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
-    color: rgba(0, 0, 0, 0.148);
+    color: #000;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.search-btn {
+    position: absolute;
+    right: 24rem;
+    top: -2.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #b3b3b3;
+}
+
 .search[placeholder] {
-    color: black;
-    padding-left: 1rem;
+    color: #b3b3b3;
+    font-weight: 500;
+    padding-left: 3rem;
 }
 
 .s1part2 {
@@ -64,7 +86,8 @@
 .s1part2 a:hover {
     text-decoration: underline;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,6 +95,7 @@
     margin: -2rem 0.7rem;
 
 }
+
 .s1btn1 {
     /* width:fit-content;
     padding: .9rem;
@@ -83,17 +107,14 @@
     cursor: pointer;
     height: 2.5rem;
     width: 7.2rem;
-    margin: 0 ;
+    margin: 0;
     border-radius: 1rem;
     border: none;
-    border: 1px solid #ff765d;
     background-color: white;
     margin: 0 0.5rem;
     font-size: 1rem;
     color: black;
     font-weight: bold;
-
-    
 }
 
 /* add hovering effect to s1btn1 buttons */
@@ -103,7 +124,7 @@
     cursor: pointer;
 } */
 
-.s1btn1-recent:hover{
+.s1btn1-recent:hover {
     color: #fff;
     background-color: #ff765d;
 }

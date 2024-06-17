@@ -8,8 +8,9 @@ console.log("FucY")
     console.log("Hi")
     for(i=0; i<NavBar.length; i++)
     {
+      NavBar[1]=document.getElementById(ele).style.backgroundColor="#ffffff"
       NavBar[i].style.backgroundColor="white";
-      NavBar[i].style.color="black";
+      NavBar[i].style.color="#7f7f7f";
     }
     document.getElementById(ele).style.backgroundColor="#ff765d"
     document.getElementById(ele).style.color="white";

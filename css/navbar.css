@@ -121,9 +121,10 @@ body{
 }
 
 #loginButton{
-    border: 1px solid #208FF4;
+    border: 2.5px solid #218FF4;
     background-color: transparent;
-    color: #2a95f6;
+    color: #101010;
+    font-weight: 600;
 }
 #loginButton:hover{
     border: 1px solid #f6f8f9;
@@ -173,7 +174,7 @@ body{
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -352,17 +353,12 @@ body{
 }
 
 .date{
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    padding:5px;
-    margin: auto;
+    text-align: start;
     font-weight: 500;
-    border-radius: 50%;
+    border-radius: 2%;
     transition: 0.2s;
-    height:20px;
-    width:50px;
+    width: 50px;
 }
 
 .date:hover,
