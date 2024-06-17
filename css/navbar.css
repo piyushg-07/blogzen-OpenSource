@@ -130,6 +130,9 @@ body{
     background-color:#208FF4 ;
     color: white;
 }
+#loginButton a {
+    text-decoration: none;
+}
 #signup:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
