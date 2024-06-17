@@ -59,7 +59,7 @@
     margin-top: 10px;
 }
 
-.contact h2 a{
+.contact h2 a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -72,3 +72,47 @@
     margin-top: 10px;
 } 
 
+.Btn {
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #f2edf4;  /* Ensure text color is set */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-position 1s, transform 0.2s;
+    overflow: hidden;
+    z-index: 1;  /* Ensure button is above pseudo-element */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+.Btn::before {
+    position: absolute;
+    content: "";
+    width: 97%;
+    height: 90%;
+    border-radius: 4px;
+    transition: background-position 1s;
+    background-color: #AA77FF;
+    background-size: 200%;
+    z-index: -1;  /* Ensure pseudo-element is below text */
+}
+
+.Btn:hover {
+    background-position: right;
+}
+
+.Btn:hover::before {
+    background-position: right;
+}
+
+.Btn:active {
+    transform: scale(0.8);
+}
