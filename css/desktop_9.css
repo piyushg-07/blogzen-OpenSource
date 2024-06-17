@@ -25,6 +25,10 @@
     padding: 10px;
 }
 
+body{
+    cursor:none;
+}
+
 nav {
     height: 80px;
     display: flex;
@@ -410,6 +414,16 @@ nav {
     color: #ffffff;
     cursor: pointer;
 }
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background: #a989e0;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
 
 .footer a .mail{
     color: #ffffff;

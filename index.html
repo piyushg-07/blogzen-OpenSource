@@ -31,6 +31,7 @@
 </head>
 
 <body>
+
   <!-- Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
   <div class="navbar" id="navbar">
@@ -222,6 +223,44 @@
 
   <script src="./chatBot/script.js"></script>
   <script src="js/theme.js"></script>
+  <script>
+    // custom cursor
+    const dots = [];
+      const cursor = {
+        x: 0,
+        y: 0,
+      };
+
+      for (let i = 0; i < 10; i++) {
+        const dot = document.createElement("div");
+        dot.style.scale=`0.${10-(i)}`;
+        dot.className = "dot";
+        document.body.appendChild(dot);
+        dots.push(dot);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.x = e.clientX;
+        cursor.y = e.clientY;
+      });
+
+      function draw() {
+        let x = cursor.x;
+        let y = cursor.y;
+
+        dots.forEach((dot, index) => {
+          const nextDot = dots[index + 1] || dots[0];
+
+          dot.style.left = x + "px";
+          dot.style.top = y + "px";
+
+          x += (nextDot.offsetLeft - dot.offsetLeft) * 0.5;
+          y += (nextDot.offsetTop - dot.offsetTop) * 0.5;
+        });
+      }
+
+      setInterval(draw, 10);
+  </script>
 </body>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 
