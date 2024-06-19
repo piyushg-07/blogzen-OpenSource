@@ -283,6 +283,7 @@ body{
     padding:10px;
     padding-left: 2%;
     text-align: center;
+
   }
   
   .popup .option {
@@ -304,6 +305,42 @@ body{
     margin-right: 20px;
     margin-bottom: 10px;
   }
+=======
+    padding:5px;
+    color:rgb(0, 0, 0);
+}
+
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+}
+
+.date{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding:5px;
+    margin: auto;
+    font-weight: 500;
+    border-radius: 50%;
+    transition: 0.2s;
+    height:20px;
+    width:50px;
+}
+
+.date:hover,
+.date.active{
+    background-color: darkblue;
+    color: white;
+}
+
+.date.inactive{
+    color:rgb(211, 211, 211);
+}
+
+
 
   .popup :hover {
     border: 2px solid blue ;
