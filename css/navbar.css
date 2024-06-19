@@ -55,6 +55,17 @@ body{
 
 }
 
+/* New rule to change Log In button text color to white in dark mode */
+.darktheme #loginButton a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.darktheme #loginButton a:hover {
+    background-color: #2a95f6;
+    font-weight: 400;
+}
+
 #themeImg {
     cursor: pointer;
     width: 25px;
