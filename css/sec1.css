@@ -73,13 +73,39 @@
 
 }
 .s1btn1 {
-    width:fit-content;
+    /* width:fit-content;
     padding: .9rem;
     margin: 0 0.7rem;
     border: none;
     border-radius: 1rem;
     background-color: #ff765d;
+    color: white; */
+    cursor: pointer;
+    height: 2.5rem;
+    width: 7.2rem;
+    margin: 0 ;
+    border-radius: 1rem;
+    border: none;
+    border: 1px solid #ff765d;
+    background-color: white;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+
+    
+}
+
+/* add hovering effect to s1btn1 buttons */
+/* .s1btn1:hover {
+    background-color: #ff765d;
     color: white;
+    cursor: pointer;
+} */
+
+.s1btn1-recent:hover{
+    color: #fff;
+    background-color: #ff765d;
 }
 
 .s1part2 a {
