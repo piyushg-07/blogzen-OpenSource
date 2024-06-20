@@ -1,33 +1,41 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
+document.addEventListener("DOMContentLoaded", function () {
+  var tbody = document.getElementById("blog");
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    var tbody = document.getElementById("blog");
-
-    // fetch function
-    fetch("../database/jsonData.json")
-      .then(res => res.json())
-      .then(json => {
-        json.blogs.map(data => {
-          console.log("data1", data);
-          // tbody.innerHTML += td_fun(data);
-          // tbody.append(td_blog(data));
-         if (data.id === id) tbody.innerHTML = td_blog(data).innerHTML;
-        });
-      })
-      .catch(error => {
-        console.error('Error:', error);
+  // fetch function
+  fetch("../database/jsonData.json")
+    .then((res) => res.json())
+    .then((json) => {
+      json.blogs.map((data) => {
+        console.log("data1", data);
+        // tbody.innerHTML += td_fun(data);
+        // tbody.append(td_blog(data));
+        if (data.id === id) tbody.innerHTML = td_blog(data).innerHTML;
       });
-  });
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+});
 
-  // create td
-  function td_blog(item) {
-    console.log("item000", item ,item.id);
-    let loading =window.location.href.split("=")[1];
-    if (item.id==loading){
-      let div = document.createElement('div');
+// create td
+function td_blog(item) {
+  console.log("item000", item, item.id);
+  let loading = window.location.href.split("=")[1];
+  if (item.id == loading) {
+    let div = document.createElement("div");
+    let commentsHtml = item.comments
+      .map(
+        (comment) => `
+      <div class="comment" style="margin-top: 15px;">
+        <p><strong>${comment.author}</strong> (${comment.date}):</p>
+        <p>${comment.content}</p>
+      </div>
+    `
+      )
+      .join("");
     div.innerHTML = `
         <div class="title_container">
         <div class="category">${item.tags}</div>
@@ -62,7 +70,14 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <hr class="below">
         </div>
+        <div className="comments">
+          <h2>Comments</h2>
+         
+          <div class="all-comments" style="margin-top: 20px;">
+              ${commentsHtml}
+            </div>
+        </div>
         `;
-        return div;
-    }
-    }
+    return div;
+  }
+}
