@@ -81,9 +81,7 @@
         <div class="textfield">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Enter Password">
-          <span id="login-hide">
-            <i class='icon bx bxs-hide' style="font-size: 27px;"></i>
-          </span>
+          <input type="checkbox" onclick="myFunction()">
         </div>
         <button class="btn-login" onclick="validateLogin()">Login</button>
         <h3>
@@ -128,18 +126,16 @@
     const auth = firebase.auth();
 
     // Password visibility toggle
-    const passwordInput = document.getElementById("password");
-    const hideLogo = document.getElementById("login-hide");
-    hideLogo.addEventListener("click", function () {
-      const passwordField = this.querySelector("i");
-      if (passwordInput.getAttribute("type") == "text") {
-        passwordInput.setAttribute("type", "password");
-        passwordField.classList.replace("bxs-show", "bxs-hide");
-      } else {
-        passwordInput.setAttribute("type", "text");
-        passwordField.classList.replace("bxs-hide", "bxs-show");
-      }
-    });
+    function myFunction()
+        {
+            var x= document.getElementById("myInput");
+            if(x.type=="password"){
+            x.type=any;
+        }
+        else{
+            x.type="password";
+        }
+            }
 
     // Close button redirect
     const closeBtn = document.querySelector('.close-btn');
