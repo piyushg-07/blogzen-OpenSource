@@ -120,16 +120,16 @@ body{
     color: #7D41E2;
 }
 
-#loginButton{
+#loginButton:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
     color: #2a95f6;
 }
-#loginButton:hover{
+/* #loginButton:hover{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
     color: white;
-}
+} */
 #signup:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
