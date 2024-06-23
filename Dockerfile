@@ -1,26 +1,14 @@
-# Use the official Node.js image as the base image
-FROM node:16-alpine
+# Use the official Nginx image from the Docker Hub
+FROM nginx:latest
 
-# Set the working directory inside the container
-WORKDIR /app
+# Remove the default Nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
-# Copy the package.json and package-lock.json files
-COPY package*.json ./
+# Copy the current directory contents into the Nginx web directory
+COPY . /usr/share/nginx/html
 
-# Install dependencies
-RUN npm install
+# Expose port 80 to the outside world
+EXPOSE 80
 
-# Copy the rest of the application code
-COPY . .
-
-# Build the React application
-RUN npm run build
-
-# Install a simple HTTP server to serve the React application
-RUN npm install -g serve
-
-# Expose the port the app runs on
-EXPOSE 3000
-
-# Command to run the application
-CMD ["serve", "-s", "build"]
+# Run Nginx in the foreground (this ensures the container stays running)
+CMD ["nginx", "-g", "daemon off;"]
