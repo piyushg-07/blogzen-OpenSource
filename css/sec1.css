@@ -7,8 +7,8 @@
 
 
 .sec1 {
-    height: 20rem;
-    margin-top: 110px;
+    margin-top: 100px;
+    height: 18rem;
     width: 100%;
 }
 
@@ -29,25 +29,6 @@
     font-size: 2.7em;
     font-weight: bold;
     color: white;
-}
-
-.search {
-    height: 3rem;
-    width: 34rem;
-    border-radius: 2rem;
-    position: relative;
-    top: -2.5rem;
-    background-color: white;
-    border: none;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.155);
-    color: rgba(0, 0, 0, 0.148);
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.search[placeholder] {
-    color: black;
-    padding-left: 1rem;
 }
 
 .s1part2 {

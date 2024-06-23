@@ -54,12 +54,16 @@ body{
     transition: all 1s;
 
 }
-
+a{
+    text-decoration: none;
+}
 #themeImg {
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 5px;
 }
 
 .themechangebtn {
@@ -84,7 +88,6 @@ body{
     z-index: 9999;
     position: fixed;
 }
-
 /* Sec-1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs1 {
     /* border: 1px solid black; */
@@ -120,15 +123,15 @@ body{
     color: #7D41E2;
 }
 
-#loginButton{
-    border: 1px solid #208FF4;
+.loginbtn{
+    color: white;
+    text-decoration: none;
+}
+
+.loginbtn:hover{
     background-color: transparent;
     color: #2a95f6;
-}
-#loginButton:hover{
-    border: 1px solid #f6f8f9;
-    background-color:#208FF4 ;
-    color: white;
+    text-decoration: none;
 }
 #signup:hover{
     border: 1px solid #208FF4;
@@ -209,9 +212,11 @@ body{
 
 .txtColor {
     color: white;
+    text-decoration: none;
 }
 .txtColor1{
     color: white;
+    text-decoration: none;
 }
 
 .txtColor:hover{
