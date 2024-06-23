@@ -1,3 +1,19 @@
 {
-    "liveServer.settings.port": 5503
+    "liveServer.settings.port": 5503,
+    "cSpell.words": [
+        "assests",
+        "authorsname",
+        "backspeed",
+        "Blogzen",
+        "boxauthor",
+        "boxauthorsname",
+        "boxdiv",
+        "boxtext",
+        "darktheme",
+        "datestyle",
+        "namestyle",
+        "navs",
+        "signup",
+        "themechangebtn"
+    ]
 }

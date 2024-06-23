@@ -142,7 +142,7 @@ body * {
 }
 
 #google-login:hover {
-  background: rgba(111, 50, 208, 0.9);
+  background: hsla(263, 63%, 51%, 0.9);
 }
 
 .close-btn {
@@ -154,6 +154,16 @@ body * {
   right: 10px;
   cursor: pointer;
   color: white;
+}
+
+h3{
+  color: hsla(263, 63%, 51%, 0.9);
+  font-size: 12px;
+  font-weight: 800;
+}
+h3 .a{
+  color: rgb(0, 0, 0);
+  font-weight: 800;
 }
 
 

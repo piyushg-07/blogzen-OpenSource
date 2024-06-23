@@ -52,9 +52,8 @@
         <div class="navs2">
           <!-- <img src="img/final logo 1.png" alt="" /> -->
           <img src="assests/moon.png" alt="image" id="themeImg">
-          <button  id="loginButton" class="button_nav txtColor hello" ><a href="login.html">
-           LogIn</a></button>
-          <button id="signup" class="button_nav txtColor">Sign Up</button>
+          <button  id="loginButton" class="button_nav txtColor" ><a href="login.html">
+           Get Started</a></button>
           <button onclick="click" id="Calender" class="button_nav txtColor1 hello">Calendar</button>
         </div>
       </div>
@@ -87,9 +86,40 @@
         </div>
         <button class="btn-login" onclick="validateLogin()">Login</button>
         <h3>
-          <center>OR</center>
+          <center>Don't have an account?<a href="#" id="signup">SIgnUp</a></center>
         </h3>
-        <button id="google-login">Login with Google</button>
+      </div>
+    </div>
+  </div>
+  <div class="signup">
+    <div class="left-login" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
+      <h1><b>Signup Here</b></h1>
+      <img src="1.png" class="left-login-image" alt="food">
+    </div>
+    <div class="right-login">
+      <div class="card-login" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
+        <button class="close-btn">&times;</button>
+        <h1>SIGNUP</h1>
+        <br>
+        <div class="textfield">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="textfield">
+          <label for="username">Username</label>
+          <input type="text" name="Username" id="username" placeholder="Username">
+        </div>
+        <div class="textfield">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password">
+          <span id="login-hide">
+            <i class='icon bx bxs-hide' style="font-size: 27px;"></i>
+          </span>
+        </div>
+        <button class="btn-login" onclick="validateLogin()">Login</button>
+        <h3>
+          <center>Already have an account?<a href="#" id="login">LogIn</a></center>
+        </h3>
       </div>
     </div>
   </div>
@@ -178,8 +208,25 @@
           });
       }
     }
-     // Google Sign-In
-     document.getElementById('google-login').addEventListener('click', () => {
+
+    // Redirect to signup page
+    // JavaScript to handle the tab switching
+    document.getElementById('signupLink').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      // Hide all tabs
+      var tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(function(tab) {
+          tab.style.display = 'none';
+      });
+
+      // Display the signup tab
+      document.getElementById('signupTab').style.display = 'block';
+    });
+
+    /*
+    // Google Sign-In
+    document.getElementById('google-login').addEventListener('click', () => {
       const provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithPopup(provider)
         .then((result) => {
@@ -201,8 +248,8 @@
         .catch((error) => {
           console.error('Error logging in with Google:', error);
           alert(error.message);
-        });
-    });
+        }); 
+    }); */
   </script>
 </body>
 
