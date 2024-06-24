@@ -125,6 +125,27 @@ body * {
   background: rgba(111, 50, 208, 0.9);
 }
 
+.social-icons h3{
+  padding-left: 80px;
+  font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+.social-icons {
+  margin-bottom: 5.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i {
+  font-size: 2.2rem;
+  color:white;
+  padding: .8rem 2rem;
+  transition: color .5s;
+}
+.social-icons li{
+  list-style-type :none;
+  }
+
 #google-login {
   width: 100%;
   padding: 16px 0;
