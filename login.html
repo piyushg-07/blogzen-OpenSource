@@ -8,7 +8,6 @@
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
-  <link rel="stylesheet" href="login1.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -34,10 +33,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../Css-files/scroll-top-button.css">
-    <link rel="stylesheet" href="../Css-files/content.css">
-    <script src="../hamburger.js"></script>
+   
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="login1.css">
   <title>Login</title>
 </head>
 
@@ -59,72 +58,40 @@
       </div>
   
   <section>
-  <div class="main-login">
-    <div class="left-login" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
-      <h1><b>Login Here</b></h1>
-      <img src="1.png" class="left-login-image" alt="food">
-    </div>
-    <div class="right-login">
-      <div class="card-login" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
-        <button class="close-btn">&times;</button>
-        <h1>LOGIN</h1>
-        <br>
-        <div class="textfield">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter Email">
+    <div class="main-login">
+      <div class="left-login" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
+        <!-- <h1><b>Login Here</b></h1> -->
+        <img src="1.png" class="left-login-image" alt="food">
+      </div>
+      <div class="right-login">
+        <div class="card-login" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
+          <button class="close-btn">&times;</button>
+          <h1>LOGIN</h1>
+          <br>
+          <div class="textfield">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+          </div>
+          <div class="textfield">
+            <label for="username">Username</label>
+            <input type="text" name="Username" id="username" placeholder="Username">
+          </div>
+          <div class="textfield">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+            <span id="login-hide">
+              <i class='icon bx bxs-hide' style="font-size: 27px;"></i>
+            </span>
+          </div>
+          <button class="btn-login" onclick="validateLogin()">Login</button>
+          <h3>
+            <center>Don't have account?<a href="signup.html" id="signup">SIGNUP</a></center>
+          </h3>
         </div>
-        <div class="textfield">
-          <label for="username">Username</label>
-          <input type="text" name="Username" id="username" placeholder="Username">
-        </div>
-        <div class="textfield">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter Password">
-          <span id="login-hide">
-            <i class='icon bx bxs-hide' style="font-size: 27px;"></i>
-          </span>
-        </div>
-        <button class="btn-login" onclick="validateLogin()">Login</button>
-        <h3>
-          <center>Don't have an account?<a href="#" id="signup">SIgnUp</a></center>
-        </h3>
       </div>
     </div>
-  </div>
-  <div class="signup">
-    <div class="left-login" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
-      <h1><b>Signup Here</b></h1>
-      <img src="1.png" class="left-login-image" alt="food">
-    </div>
-    <div class="right-login">
-      <div class="card-login" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-offset="170" data-aos-easing="ease-in-out">
-        <button class="close-btn">&times;</button>
-        <h1>SIGNUP</h1>
-        <br>
-        <div class="textfield">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter Email">
-        </div>
-        <div class="textfield">
-          <label for="username">Username</label>
-          <input type="text" name="Username" id="username" placeholder="Username">
-        </div>
-        <div class="textfield">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter Password">
-          <span id="login-hide">
-            <i class='icon bx bxs-hide' style="font-size: 27px;"></i>
-          </span>
-        </div>
-        <button class="btn-login" onclick="validateLogin()">Login</button>
-        <h3>
-          <center>Already have an account?<a href="#" id="login">LogIn</a></center>
-        </h3>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="footer">
+  </section>
+  <div class="footer">
     <div class="socials">
       <div class="footer_titles">Follow us on our socials</div>
       <div class="icons">
