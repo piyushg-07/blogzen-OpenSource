@@ -3,26 +3,25 @@
 console.log("jsonData")
 console.log("FucY")
 //Adding color function on click by Priyas32
-  function buttonClick(ele) {
-    NavBar= document.getElementsByClassName("s1btn1");
-    console.log("Hi")
-    for(i=0; i<NavBar.length; i++)
-    {
-      NavBar[i].style.backgroundColor="white";
-      NavBar[i].style.color="black";
-    }
-    document.getElementById(ele).style.backgroundColor="#ff765d"
-    document.getElementById(ele).style.color="white";
-    //
-    var tbody = document.getElementById("tbody");
-    let get = Array.from(document.getElementsByClassName('mainContainer'));
-    get.forEach(element => {
-    element.remove(); 
-    });
+function buttonClick(ele) {
+  NavBar = document.getElementsByClassName("s1btn1");
+  console.log("Hi")
+  for (i = 0; i < NavBar.length; i++) {
+    NavBar[i].style.backgroundColor = "white";
+    NavBar[i].style.color = "black";
+  }
+  document.getElementById(ele).style.backgroundColor = "#ff765d"
+  document.getElementById(ele).style.color = "white";
+  //
+  var tbody = document.getElementById("tbody");
+  let get = Array.from(document.getElementsByClassName('mainContainer'));
+  get.forEach(element => {
+    element.remove();
+  });
   const john = document.getElementById(ele);
   // fetch function
   fetch("../database/jsonData.json")
-  // fetch("http://localhost:3000/blogs")
+    // fetch("http://localhost:3000/blogs")
     .then(res => res.json())
     .then(json => {
       console.log("data1", json);
@@ -35,13 +34,13 @@ console.log("FucY")
         console.log("data1", data);
         // tbody.innerHTML += td_fun(data);
         tbody.append(td_fun(data));
-        
+
       });
     })
     .catch(error => {
       console.error('Error:', error);
     });
-  }
+}
 
 //Changes by priya
 
@@ -58,7 +57,7 @@ console.log("FucY")
 //       console.log("data1",data)
 //       // tbody.append(td_fun(data));
 //       tbody.innerHTML += td_fun(data);
-      
+
 //     })
 //   }) .catch(error => {
 //     console.error('Error:', error);
@@ -102,13 +101,13 @@ console.log("FucY")
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var tbody = document.getElementById("tbody");
   var tmain = document.getElementById("sec2");
 
   // fetch function
   fetch("../database/jsonData.json")
-  // fetch("http://localhost:3000/blogs")
+    // fetch("http://localhost:3000/blogs")
     .then(res => res.json())
     .then(json => {
       console.log("data1", json);
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("data1", data);
         // tbody.innerHTML += td_fun(data);
         tbody.append(td_fun(data));
-        
+
       });
       tmain.append(td_fun1(json));
     })
@@ -132,12 +131,12 @@ function td_fun(item) {
   div.className = "mainContainer";
   div.innerHTML = `
     <div class="box1" key="item.id">
-      <img src=${item.imageurl} alt="" />
+      <img src=${item.imageurl} alt="" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300.png';" />
       <div class="boxtext">
         <div class="boxdiv">${item.tags}</div>
         <a href="../blog.html?id=${item.id}"><h1>${item.title}</h1></a>
         <a href="../blog.html?id=${item.id}"><p class="boxContent">
-        ${item.content.slice(0,180)}
+        ${item.content.slice(0, 180)}
         </p></a>
         <div class="boxauthor">
           <img src=${item.img0} alt="" class="boxauthorimg" />
@@ -156,17 +155,17 @@ function td_fun(item) {
 function td_fun1(item) {
   let data = item.blogs[0]
   console.log("item-mini", item.blogs[0]);
-  console.log("item-mini", item ,item.index);
+  console.log("item-mini", item, item.index);
   let div = document.createElement('div');
   div.innerHTML = `
      <div class="sec2content">
-        <img src=${data.imageurl} alt="" />
+        <img src=${data.imageurl} alt="" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300.png';"  />
         <div class="s2text">
           <div class="div">${data.tags}</div>
           <h1>${data.title}</h1>
           <p">
           ${data.content.slice(0, 500)}
-          </p>
+          </p>  
           <div class="author">
             <img src=${data.img0} alt="" class="authorimg" />
             <div class="authorsname">
