@@ -88,8 +88,8 @@ body{
 /* Sec-1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .navs1 {
     /* border: 1px solid black; */
-    width: 15vw;
-    height: 80px;
+    width: 30px;
+    height: 100px;
     display: flex;
     align-items: center;
     margin-left: 3.5vw;
@@ -97,8 +97,8 @@ body{
 
 .navs1 img {
     /* border: 1px solid black; */
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 2rem;
 }
 
