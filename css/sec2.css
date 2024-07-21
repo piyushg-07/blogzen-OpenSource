@@ -1,25 +1,12 @@
-:root{
+:root {
     --element-color: black;
-    --element1-color:rgba(0, 0, 0, 0.5);
-    --element2-color:rgba(0, 0, 0, 0.8);
+    --element1-color: rgba(0, 0, 0, 0.5);
+    --element2-color: rgba(0, 0, 0, 0.8);
 
 }
 
 
-.sec2{
-    /* border: 2px solid red; */
-    width: 100vw;
-}
-
-.sec2buttons{
-    margin-left: 9.5vw;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-.sec2btn2{
+.sec2btn2 {
     cursor: pointer;
     padding:4px 10px;
     margin: 0 1.3vw;
@@ -32,36 +19,30 @@
     display: inline-block;
     color: black;
 }
-.sec2btn2-recent:hover{
+
+.sec2btn2-recent:hover {
     color: #fff;
     background-color: #ff765d;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.sec2content{
+.sec2content {
     /* border: 1px solid black; */
     width: 90vw;
     margin-top: 2.4vw;
     display: flex;
     align-items: center;
-    margin-left: 5vw;
-    
-}
-.sec2content>img{
-    height: fit-content;
-    /* width: 29vw; */
-    width: 22rem;
-    object-fit: fill;
-    margin: 0 5vw;
-    border-radius: 2vw;
+
 }
 
-.s2text{
+.s2text {
     /* border: 1px solid green; */
     width: auto;
     height: 23vw;
     overflow: scroll;
     /* margin: 0 3vw; */
 }
+
 /* .div{
     margin: 1.3vw 0;
     font-family: 'Poppins';
@@ -70,10 +51,7 @@
     font-size: 0.9em;
     line-height: 30px;
      color: var(--element1-color)} */
-.s2text h1{
-    margin: 1vw 0;
-    font-size: 1.8em;
-    width: 100%;
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -81,7 +59,8 @@
     line-height: 42px;
     color: var(--element-color);
 }
-.s2text p{
+
+.s2text p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -91,33 +70,10 @@
     color: var(--element-color);
 
 }
-.author{
+
+.author {
     display: flex;
     align-items: center;
     margin-top: 1.5vw;
 }
-.author>img{
-    height: 3vw;
-    width: 3vw;
-    border-radius: 10vw;
-}
-.authorsname{
-    margin-left: 1vw;
-}
 
-@media (max-width:834px) {
-    .sec2content{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .s2text{
-        height: 20rem;
-        width: 70%;
-    }
-}
-
-@media (max-width:515px) {
-    .sec2content>img{
-        width: 70vw;
-    }
-}

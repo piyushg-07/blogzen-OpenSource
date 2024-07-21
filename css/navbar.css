@@ -283,27 +283,7 @@ body{
     padding:10px;
     padding-left: 2%;
     text-align: center;
-  }
-  
-  .popup .option {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: 25px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    padding-left:15px;
-    cursor: pointer;
-    
-  }
-  
-  .popup .option img {
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
+
 
   .popup :hover {
     border: 2px solid blue ;
