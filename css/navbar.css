@@ -119,16 +119,22 @@ body{
     font-weight: bolder;
     color: #7D41E2;
 }
-
+#loginButton a{
+    text-decoration: none;
+    color: #f6f8f9;
+}
 #loginButton{
     border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
+    background-color: #208FF4;
+    color: #fcfeff;
 }
 #loginButton:hover{
-    border: 1px solid #f6f8f9;
-    background-color:#208FF4 ;
-    color: white;
+    border: 1px solid #208FF4;
+    background-color: transparent ;
+    color: #ffffff;
+}
+#loginButton:hover a{
+    color: #208FF4;
 }
 #signup:hover{
     border: 1px solid #208FF4;
@@ -139,8 +145,13 @@ body{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
     color: white;
-    font-size: 1.1rem;
-    padding: 1.2rem;
+    /* font-size: 1.1rem;
+    padding: 1.2rem; */
+}
+#Calender:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
 }
 
 
