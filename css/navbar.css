@@ -128,15 +128,20 @@ body{
     background-color: #208FF4;
     color: #fcfeff;
 }
+#loginButton:hover a{
+    color: #208FF4;
+}
 #loginButton:hover{
     border: 1px solid #208FF4;
     background-color: transparent ;
     color: #ffffff;
 }
-#loginButton:hover a{
-    color: #208FF4;
-}
 #signup:hover{
+    border: 1px solid #208FF4;
+    background-color: transparent;
+    color: #2a95f6;
+}
+#Calender:hover{
     border: 1px solid #208FF4;
     background-color: transparent;
     color: #2a95f6;
@@ -145,13 +150,6 @@ body{
     border: 1px solid #f6f8f9;
     background-color:#208FF4 ;
     color: white;
-    /* font-size: 1.1rem;
-    padding: 1.2rem; */
-}
-#Calender:hover{
-    border: 1px solid #208FF4;
-    background-color: transparent;
-    color: #2a95f6;
 }
 
 
