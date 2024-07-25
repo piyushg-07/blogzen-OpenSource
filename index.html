@@ -174,7 +174,7 @@
         var email = document.getElementById("emailId").value;
     
         // Email validation using regular expression
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var emailRegex = /^([a-zA-Z 0-9]{3,20})@([a-zA-Z]{3,6}).([a-z]{3})$/;
         if (!emailRegex.test(email)) {
           alert("Please enter a valid email address.");
           return;
