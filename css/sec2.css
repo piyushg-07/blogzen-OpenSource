@@ -61,11 +61,20 @@
 }
 
 .s2text {
-    /* border: 1px solid green; */
     width: 35rem;
     padding: 1rem;
-    /* margin: 0 3vw; */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* Shadow for depth */
+                0 1px 3px rgba(0, 0, 0, 0.1);
+    color: --element-color; /* Black text color for contrast */
+    background-image: linear-gradient(to right, rgba(135, 206, 235, 0.2), rgba(148, 0, 211, 0.2)); /* Gradient background with sky blue and bright purple */
+    border-image: linear-gradient(to right, skyblue, violet) 1; /* Gradient border with sky blue and bright purple */
 }
+
 
 /* .div{
     margin: 1.3vw 0;
