@@ -1,0 +1,144 @@
+body {
+    background-color: #6a0dad;
+    /* Purple background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-signup {
+    display: flex;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-signup {
+    flex: 1;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.left-signup img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-signup {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.card-signup {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.textfield {
+    margin: 20px 0;
+}
+
+.textfield label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#signup-hide {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-signup:hover {
+    background-color: #5a0d9a;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .socials,
+.footer .newsletter {
+    margin: 10px 0;
+}
+
+.footer .footer_titles {
+    margin-bottom: 0px;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer #subscriptionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer #subscriptionForm input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.footer #subscriptionForm button {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer #subscriptionForm button:hover {
+    background-color: #5a0d9a;
+}
