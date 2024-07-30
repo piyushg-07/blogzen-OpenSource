@@ -26,20 +26,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function initliase(id){
-    const likecount=localStorage.getItem(`likecount-${id}`) || 0; //get the like count if its nan then 0 will be displayed 
-    console.log(like);
-    document.getElementById(`likecount-${id}`).innerHTML=likecount;
+    const likeCount = localStorage.getItem(`likecount-${id}`) ||0;
+    document.getElementById(`likecount-${id}`).innerHTML=likeCount;
   }
-
-  function setlike(item){
-    console.log(item);
-    const like=document.getElementById(`likecount-${'00'+item}`)
-    console.log(like);
-    let currentlike=parseInt(like.innerHTML,10);
-   like.innerHTML=currentlike+1;
-   localStorage.setItem(`likecount-${'00'+item}`,parseInt(like.innerHTML)); //set the like countfor each blog
-
-  }
+  function setlike(id) {
+    const likeElement = document.getElementById(`likecount-${'00' + id}`);
+    let currentLike = parseInt(likeElement.innerHTML, 10);
+    likeElement.innerHTML = currentLike+1;
+    console.log(likeElement);
+    localStorage.setItem(`likecount-${'00'+id}`, parseInt(likeElement.innerHTML));
+}
  
   // create td
   function td_blog(item) {
