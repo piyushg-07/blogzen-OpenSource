@@ -38,6 +38,62 @@
     transform: scale(1.1);
 }
 
+.description-box {
+    border: 2px solid #7D41E2; /* Border color */
+    background-color: #a778f9; /* Light background color */
+    background-image: url(../assests//footer_bg.png);
+    padding: 20px; /* Padding inside the box */
+    margin-top: 20px; /* Space between buttons and box */
+    margin: 3.2rem 2%; /* Space between page margin and box */
+    border-radius: 2rem; /* Rounded corners */
+    font-family: 'Arial', sans-serif; /* Font style */
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    line-height: 1.6; /* Improved line spacing */
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+.description-box h1 {
+    font-size: 2em; /* Title font size */
+    color: #fff; /* Title color */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center the title */
+    font-weight: 900; /* Make the title bold */
+}
+.description-box .p1 {
+    font-size: 1em; /* Title font size */
+    color: #fff; /* Title color */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+.description-box h2 {
+    font-size: 1.5em; /* Title font size */
+    color: #fff; /* Title color */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: left; /* Center the title */
+    font-weight: 700; /* Make the title bold */
+}
+
+.description-box ul {
+    padding-left: 20px; /* Padding for the list */
+}
+
+.description-box li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.description-box li strong {
+    color: #fb9e95; /* Highlight the bold text */
+}
+
+.description-box .p2 {
+    font-size: 1em; /* Title font size */
+    color: #fff; /* Title color */
+    margin-top: 30px; /* Space above the title */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .sec2content {
     /* border: 1px solid black; */
