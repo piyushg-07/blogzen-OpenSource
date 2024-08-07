@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/sec1.css" />
   <link rel="stylesheet" href="css/sec2.css" />
   <link rel="stylesheet" href="css/sec3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!-- <link rel="stylesheet" href="css/sec4.css" /> -->
   <!-- material -->
   <link rel="stylesheet"
@@ -46,7 +48,11 @@
       <button  id="loginButton" class="button_nav txtColor hello" ><a href="login.html">
        LogIn</a></button>
       <button id="signup" class="button_nav txtColor">Sign Up</button>
-      <button onclick="click" id="Calender" class="button_nav txtColor1 hello">Calendar</button>
+      <button onclick="click" id="Calender" class="button_nav txtColor1 hello">
+        <i class="fa-solid fa-calendar"></i> Calendar
+      </button>
+      
+      
     </div>
   </div>
 <!--Calender-->
@@ -56,10 +62,12 @@
         <button class="prevBtn" id="prevBtn">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
+        
         <div class="monthYear" id="monthYear"></div>
         <button class="nextBtn" id="nextBtn">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
+        <button class="closeBtn" id="closeCalendar"><i class="fa-solid fa-times"></i></button>
       </div>
       <div class="days">
           <div class="day">Mon</div>
@@ -71,7 +79,42 @@
           <div class="day">Sun</div>
       </div>
       <div class="dates" id="dates"></div>
+      
     </div> 
+  </div>
+
+   <!-- Signup Popup (Assuming this is how your signup popup would be) -->
+   <div class="overlay2" id="overlay2">
+    <div class="popup2">
+      <!-- Signup content here -->
+       <!-- Signup content here -->
+    <div class="popup-header">
+      <h2>Sign Up</h2>
+      <button class="closeBtn" id="closeSignup"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="signupUsername">Username</label>
+        <input type="text" id="signupUsername" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="signupConfirmPassword">Confirm Password</label>
+        <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="signupMessage" style="display: none;">You have signed up successfully!</div>
+
+      
+    </div>
   </div>
 
   <!-- <div class="overlay" id="overlay">
@@ -167,6 +210,28 @@
     </div>
     
     <script>
+
+document.getElementById("Calender").addEventListener("click", function() {
+  document.getElementById("overlay1").style.display = "flex";
+  document.getElementById("overlay2").style.display = "none";
+});
+
+document.getElementById("signup").addEventListener("click", function() {
+  document.getElementById("overlay2").style.display = "flex";
+  document.getElementById("overlay1").style.display = "none";
+});
+
+document.getElementById("closeCalendar").addEventListener("click", function() {
+  document.getElementById("overlay1").style.display = "none";
+});
+
+document.getElementById("closeSignup").addEventListener("click", function() {
+  document.getElementById("overlay2").style.display = "none";
+});
+
+
+
+
       document.getElementById("subscriptionForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the form from submitting
     
