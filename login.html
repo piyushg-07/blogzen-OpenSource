@@ -38,6 +38,27 @@
     <link rel="stylesheet" href="../Css-files/content.css">
     <script src="../hamburger.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+      // script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const toggleIcon = document.getElementById('toggle-icon');
+
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            toggleIcon.classList.remove('fa-moon');
+            toggleIcon.classList.add('fa-sun');
+        } else {
+            toggleIcon.classList.remove('fa-sun');
+            toggleIcon.classList.add('fa-moon');
+        }
+    });
+});
+
+    </script>
   <title>Login</title>
 </head>
 
@@ -51,7 +72,12 @@
     
         <div class="navs2">
           <!-- <img src="img/final logo 1.png" alt="" /> -->
-          <img src="assests/moon.png" alt="image" id="themeImg">
+          <nav class="nav">
+            <!-- Other navbar content -->
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i id="toggle-icon" class="fas fa-moon"></i>
+            </button>
+        </nav>
           <button  id="loginButton" class="button_nav txtColor hello" ><a href="login.html">
            LogIn</a></button>
           <button id="signup" class="button_nav txtColor">Sign Up</button>
