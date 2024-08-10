@@ -1,24 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
+/* Base styles */
 body {
-  margin: 0;
   font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-body * {
-  box-sizing: border-box;
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.nav {
+ 
+  color: #9e0e0e;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #4c39e0;
+  padding: 0;
 }
 
 .main-login {
   width: 100vw;
   height: 140vh;
-  /* background: #8A2525; */
   background: rgb(84, 50, 208);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 50px;
+  transition: background-color 0.3s;
+}
+
+.dark-mode .main-login {
+  background: #160202;
 }
 
 .left-login {
@@ -30,9 +57,13 @@ body * {
   flex-direction: column;
 }
 
-.left-login>h1 {
+.left-login > h1 {
   color: white;
   font-size: 2.5vw;
+}
+
+.dark-mode .left-login > h1 {
+  color: #e0e0e0;
 }
 
 .left-login-image {
@@ -57,13 +88,22 @@ body * {
   border-radius: 20px;
   box-shadow: 0px 10px 50px #000000a4;
   background-color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card-login>h1 {
-  /* color: #8A2525; */
+.dark-mode .card-login {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.card-login > h1 {
   color: rgb(84, 50, 208);
   font-weight: 800;
   margin: 0;
+}
+
+.dark-mode .card-login > h1 {
+  color: #e0e0e0;
 }
 
 .textfield {
@@ -82,7 +122,7 @@ body * {
   left: 84.9%;
 }
 
-.textfield>input {
+.textfield > input {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -93,19 +133,33 @@ body * {
   box-shadow: 0px 3px 10px #00000056;
   outline: none;
   box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.textfield>label {
+.dark-mode .textfield > input {
+  background: #333;
+  color: #e0e0e0;
+}
+
+.textfield > label {
   color: black;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.textfield>input::placeholder {
+.dark-mode .textfield > label {
+  color: #e0e0e0;
+}
+
+.textfield > input::placeholder {
   color: #000000;
 }
 
-.btn-login {
+.dark-mode .textfield > input::placeholder {
+  color: #e0e0e0;
+}
+
+.btn-login, #google-login {
   width: 100%;
   padding: 16px 0;
   margin: 25px;
@@ -119,30 +173,19 @@ body * {
   background: rgb(84, 50, 208);
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
+  transition: background-color 0.3s;
 }
 
-.btn-login:hover {
+.dark-mode .btn-login, .dark-mode #google-login {
+  background: #555;
+}
+
+.btn-login:hover, #google-login:hover {
   background: rgba(111, 50, 208, 0.9);
 }
 
-#google-login {
-  width: 100%;
-  padding: 16px 0;
-  margin: 25px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: white;
-  background: rgb(84, 50, 208);
-  cursor: pointer;
-  box-shadow: 0px 10px 40px -12px #00ff8052;
-}
-
-#google-login:hover {
-  background: rgba(111, 50, 208, 0.9);
+.dark-mode .btn-login:hover, .dark-mode #google-login:hover {
+  background: rgba(83, 83, 83, 0.9);
 }
 
 .close-btn {
@@ -154,41 +197,4 @@ body * {
   right: 10px;
   cursor: pointer;
   color: white;
-}
-
-
-
-
-@media only screen and (max-width: 950px) {
-  .card-login {
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .main-login {
-    flex-direction: column;
-  }
-
-  .left-login>h1 {
-    display: none;
-  }
-
-  .left-login {
-    width: 100%;
-    height: auto;
-  }
-
-  .right-login {
-    width: 100%;
-    height: auto;
-  }
-
-  .left-login-image {
-    width: 40vh;
-  }
-
-  .card-login {
-    width: 90%;
-  }
 }
