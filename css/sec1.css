@@ -113,3 +113,13 @@
     text-decoration: none;
     color: var(--element-color);
 }
+
+.button_nav:hover {
+    font-size: 1rem;
+    box-shadow: 2px 1px 5px 1px #ff765d;
+}
+
+.button_nav{
+    transition: 0.2s linear;
+    
+}
